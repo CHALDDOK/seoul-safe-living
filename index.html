@@ -55,9 +55,10 @@ select:focus{border-color:var(--ac);}
 .tab-panel.active{display:block;}
 
 /* ── 테이블 ── */
-.table-wrap{overflow-x:auto;padding:0 32px 32px;}
+.table-wrap{overflow-x:auto;padding:0 32px 32px;display:flex;justify-content:center;}
+.table-wrap table{width:auto;min-width:900px;border-collapse:collapse;margin-top:14px;}
 table{width:auto;min-width:900px;border-collapse:collapse;margin-top:14px;}
-thead th{background:var(--sf);color:var(--tx2);font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.5px;padding:9px 12px;border-bottom:1px solid var(--bd);white-space:nowrap;font-family:'IBM Plex Mono',monospace;position:sticky;top:91px;z-index:10;text-align:left;cursor:pointer;user-select:none;}
+thead th{background:var(--sf);color:var(--tx2);font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.5px;padding:9px 12px;border-bottom:1px solid var(--bd);white-space:nowrap;font-family:'IBM Plex Mono',monospace;position:sticky;top:var(--thead-top,91px);z-index:10;text-align:left;cursor:pointer;user-select:none;}
 thead th:hover{color:var(--tx);}
 thead th.sa::after{content:' ↑';color:var(--ac);}
 thead th.sd::after{content:' ↓';color:var(--ac);}
@@ -159,6 +160,10 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
   <div>
     <h1>서울시 청년안심주택 공급 추진현황</h1>
     <div class="sub">YOUTH SAFE HOUSING · SUPPLY STATUS TRACKER</div>
+    <div style="margin-top:5px;display:flex;gap:10px;flex-wrap:wrap;">
+      <a href="https://news.seoul.go.kr/citybuild/archives/502414?listPage=2" target="_blank" rel="noopener" style="font-size:10px;color:var(--tx3);text-decoration:none;font-family:'IBM Plex Mono',monospace;transition:color .15s;" onmouseover="this.style.color='var(--ac)'" onmouseout="this.style.color='var(--tx3)'">서울시청 청년안심주택 공급 추진 현황 ↗</a>
+      <a href="https://soco.seoul.go.kr/youth/bbs/BMSR00015/list.do?menuNo=400008" target="_blank" rel="noopener" style="font-size:10px;color:var(--tx3);text-decoration:none;font-family:'IBM Plex Mono',monospace;transition:color .15s;" onmouseover="this.style.color='var(--ac)'" onmouseout="this.style.color='var(--tx3)'">서울시청 청년안심주택 플랫폼 ↗</a>
+    </div>
   </div>
   <div style="display:flex;align-items:center;gap:10px;">
     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;">
@@ -313,6 +318,8 @@ async function loadData(){
     const sel = document.getElementById('guFilter');
     gus.forEach(g=>{ const o=document.createElement('option'); o.value=o.textContent=g; sel.appendChild(o); });
     applyFilters();
+    setTimeout(updateTheadTop, 100);
+    window.addEventListener('resize', updateTheadTop);
   } catch(e) {
     document.getElementById('statusBadge').className='badge err';
     document.getElementById('statusBadge').textContent='데이터 오류: '+e.message;
@@ -401,10 +408,12 @@ function openDetail(idx){
   const notices=c.notices||[];
   const tdNow=new Date();
 
-  // 청약 링크: 최신 공고의 url 사용, 없으면 모집공고 목록
-  const applyUrl = notices.length>0&&notices[0].url
-    ? notices[0].url
-    : 'https://soco.seoul.go.kr/youth/bbs/BMSR00015/list.do?menuNo=400008';
+  // 청약 링크: applyUrl 필드 우선, 없으면 최신 공고 url, 없으면 목록
+  const applyUrl = c.applyUrl
+    ? c.applyUrl
+    : notices.length>0&&notices[0].url
+      ? notices[0].url
+      : 'https://soco.seoul.go.kr/youth/bbs/BMSR00015/list.do?menuNo=400008';
 
   document.getElementById('detailBody').innerHTML=`
     <div class="ds"><div class="dst">공실 현황</div>
@@ -476,6 +485,61 @@ function closeDetail(){
   document.querySelectorAll('tbody tr').forEach(r=>r.classList.remove('selected'));
 }
 
+// 지도 팝업의 단지명 클릭 시 호출 (ALL 인덱스 기준)
+function openDetailFromMap(allIdx){
+  const c = ALL[allIdx];
+  if(!c) return;
+  // 테이블 행 선택 해제
+  document.querySelectorAll('tbody tr').forEach(r=>r.classList.remove('selected'));
+  document.getElementById('detailTitle').textContent=c.name;
+  document.getElementById('detailSub').textContent=`${c.gu||''} · ${c.stage||'—'}`;
+  const vPct=Math.min((c.vacancy||0)*100,100);
+  const rv=28,circ=2*Math.PI*rv,dashoff=circ*(1-vPct/100);
+  const sc=(c.vacancy||0)>=0.3?'#ef4444':(c.vacancy||0)>=0.1?'#eab308':'#22c55e';
+  const notices=c.notices||[];
+  const tdNow=new Date();
+  const applyUrl = notices.length>0&&notices[0].url ? notices[0].url : 'https://soco.seoul.go.kr/youth/bbs/BMSR00015/list.do?menuNo=400008';
+  document.getElementById('detailBody').innerHTML=`
+    <div class="ds"><div class="dst">공실 현황</div>
+      <div class="vbig">
+        <svg width="70" height="70" viewBox="0 0 70 70">
+          <circle cx="35" cy="35" r="${rv}" fill="none" stroke="var(--sf2)" stroke-width="8"/>
+          <circle cx="35" cy="35" r="${rv}" fill="none" stroke="${sc}" stroke-width="8"
+            stroke-dasharray="${circ.toFixed(1)}" stroke-dashoffset="${dashoff.toFixed(1)}"
+            stroke-linecap="round" transform="rotate(-90 35 35)"/>
+          <text x="35" y="39" text-anchor="middle" fill="${sc}" font-size="11" font-family="IBM Plex Mono" font-weight="700">${vPct.toFixed(1)}%</text>
+        </svg>
+        <div>
+          <div class="vbigp" style="color:${sc}">${vPct.toFixed(1)}%</div>
+          <div class="vbigl">민간임대 공실률</div>
+          <div class="vbigu">추정 ${Math.round((c.private||0)*(c.vacancy||0))}세대 / 민간 ${c.private||0}세대</div>
+        </div>
+      </div>
+    </div>
+    <div class="ds"><div class="dst">세대 구성</div>
+      <div class="drow"><div class="dk">합계</div><div class="dv">${(c.total||0).toLocaleString()} 세대</div></div>
+      <div class="drow"><div class="dk">공공임대</div><div class="dv">${(c.public||0).toLocaleString()} 세대</div></div>
+      <div class="drow"><div class="dk">민간임대</div><div class="dv">${(c.private||0).toLocaleString()} 세대</div></div>
+      <div class="drow"><div class="dk">부지면적</div><div class="dv">${(c.area||0).toLocaleString()} ㎡</div></div>
+    </div>
+    <div class="ds"><div class="dst">사업 일정</div>
+      <div class="tl">${[{l:'인허가',dt:c.approval},{l:'착공신고',dt:c.construction},{l:'사용승인',dt:c.completion},{l:'입주',dt:c.moveIn}].map(item=>{
+        const done=item.dt&&new Date(item.dt)<=tdNow;
+        return `<div class="tli"><div class="tld ${done?'done':'act'}"></div><div><div class="tll">${item.l}</div><div class="tlt">${item.dt||'미정'}</div></div></div>`;
+      }).join('')}</div>
+    </div>
+    <div class="ds"><div class="dst">사업 정보</div>
+      <div class="drow"><div class="dk">자치구</div><div class="dv nt">${c.gu||'—'}</div></div>
+      <div class="drow"><div class="dk">지하철역</div><div class="dv nt">${c.subwayFormatted||c.subway||'—'}</div></div>
+      <div class="drow"><div class="dk">추진단계</div><div class="dv nt">${c.stage||'—'}</div></div>
+      <div class="drow"><div class="dk">사업시행자</div><div class="dv nt" style="max-width:260px;white-space:normal">${c.operator||'—'}</div></div>
+      <div class="drow"><div class="dk">시공사</div><div class="dv nt" style="max-width:260px;white-space:normal">${c.contractor||'—'}</div></div>
+      <div class="drow"><div class="dk">청약페이지</div><div class="dv nt"><a href="${applyUrl}" target="_blank" rel="noopener">공고 바로가기 ↗</a></div></div>
+      ${c.note?`<div class="drow"><div class="dk">비고</div><div class="dv nt">${c.note}</div></div>`:''}
+    </div>`;
+  document.getElementById('detailOv').classList.add('open');
+}
+
 // ── 탭 전환 ──
 function switchTab(tab){
   currentTab=tab;
@@ -510,23 +574,28 @@ function markerColor(vacancy){
 function renderMarkers(){
   mapMarkers.forEach(m=>m.remove());
   mapMarkers=[];
-  filtered.forEach((c,i)=>{
+  // 지도는 항상 전체 단지(ALL) 표시, 필터 무관
+  ALL.forEach((c,i)=>{
     if(!c.lat||!c.lng) return;
     const color=markerColor(c.vacancy);
+    // 필터된 목록에 포함여부로 투명도 구분
+    const inFilter = filtered.some(f=>f.id===c.id);
+    const opacity = inFilter ? 1 : 0.3;
     const icon=L.divIcon({
       className:'',
-      html:`<div style="width:12px;height:12px;border-radius:50%;background:${color};border:2px solid rgba(255,255,255,0.35);box-shadow:0 2px 6px rgba(0,0,0,.4);cursor:pointer;"></div>`,
+      html:`<div style="width:12px;height:12px;border-radius:50%;background:${color};border:2px solid rgba(255,255,255,0.35);box-shadow:0 2px 6px rgba(0,0,0,.4);cursor:pointer;opacity:${opacity};"></div>`,
       iconSize:[12,12],iconAnchor:[6,6]
     });
+    // 팝업에서 단지명 클릭 시 사이드패널 오픈 (allIdx 기준)
+    const allIdx = i;
     const m=L.marker([c.lat,c.lng],{icon}).addTo(mapInstance).bindPopup(`
-      <div class="popup-name">${c.name}</div>
+      <div class="popup-name"><a href="#" onclick="openDetailFromMap(${allIdx});return false;" style="color:var(--ac);text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${c.name}</a></div>
       <div class="popup-row">자치구: <span>${c.gu}</span></div>
       <div class="popup-row">지하철: <span>${c.subwayFormatted||c.subway||'—'}</span></div>
       <div class="popup-row">단계: <span>${c.stage||'—'}</span></div>
       <div class="popup-row">민간세대: <span>${(c.private||0).toLocaleString()}세대</span></div>
       <div class="popup-row">공실률: <span>${c.vacancy!=null?(c.vacancy*100).toFixed(1)+'%':'—'}</span></div>
     `);
-    // 지도 마커 클릭 → 팝업만 (상세 패널 열지 않음)
     mapMarkers.push(m);
   });
 }
@@ -549,6 +618,16 @@ document.querySelectorAll('thead th[data-s]').forEach(th=>{
   });
 });
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeDetail(); });
+
+// ── thead top 동적 계산 ──
+function updateTheadTop(){
+  const header = document.querySelector('header');
+  const controls = document.querySelector('.controls');
+  const rinfo = document.getElementById('rinfo');
+  if(!header||!controls) return;
+  const top = header.offsetHeight + controls.offsetHeight + (rinfo?rinfo.offsetHeight:0);
+  document.documentElement.style.setProperty('--thead-top', top+'px');
+}
 
 loadData();
 </script>
