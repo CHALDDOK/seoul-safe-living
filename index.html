@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울시 청년안심주택 공급 추진현황</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  /* ── 리셋 & 변수 ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-0: #0a0c10;
+    --bg-1: #10141c;
+    --bg-2: #161b26;
+    --bg-3: #1e2535;
+    --border: #252d3f;
+    --border-bright: #2e3a52;
+    --text-0: #e8edf5;
+    --text-1: #9ba8bf;
+    --text-2: #5c6a84;
+    --accent: #3b82f6;
+    --accent-dim: #1d4ed8;
+    --accent-glow: rgba(59,130,246,0.15);
+    --green: #22c55e;
+    --green-dim: rgba(34,197,94,0.12);
+    --yellow: #eab308;
+    --yellow-dim: rgba(234,179,8,0.12);
+    --red: #ef4444;
+    --red-dim: rgba(239,68,68,0.12);
+    --purple: #a855f7;
+    --cyan: #06b6d4;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'Noto Sans KR', sans-serif;
+    --radius: 8px;
+    --header-h: 64px;
+    --tab-h: 48px;
+  }
+
+  html { font-size: 14px; }
+  body {
+    font-family: var(--sans);
+    background: var(--bg-0);
+    color: var(--text-0);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── 스크롤바 ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg-1); }
+  ::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-2); }
+
+  /* ── 헤더 ── */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    height: var(--header-h);
+    background: rgba(10,12,16,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px;
+  }
+  .header-title {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .header-badge {
+    display: inline-flex; align-items: center;
+    background: var(--accent-glow);
+    border: 1px solid rgba(59,130,246,0.3);
+    color: var(--accent);
+    font-size: 11px; font-weight: 600;
+    padding: 3px 8px; border-radius: 4px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .header-title h1 {
+    font-size: 16px; font-weight: 700;
+    color: var(--text-0);
+    letter-spacing: -0.02em;
+  }
+  .header-meta {
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--mono); font-size: 12px; color: var(--text-2);
+  }
+  .header-meta .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 6px var(--green);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; } 50% { opacity: 0.4; }
+  }
+
+  /* ── KPI 그리드 ── */
+  .kpi-section {
+    padding: 20px 24px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 900px) {
+    .kpi-section { grid-template-columns: repeat(3, 1fr); }
+  }
+  .kpi-card {
+    background: var(--bg-1);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .kpi-card:hover { border-color: var(--border-bright); }
+  .kpi-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  }
+  .kpi-card.blue::before { background: linear-gradient(90deg, var(--accent), transparent); }
+  .kpi-card.green::before { background: linear-gradient(90deg, var(--green), transparent); }
+  .kpi-card.yellow::before { background: linear-gradient(90deg, var(--yellow), transparent); }
+  .kpi-card.red::before { background: linear-gradient(90deg, var(--red), transparent); }
+  .kpi-card.purple::before { background: linear-gradient(90deg, var(--purple), transparent); }
+  .kpi-label {
+    font-size: 11px; color: var(--text-2); font-weight: 500;
+    letter-spacing: 0.04em; margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .kpi-value {
+    font-family: var(--mono); font-size: 26px; font-weight: 500;
+    color: var(--text-0); line-height: 1;
+  }
+  .kpi-value .unit { font-size: 13px; color: var(--text-1); margin-left: 3px; }
+
+  /* ── 탭 영역 ── */
+  .tab-bar {
+    display: flex; align-items: center;
+    padding: 16px 24px 0;
+    gap: 4px;
+    border-bottom: 1px solid var(--border);
+    margin-top: 20px;
+  }
+  .tab-btn {
+    display: flex; align-items: center; gap: 7px;
+    padding: 10px 18px;
+    background: none; border: none; cursor: pointer;
+    font-family: var(--sans); font-size: 13px; font-weight: 500;
+    color: var(--text-2);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .tab-btn:hover { color: var(--text-1); }
+  .tab-btn.active { color: var(--accent); border-color: var(--accent); }
+  .tab-btn svg { width: 15px; height: 15px; }
+
+  /* ── 필터 바 ── */
+  .filter-bar {
+    padding: 14px 24px;
+    display: flex; align-items: center; flex-wrap: wrap; gap: 10px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-0);
+    position: sticky; top: var(--header-h); z-index: 80;
+  }
+  .search-wrap {
+    position: relative; flex: 1; min-width: 200px; max-width: 280px;
+  }
+  .search-wrap svg {
+    position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+    color: var(--text-2); pointer-events: none;
+  }
+  .search-input {
+    width: 100%; padding: 7px 10px 7px 34px;
+    background: var(--bg-2); border: 1px solid var(--border);
+    border-radius: var(--radius); color: var(--text-0);
+    font-family: var(--sans); font-size: 13px;
+    outline: none; transition: border-color 0.15s;
+  }
+  .search-input:focus { border-color: var(--accent); }
+  .search-input::placeholder { color: var(--text-2); }
+
+  .filter-select {
+    padding: 7px 28px 7px 10px;
+    background: var(--bg-2); border: 1px solid var(--border);
+    border-radius: var(--radius); color: var(--text-0);
+    font-family: var(--sans); font-size: 13px;
+    outline: none; cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%235c6a84' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    transition: border-color 0.15s;
+  }
+  .filter-select:focus { border-color: var(--accent); }
+
+  .pill-group { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pill {
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 20px; background: none;
+    font-family: var(--sans); font-size: 12px; font-weight: 500;
+    color: var(--text-1); cursor: pointer;
+    transition: all 0.15s; white-space: nowrap;
+  }
+  .pill:hover { border-color: var(--border-bright); color: var(--text-0); }
+  .pill.active {
+    background: var(--accent-glow);
+    border-color: rgba(59,130,246,0.5);
+    color: var(--accent);
+  }
+  .filter-count {
+    margin-left: auto;
+    font-family: var(--mono); font-size: 12px; color: var(--text-2);
+  }
+  .filter-count strong { color: var(--text-1); }
+
+  /* ── 탭 패널 ── */
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* ── 테이블 ── */
+  .table-wrap {
+    overflow-x: auto;
+    height: calc(100vh - var(--header-h) - 200px);
+    min-height: 400px;
+  }
+  table {
+    width: 100%; border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg-1);
+    padding: 11px 14px;
+    text-align: left; font-weight: 600; font-size: 11px;
+    color: var(--text-2); letter-spacing: 0.05em; text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap; cursor: pointer; user-select: none;
+    transition: color 0.15s;
+  }
+  thead th:hover { color: var(--text-1); }
+  thead th.sorted { color: var(--accent); }
+  thead th .sort-icon { display: inline-block; margin-left: 4px; opacity: 0.5; }
+  thead th.sorted .sort-icon { opacity: 1; }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  tbody tr:hover { background: var(--bg-1); }
+  tbody tr.selected { background: rgba(59,130,246,0.08); }
+  tbody td {
+    padding: 11px 14px;
+    color: var(--text-1);
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  tbody td.name-cell { color: var(--text-0); font-weight: 500; max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
+  tbody td.mono { font-family: var(--mono); font-size: 12px; }
+
+  .stage-badge {
+    display: inline-flex; align-items: center;
+    padding: 3px 8px; border-radius: 4px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.02em;
+  }
+  .stage-입주 { background: var(--green-dim); color: var(--green); }
+  .stage-모집공고 { background: rgba(6,182,212,0.12); color: var(--cyan); }
+  .stage-공사중 { background: var(--yellow-dim); color: var(--yellow); }
+  .stage-심의중 { background: rgba(168,85,247,0.12); color: var(--purple); }
+  .stage-사업승인 { background: rgba(59,130,246,0.12); color: var(--accent); }
+  .stage-계획중 { background: var(--bg-3); color: var(--text-2); }
+  .stage-기타 { background: var(--bg-3); color: var(--text-2); }
+
+  .vacancy-bar-wrap { display: flex; align-items: center; gap: 8px; }
+  .vacancy-bar {
+    width: 50px; height: 4px; background: var(--bg-3); border-radius: 2px; overflow: hidden;
+  }
+  .vacancy-bar-fill { height: 100%; border-radius: 2px; }
+  .vr-low .vacancy-bar-fill { background: var(--green); }
+  .vr-mid .vacancy-bar-fill { background: var(--yellow); }
+  .vr-high .vacancy-bar-fill { background: var(--red); }
+  .vr-text { font-family: var(--mono); font-size: 12px; min-width: 38px; }
+  .vr-low .vr-text { color: var(--green); }
+  .vr-mid .vr-text { color: var(--yellow); }
+  .vr-high .vr-text { color: var(--red); }
+
+  /* ── 상세 패널 ── */
+  .detail-overlay {
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .detail-overlay.open { opacity: 1; pointer-events: all; }
+  .detail-panel {
+    position: fixed; top: 0; right: 0; bottom: 0; z-index: 201;
+    width: 380px; max-width: 95vw;
+    background: var(--bg-1);
+    border-left: 1px solid var(--border);
+    transform: translateX(100%);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+  }
+  .detail-panel.open { transform: translateX(0); }
+  .detail-header {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0;
+    background: var(--bg-1); z-index: 1;
+  }
+  .detail-header h2 { font-size: 16px; font-weight: 700; line-height: 1.4; color: var(--text-0); }
+  .detail-header .gu-tag {
+    font-size: 11px; color: var(--text-2); font-weight: 500;
+    margin-top: 4px;
+  }
+  .close-btn {
+    background: none; border: none; cursor: pointer;
+    color: var(--text-2); padding: 4px;
+    border-radius: 4px; transition: color 0.15s;
+  }
+  .close-btn:hover { color: var(--text-0); }
+  .detail-body { padding: 20px; }
+  .detail-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .detail-row:last-child { border-bottom: none; }
+  .detail-key { color: var(--text-2); font-size: 12px; }
+  .detail-val { color: var(--text-0); font-weight: 500; font-family: var(--mono); }
+  .detail-link {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 8px 14px; margin-top: 16px;
+    border: 1px solid rgba(59,130,246,0.3);
+    border-radius: var(--radius);
+    color: var(--accent); font-size: 13px;
+    text-decoration: none; transition: background 0.15s;
+  }
+  .detail-link:hover { background: var(--accent-glow); }
+
+  /* ── 지도 탭 ── */
+  #map {
+    height: calc(100vh - var(--header-h) - var(--tab-h) - 120px);
+    min-height: 400px;
+    background: var(--bg-1);
+  }
+  .leaflet-container { background: #1a2030 !important; }
+
+  /* ── Leaflet 커스텀 마커 ── */
+  .custom-marker {
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: transform 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+  .custom-marker:hover { transform: scale(1.2); }
+  .leaflet-popup-content-wrapper {
+    background: var(--bg-2) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    color: var(--text-0) !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
+  }
+  .leaflet-popup-tip { background: var(--bg-2) !important; }
+  .leaflet-popup-content { margin: 12px 14px !important; font-size: 13px; }
+  .popup-name { font-weight: 700; font-size: 14px; margin-bottom: 6px; color: var(--text-0); }
+  .popup-row { color: var(--text-1); margin: 3px 0; font-size: 12px; }
+  .popup-row span { color: var(--text-0); font-family: var(--mono); }
+
+  /* ── 빈 상태 ── */
+  .empty-state {
+    padding: 80px 24px;
+    text-align: center;
+    color: var(--text-2);
+  }
+  .empty-state svg { margin-bottom: 16px; opacity: 0.4; }
+  .empty-state p { font-size: 14px; }
+
+  /* ── 로딩 ── */
+  .loading-overlay {
+    position: fixed; inset: 0; z-index: 500;
+    background: var(--bg-0);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 16px;
+  }
+  .loading-spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-text { font-family: var(--mono); font-size: 13px; color: var(--text-2); }
+
+  /* ── 에러 배너 ── */
+  .error-banner {
+    margin: 12px 24px;
+    padding: 12px 16px;
+    background: rgba(239,68,68,0.1);
+    border: 1px solid rgba(239,68,68,0.3);
+    border-radius: var(--radius);
+    color: #fca5a5; font-size: 13px;
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- 로딩 -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">데이터를 불러오는 중...</div>
+</div>
+
+<!-- 헤더 -->
+<header>
+  <div class="header-title">
+    <span class="header-badge">LIVE</span>
+    <h1>서울시 청년안심주택 공급 추진현황</h1>
+  </div>
+  <div class="header-meta">
+    <span class="dot"></span>
+    <span id="updatedAt">—</span> 업데이트 완료
+  </div>
+</header>
+
+<!-- 에러 배너 -->
+<div class="error-banner" id="errorBanner"></div>
+
+<!-- KPI -->
+<section class="kpi-section" id="kpiSection">
+  <div class="kpi-card blue">
+    <div class="kpi-label">총 단지수</div>
+    <div class="kpi-value" id="kpiTotal">—<span class="unit">개</span></div>
+  </div>
+  <div class="kpi-card green">
+    <div class="kpi-label">입주 단지수</div>
+    <div class="kpi-value" id="kpiActive">—<span class="unit">개</span></div>
+  </div>
+  <div class="kpi-card yellow">
+    <div class="kpi-label">총 세대수(민간)</div>
+    <div class="kpi-value" id="kpiUnits">—<span class="unit">세대</span></div>
+  </div>
+  <div class="kpi-card red">
+    <div class="kpi-label">공실 세대수</div>
+    <div class="kpi-value" id="kpiVacancy">—<span class="unit">세대</span></div>
+  </div>
+  <div class="kpi-card purple">
+    <div class="kpi-label">평균 공실률</div>
+    <div class="kpi-value" id="kpiRate">—<span class="unit">%</span></div>
+  </div>
+</section>
+
+<!-- 탭 바 -->
+<div class="tab-bar">
+  <button class="tab-btn active" data-tab="table" onclick="switchTab('table')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/>
+      <line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="9" x2="9" y2="21"/>
+    </svg>
+    표
+  </button>
+  <button class="tab-btn" data-tab="map" onclick="switchTab('map')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+      <line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/>
+    </svg>
+    지도
+  </button>
+</div>
+
+<!-- 필터 바 -->
+<div class="filter-bar">
+  <div class="search-wrap">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input type="text" class="search-input" id="searchInput" placeholder="단지명 검색..." oninput="applyFilters()">
+  </div>
+  <select class="filter-select" id="guFilter" onchange="applyFilters()">
+    <option value="">전체 자치구</option>
+  </select>
+  <select class="filter-select" id="stageFilter" onchange="applyFilters()">
+    <option value="">전체 단계</option>
+    <option value="입주">입주</option>
+    <option value="모집공고">모집공고</option>
+    <option value="공사중">공사중</option>
+    <option value="심의중">심의중</option>
+    <option value="사업승인">사업승인</option>
+    <option value="계획중">계획중</option>
+  </select>
+  <div class="pill-group">
+    <button class="pill active" data-vr="all" onclick="setVrFilter('all', this)">전체 공실</button>
+    <button class="pill" data-vr="low" onclick="setVrFilter('low', this)">낮음 &lt;10%</button>
+    <button class="pill" data-vr="mid" onclick="setVrFilter('mid', this)">중간 10–30%</button>
+    <button class="pill" data-vr="high" onclick="setVrFilter('high', this)">높음 &gt;30%</button>
+  </div>
+  <div class="filter-count"><strong id="filteredCount">0</strong>개 단지</div>
+</div>
+
+<!-- 표 탭 -->
+<div class="tab-panel active" id="tab-table">
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortBy('gu')">자치구 <span class="sort-icon" id="sort-gu">↕</span></th>
+          <th onclick="sortBy('name')">단지명 <span class="sort-icon" id="sort-name">↕</span></th>
+          <th>지하철역</th>
+          <th onclick="sortBy('stage')">추진단계 <span class="sort-icon" id="sort-stage">↕</span></th>
+          <th onclick="sortBy('total')" style="text-align:right">총세대수 <span class="sort-icon" id="sort-total">↕</span></th>
+          <th onclick="sortBy('vacancyRate')" style="width:120px">공실률 <span class="sort-icon" id="sort-vacancyRate">↕</span></th>
+          <th onclick="sortBy('lastNoticeDate')">최근공고일 <span class="sort-icon" id="sort-lastNoticeDate">↕</span></th>
+          <th style="text-align:right">일반공급</th>
+          <th style="text-align:right">특별공급</th>
+          <th style="text-align:right">청년세대</th>
+          <th style="text-align:right">신혼부부</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <div class="empty-state" id="emptyState" style="display:none">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="12" cy="12" r="10"/><line x1="8" y1="15" x2="16" y2="15"/>
+        <line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>
+      </svg>
+      <p>조건에 맞는 단지가 없습니다</p>
+    </div>
+  </div>
+</div>
+
+<!-- 지도 탭 -->
+<div class="tab-panel" id="tab-map">
+  <div id="map"></div>
+</div>
+
+<!-- 상세 패널 -->
+<div class="detail-overlay" id="detailOverlay" onclick="closeDetail()"></div>
+<div class="detail-panel" id="detailPanel">
+  <div class="detail-header">
+    <div>
+      <h2 id="detailName">—</h2>
+      <div class="gu-tag" id="detailGu">—</div>
+    </div>
+    <button class="close-btn" onclick="closeDetail()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+  <div class="detail-body" id="detailBody"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// ── 상태 ──────────────────────────────────────────────────────────
+let allData = [];
+let filteredData = [];
+let sortKey = 'gu';
+let sortAsc = true;
+let vrFilter = 'all';
+let mapInstance = null;
+let mapMarkers = [];
+
+// ── 유틸 ──────────────────────────────────────────────────────────
+const num = (n, fallback = '—') => (n == null || n === '') ? fallback : n.toLocaleString();
+const pct = (r) => (r == null ? '—' : r.toFixed(1) + '%');
+
+function vrClass(rate) {
+  if (rate == null) return '';
+  if (rate < 10) return 'vr-low';
+  if (rate <= 30) return 'vr-mid';
+  return 'vr-high';
+}
+
+function stageHtml(stage) {
+  const s = stage || '기타';
+  return `<span class="stage-badge stage-${s}">${s}</span>`;
+}
+
+function vacancyHtml(rate) {
+  if (rate == null) return '<span style="color:var(--text-2)">—</span>';
+  const cls = vrClass(rate);
+  const w = Math.min(rate, 100);
+  return `<div class="vacancy-bar-wrap ${cls}">
+    <div class="vacancy-bar"><div class="vacancy-bar-fill" style="width:${w}%"></div></div>
+    <span class="vr-text">${rate.toFixed(1)}%</span>
+  </div>`;
+}
+
+// ── 데이터 로드 ────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const res = await fetch('data.json?t=' + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+
+    // KPI
+    const k = json.kpi || {};
+    document.getElementById('kpiTotal').innerHTML   = `${num(k.totalComplexes, 0)}<span class="unit">개</span>`;
+    document.getElementById('kpiActive').innerHTML  = `${num(k.activeComplexes, 0)}<span class="unit">개</span>`;
+    document.getElementById('kpiUnits').innerHTML   = `${num(k.totalUnits, 0)}<span class="unit">세대</span>`;
+    document.getElementById('kpiVacancy').innerHTML = `${num(k.vacancyUnits, 0)}<span class="unit">세대</span>`;
+    document.getElementById('kpiRate').innerHTML    = `${pct(k.avgVacancyRate)}<span class="unit"> </span>`;
+    document.getElementById('updatedAt').textContent = json.updatedAt || '—';
+
+    allData = json.complexes || [];
+
+    // 자치구 목록
+    const gus = [...new Set(allData.map(c => c.gu).filter(Boolean))].sort();
+    const sel = document.getElementById('guFilter');
+    gus.forEach(g => {
+      const opt = document.createElement('option');
+      opt.value = opt.textContent = g;
+      sel.appendChild(opt);
+    });
+
+    applyFilters();
+  } catch (e) {
+    console.error(e);
+    showError('data.json을 불러오지 못했습니다: ' + e.message);
+    // fallback empty
+    allData = [];
+    applyFilters();
+  } finally {
+    document.getElementById('loadingOverlay').style.display = 'none';
+  }
+}
+
+function showError(msg) {
+  const el = document.getElementById('errorBanner');
+  el.textContent = '⚠ ' + msg;
+  el.style.display = 'block';
+}
+
+// ── 필터 & 정렬 ────────────────────────────────────────────────────
+function applyFilters() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  const gu = document.getElementById('guFilter').value;
+  const stage = document.getElementById('stageFilter').value;
+
+  filteredData = allData.filter(c => {
+    if (q && !c.name?.toLowerCase().includes(q) && !c.station?.toLowerCase().includes(q)) return false;
+    if (gu && c.gu !== gu) return false;
+    if (stage && c.stage !== stage) return false;
+    if (vrFilter !== 'all') {
+      const r = c.vacancyRate;
+      if (vrFilter === 'low'  && !(r != null && r < 10))  return false;
+      if (vrFilter === 'mid'  && !(r != null && r >= 10 && r <= 30)) return false;
+      if (vrFilter === 'high' && !(r != null && r > 30))  return false;
+    }
+    return true;
+  });
+
+  // 정렬
+  filteredData.sort((a, b) => {
+    let va = a[sortKey], vb = b[sortKey];
+    if (va == null) va = sortAsc ? Infinity : -Infinity;
+    if (vb == null) vb = sortAsc ? Infinity : -Infinity;
+    if (typeof va === 'string') return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+    return sortAsc ? va - vb : vb - va;
+  });
+
+  document.getElementById('filteredCount').textContent = filteredData.length;
+  renderTable();
+  if (mapInstance) renderMapMarkers();
+}
+
+function setVrFilter(val, btn) {
+  vrFilter = val;
+  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function sortBy(key) {
+  if (sortKey === key) sortAsc = !sortAsc;
+  else { sortKey = key; sortAsc = true; }
+  // 아이콘 업데이트
+  document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '↕');
+  const icon = document.getElementById('sort-' + key);
+  if (icon) icon.textContent = sortAsc ? '↑' : '↓';
+  document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
+  const col = document.querySelector(`[onclick="sortBy('${key}')"]`);
+  if (col) col.classList.add('sorted');
+  applyFilters();
+}
+
+// ── 테이블 렌더 ────────────────────────────────────────────────────
+function renderTable() {
+  const tbody = document.getElementById('tableBody');
+  const empty = document.getElementById('emptyState');
+
+  if (!filteredData.length) {
+    tbody.innerHTML = '';
+    empty.style.display = '';
+    return;
+  }
+  empty.style.display = 'none';
+
+  tbody.innerHTML = filteredData.map((c, i) => `
+    <tr onclick="openDetail(${i})" data-idx="${i}">
+      <td>${c.gu || '—'}</td>
+      <td class="name-cell">${c.name || '—'}</td>
+      <td>${c.station || '—'}</td>
+      <td>${stageHtml(c.stage)}</td>
+      <td class="mono" style="text-align:right">${num(c.total)}</td>
+      <td>${vacancyHtml(c.vacancyRate)}</td>
+      <td class="mono">${c.lastNoticeDate || '—'}</td>
+      <td class="mono" style="text-align:right">${num(c.generalSupply)}</td>
+      <td class="mono" style="text-align:right">${num(c.specialSupply)}</td>
+      <td class="mono" style="text-align:right">${c.youthUnits != null ? num(c.youthUnits) : '<span style="color:var(--text-2)">PDF</span>'}</td>
+      <td class="mono" style="text-align:right">${c.newlywedUnits != null ? num(c.newlywedUnits) : '<span style="color:var(--text-2)">PDF</span>'}</td>
+    </tr>`
+  ).join('');
+}
+
+// ── 상세 패널 ─────────────────────────────────────────────────────
+function openDetail(idx) {
+  const c = filteredData[idx];
+  if (!c) return;
+
+  // 행 선택 표시
+  document.querySelectorAll('tbody tr').forEach(tr => tr.classList.remove('selected'));
+  const tr = document.querySelector(`tr[data-idx="${idx}"]`);
+  if (tr) tr.classList.add('selected');
+
+  document.getElementById('detailName').textContent = c.name || '—';
+  document.getElementById('detailGu').textContent = `${c.gu || ''} · ${c.stage || ''}`;
+
+  const rows = [
+    ['지하철역',  c.station || '—'],
+    ['추진단계',  stageHtml(c.stage)],
+    ['총 세대수', `${num(c.total)} 세대`],
+    ['공실 세대수', `${num(c.vacancy)} 세대`],
+    ['공실률', pct(c.vacancyRate)],
+    ['일반 공급', `${num(c.generalSupply)} 세대`],
+    ['특별 공급', `${num(c.specialSupply)} 세대`],
+    ['청년세대(PDF)', c.youthUnits != null ? `${num(c.youthUnits)} 세대` : '미파싱'],
+    ['신혼부부(PDF)', c.newlywedUnits != null ? `${num(c.newlywedUnits)} 세대` : '미파싱'],
+    ['최근 공고일', c.lastNoticeDate || '—'],
+    ['데이터 출처', c.source === 'fallback' ? '베이스데이터' : '서울시 API'],
+  ];
+
+  document.getElementById('detailBody').innerHTML =
+    rows.map(([k, v]) => `<div class="detail-row"><span class="detail-key">${k}</span><span class="detail-val">${v}</span></div>`).join('') +
+    (c.detailUrl ? `<a class="detail-link" href="${c.detailUrl}" target="_blank" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+      </svg>공고 원문 보기</a>` : '');
+
+  document.getElementById('detailOverlay').classList.add('open');
+  document.getElementById('detailPanel').classList.add('open');
+}
+
+function closeDetail() {
+  document.getElementById('detailOverlay').classList.remove('open');
+  document.getElementById('detailPanel').classList.remove('open');
+  document.querySelectorAll('tbody tr').forEach(tr => tr.classList.remove('selected'));
+}
+
+// ── 탭 전환 ──────────────────────────────────────────────────────
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
+  document.getElementById(`tab-${tab}`).classList.add('active');
+
+  if (tab === 'map' && !mapInstance) initMap();
+  if (tab === 'map' && mapInstance) {
+    setTimeout(() => { mapInstance.invalidateSize(); renderMapMarkers(); }, 100);
+  }
+}
+
+// ── 지도 ──────────────────────────────────────────────────────────
+function initMap() {
+  mapInstance = L.map('map', {
+    center: [37.5665, 126.9780],
+    zoom: 11,
+    zoomControl: true,
+  });
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://openstreetmap.org/copyright">OSM</a>',
+    maxZoom: 19,
+  }).addTo(mapInstance);
+
+  renderMapMarkers();
+}
+
+function renderMapMarkers() {
+  // 기존 마커 제거
+  mapMarkers.forEach(m => m.remove());
+  mapMarkers = [];
+
+  const stageColors = {
+    '입주': '#22c55e',
+    '모집공고': '#06b6d4',
+    '공사중': '#eab308',
+    '심의중': '#a855f7',
+    '사업승인': '#3b82f6',
+    '계획중': '#5c6a84',
+    '기타': '#5c6a84',
+  };
+
+  filteredData.forEach((c, i) => {
+    if (!c.lat || !c.lng) return;
+    const color = stageColors[c.stage] || '#5c6a84';
+
+    const icon = L.divIcon({
+      className: '',
+      html: `<div class="custom-marker" style="width:12px;height:12px;background:${color};"></div>`,
+      iconSize: [12, 12],
+      iconAnchor: [6, 6],
+    });
+
+    const marker = L.marker([c.lat, c.lng], { icon })
+      .addTo(mapInstance)
+      .bindPopup(`
+        <div class="popup-name">${c.name}</div>
+        <div class="popup-row">자치구: <span>${c.gu}</span></div>
+        <div class="popup-row">지하철: <span>${c.station || '—'}</span></div>
+        <div class="popup-row">추진단계: <span>${c.stage || '—'}</span></div>
+        <div class="popup-row">총세대수: <span>${num(c.total)} 세대</span></div>
+        <div class="popup-row">공실률: <span>${pct(c.vacancyRate)}</span></div>
+      `);
+
+    marker.on('click', () => {
+      // 표 탭의 행도 선택
+      const tableIdx = filteredData.indexOf(c);
+      if (tableIdx >= 0) openDetail(tableIdx);
+    });
+
+    mapMarkers.push(marker);
+  });
+}
+
+// ── 키보드 ────────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeDetail();
+});
+
+// ── 초기화 ────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
