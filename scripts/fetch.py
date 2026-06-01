@@ -176,6 +176,44 @@ def fetch_all_notices():
 
     return notices
 
+def fetch_notice_detail(ntt_id: str) -> dict:
+    """공고 상세페이지에서 시공사명, 청약신청URL 추출"""
+    if not ntt_id:
+        return {}
+    url = f"{DETAIL_BASE}?nttId={ntt_id}&bbsId=BMSR00015"
+    try:
+        time.sleep(0.5)
+        resp = requests.get(url, headers={**HEADERS, "Content-Type": "text/html"}, timeout=15)
+        resp.encoding = "utf-8"
+        text = resp.text
+
+        result = {"detailUrl": url}
+
+        # 시공사 추출: '시공사', '건설사', '시공' 키워드 근처 텍스트
+        contractor_pat = re.search(
+            r'(?:시공사|건설사|시공업체|시공자)[^\w가-힣]*[:：]?\s*([가-힣a-zA-Z0-9(주)㈜\s]+?)(?:<|[\r\n]|,|　)',
+            text
+        )
+        if contractor_pat:
+            result["contractor"] = contractor_pat.group(1).strip()
+
+        # 청약신청 링크 추출
+        apply_pat = re.search(
+            r'href=["\']([^"\']*(?:apply|youth|soco|seoul)[^"\']*)["\'][^>]*>\s*(?:청약|신청|입주신청)',
+            text, re.IGNORECASE
+        )
+        if apply_pat:
+            href = apply_pat.group(1)
+            if href.startswith("http"):
+                result["applyUrl"] = href
+            elif href.startswith("/"):
+                result["applyUrl"] = "https://soco.seoul.go.kr" + href
+
+        return result
+    except Exception as e:
+        print(f"[WARN] 상세페이지 파싱 실패 nttId={ntt_id}: {e}")
+        return {"detailUrl": url}
+
 # ── 단지 매칭 ────────────────────────────────────────────────────
 def match_complex(title: str, data_list: list):
     t = re.sub(r'[\[\]（）()]', '', title).lower()
@@ -249,6 +287,14 @@ def main():
                     "applyDate": apply_dt,
                     "url": url,
                 })
+                # 시공사·청약URL이 아직 없을 때만 상세페이지 크롤링 (최신 공고 1건만)
+                if ntt_id and (not matched.get("contractor") or not matched.get("applyUrl")):
+                    detail = fetch_notice_detail(ntt_id)
+                    if detail.get("contractor") and not matched.get("contractor"):
+                        matched["contractor"] = detail["contractor"]
+                        print(f"[INFO] 시공사 수집: {matched['name']} → {detail['contractor']}")
+                    if detail.get("applyUrl") and not matched.get("applyUrl"):
+                        matched["applyUrl"] = detail["applyUrl"]
     except Exception as e:
         print(f"[WARN] API 수집 실패, BASE_DATA만 사용: {e}")
 
