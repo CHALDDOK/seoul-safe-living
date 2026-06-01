@@ -1,0 +1,44 @@
+name: Update Seoul Youth Housing Data
+
+on:
+  schedule:
+    # 매일 00:00 KST = 전날 15:00 UTC
+    - cron: '0 15 * * *'
+  workflow_dispatch: # 수동 트리거 (테스트·긴급 재수집용)
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install requests
+
+      - name: Run data fetch script
+        run: python scripts/fetch.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push data.json
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "chore: auto-update data.json [$(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M KST')]"
+          git push
