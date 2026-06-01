@@ -9,17 +9,17 @@
 :root{--bg:#0d0f14;--sf:#141720;--sf2:#1c2030;--bd:#262c3e;--ac:#4c7cf3;--ac2:#38d9a9;--warn:#f59e0b;--danger:#f43f5e;--tx:#e8ecf5;--tx2:#8892aa;--tx3:#4a5568;--green:#22c55e;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh;font-size:13px;}
+
 /* ── 헤더 ── */
 header{background:var(--sf);border-bottom:1px solid var(--bd);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
 header h1{font-size:15px;font-weight:700;letter-spacing:-.3px;}
 .sub{font-size:11px;color:var(--tx2);font-family:'IBM Plex Mono',monospace;margin-top:2px;}
-.hright{display:flex;align-items:center;gap:10px;}
-.status-area{display:flex;flex-direction:column;align-items:flex-end;gap:3px;}
 .badge{font-size:10px;font-family:'IBM Plex Mono',monospace;padding:3px 9px;border-radius:4px;border:1px solid;}
 .badge.live{border-color:var(--ac2);color:var(--ac2);background:rgba(56,217,169,.08);}
 .badge.err{border-color:var(--danger);color:var(--danger);background:rgba(244,63,94,.08);}
 .badge.loading{border-color:var(--warn);color:var(--warn);background:rgba(245,158,11,.08);}
 .next-sync{font-size:10px;color:var(--tx3);font-family:'IBM Plex Mono',monospace;}
+
 /* ── KPI ── */
 .kpi-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--bd);border-bottom:1px solid var(--bd);}
 .kpi-card{background:var(--sf);padding:14px 20px;}
@@ -27,14 +27,16 @@ header h1{font-size:15px;font-weight:700;letter-spacing:-.3px;}
 .kpi-value{font-size:22px;font-weight:700;font-family:'IBM Plex Mono',monospace;letter-spacing:-1px;line-height:1;margin-top:4px;}
 .kv-ac{color:var(--ac)}.kv-g{color:var(--green)}.kv-w{color:var(--warn)}.kv-d{color:var(--danger)}
 .kpi-sub{font-size:10px;color:var(--tx3);font-family:'IBM Plex Mono',monospace;margin-top:3px;}
+
 /* ── 탭 ── */
 .tab-bar{display:flex;background:var(--sf);border-bottom:1px solid var(--bd);padding:0 24px;}
 .tab-btn{display:flex;align-items:center;gap:6px;padding:11px 16px;background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:13px;font-weight:500;color:var(--tx2);margin-bottom:-1px;transition:all .15s;}
 .tab-btn:hover{color:var(--tx);}
 .tab-btn.active{color:var(--ac);border-bottom-color:var(--ac);}
-/* ── 필터/컨트롤 ── */
+
+/* ── 필터 ── */
 .controls{background:var(--sf);border-bottom:1px solid var(--bd);padding:10px 24px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;position:sticky;top:53px;z-index:80;}
-.search-box{position:relative;flex:0 0 240px;}
+.search-box{position:relative;flex:0 0 220px;}
 .search-box input{width:100%;background:var(--bg);border:1px solid var(--bd);color:var(--tx);border-radius:6px;padding:7px 10px 7px 30px;font-size:12px;font-family:'Noto Sans KR',sans-serif;outline:none;transition:border-color .2s;}
 .search-box input:focus{border-color:var(--ac);}
 .search-box::before{content:'⌕';position:absolute;left:9px;top:50%;transform:translateY(-50%);color:var(--tx3);font-size:14px;}
@@ -47,11 +49,14 @@ select:focus{border-color:var(--ac);}
 .pill.active.pw{background:var(--warn);border-color:var(--warn);}
 .pill.active.pd{background:var(--danger);border-color:var(--danger);}
 .rinfo{padding:6px 24px;font-size:11px;color:var(--tx3);font-family:'IBM Plex Mono',monospace;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;}
-/* ── 테이블 ── */
+
+/* ── 탭 패널 ── */
 .tab-panel{display:none;}
 .tab-panel.active{display:block;}
-.table-wrap{overflow-x:auto;padding:0 24px 24px;}
-table{width:100%;border-collapse:collapse;margin-top:14px;}
+
+/* ── 테이블 ── */
+.table-wrap{overflow-x:auto;padding:0 32px 32px;}
+table{width:auto;min-width:900px;border-collapse:collapse;margin-top:14px;}
 thead th{background:var(--sf);color:var(--tx2);font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.5px;padding:9px 12px;border-bottom:1px solid var(--bd);white-space:nowrap;font-family:'IBM Plex Mono',monospace;position:sticky;top:91px;z-index:10;text-align:left;cursor:pointer;user-select:none;}
 thead th:hover{color:var(--tx);}
 thead th.sa::after{content:' ↑';color:var(--ac);}
@@ -60,9 +65,10 @@ tbody tr{border-bottom:1px solid rgba(38,44,62,.5);transition:background .1s;cur
 tbody tr:hover{background:var(--sf);}
 tbody tr.selected{background:rgba(76,124,243,.08);}
 td{padding:9px 12px;vertical-align:middle;white-space:nowrap;}
-td.nm{font-weight:500;color:var(--tx);max-width:220px;overflow:hidden;text-overflow:ellipsis;}
+td.nm{font-weight:500;color:var(--tx);max-width:200px;overflow:hidden;text-overflow:ellipsis;}
 td.mo{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--tx2);}
 td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;color:var(--tx2);}
+
 /* 단계 배지 */
 .sb{display:inline-block;border-radius:4px;padding:2px 7px;font-size:10px;font-weight:500;}
 .s입주{background:rgba(76,124,243,.15);color:#7aa4ff;border:1px solid rgba(76,124,243,.3);}
@@ -70,17 +76,22 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
 .s착공신고{background:rgba(245,158,11,.12);color:#fbbf24;border:1px solid rgba(245,158,11,.25);}
 .s인가완료{background:rgba(168,85,247,.12);color:#c084fc;border:1px solid rgba(168,85,247,.25);}
 .s기타{background:var(--sf2);color:var(--tx2);border:1px solid var(--bd);}
-/* 공고건수 배지 */
-.ncnt{background:rgba(76,124,243,.2);color:#7aa4ff;border-radius:3px;padding:0 4px;font-size:10px;font-family:'IBM Plex Mono',monospace;margin-left:4px;}
-/* 공실률 바 */
-.vc{display:flex;align-items:center;gap:7px;min-width:120px;}
-.vbw{flex:1;height:5px;background:var(--sf2);border-radius:3px;overflow:hidden;}
-.vbf{height:100%;border-radius:3px;}
-.vp{font-family:'IBM Plex Mono',monospace;font-size:11px;min-width:38px;text-align:right;}
+
+/* NEW 배지 */
+.new-badge{display:inline-block;background:rgba(244,63,94,.15);color:#f87171;border:1px solid rgba(244,63,94,.3);border-radius:3px;padding:0 4px;font-size:9px;font-weight:700;font-family:'IBM Plex Mono',monospace;margin-left:4px;vertical-align:middle;letter-spacing:.05em;}
+
+/* 공실률 바 (좁게) */
+.vc{display:flex;align-items:center;gap:5px;min-width:80px;}
+.vbw{width:36px;height:4px;background:var(--sf2);border-radius:2px;overflow:hidden;flex-shrink:0;}
+.vbf{height:100%;border-radius:2px;}
+.vp{font-family:'IBM Plex Mono',monospace;font-size:11px;min-width:36px;text-align:right;}
 .vl{color:var(--green)}.vm{color:var(--warn)}.vh{color:var(--danger)}
 .fl{background:var(--green)}.fm{background:var(--warn)}.fh{background:var(--danger)}
+
+/* 날짜 색상 */
 .dr{color:var(--ac2)}.dn{color:var(--tx2)}.do{color:var(--tx3)}
 .empty-row td{text-align:center;padding:40px;color:var(--tx3);}
+
 /* ── 지도 탭 ── */
 #map{height:calc(100vh - 210px);min-height:400px;background:var(--sf2);}
 .leaflet-container{background:#1a2030!important;}
@@ -90,6 +101,7 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
 .popup-name{font-weight:700;font-size:14px;margin-bottom:6px;color:var(--tx);}
 .popup-row{color:var(--tx2);margin:3px 0;font-size:12px;}
 .popup-row span{color:var(--tx);font-family:'IBM Plex Mono',monospace;}
+
 /* ── 상세 패널 ── */
 .ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:200;backdrop-filter:blur(2px);}
 .ov.open{display:block;}
@@ -108,6 +120,8 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
 .dk{font-size:11px;color:var(--tx2);flex-shrink:0;min-width:80px;}
 .dv{font-size:12px;color:var(--tx);text-align:right;font-family:'IBM Plex Mono',monospace;word-break:break-all;}
 .dv.nt{font-family:'Noto Sans KR',sans-serif;font-size:11px;}
+.dv a{color:var(--ac);text-decoration:none;}
+.dv a:hover{text-decoration:underline;}
 .vbig{display:flex;align-items:center;gap:14px;padding:10px 0;}
 .vbigp{font-size:26px;font-weight:700;font-family:'IBM Plex Mono',monospace;line-height:1;}
 .vbigl{font-size:11px;color:var(--tx2);margin-top:2px;}
@@ -146,15 +160,15 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
     <h1>서울시 청년안심주택 공급 추진현황</h1>
     <div class="sub">YOUTH SAFE HOUSING · SUPPLY STATUS TRACKER</div>
   </div>
-  <div class="hright">
-    <div class="status-area">
+  <div style="display:flex;align-items:center;gap:10px;">
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;">
       <span id="statusBadge" class="badge loading">데이터 로딩 중...</span>
       <span id="nextSyncInfo" class="next-sync"></span>
     </div>
   </div>
 </header>
 
-<div class="kpi-strip" id="kpiStrip">
+<div class="kpi-strip">
   <div class="kpi-card"><div class="kpi-label">총 단지수</div><div class="kpi-value kv-ac" id="kpiTotal">—</div><div class="kpi-sub">민간임대 기준</div></div>
   <div class="kpi-card"><div class="kpi-label">입주 단지수</div><div class="kpi-value kv-g" id="kpiActive">—</div><div class="kpi-sub">현재 입주 중</div></div>
   <div class="kpi-card"><div class="kpi-label">총 세대수(민간)</div><div class="kpi-value" id="kpiUnits">—</div><div class="kpi-sub">민간임대 합계</div></div>
@@ -164,12 +178,10 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
 
 <div class="tab-bar">
   <button class="tab-btn active" data-tab="table" onclick="switchTab('table')">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="9" x2="9" y2="21"/></svg>
-    표
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="9" x2="9" y2="21"/></svg>표
   </button>
   <button class="tab-btn" data-tab="map" onclick="switchTab('map')">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
-    지도
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>지도
   </button>
 </div>
 
@@ -187,7 +199,7 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
     <div class="pill active" data-v="all">전체</div>
     <div class="pill pw" data-v="mid">공실 10%↑</div>
     <div class="pill pd" data-v="high">공실 30%↑</div>
-    <div class="pill" data-v="notice">최근공고</div>
+    <div class="pill" data-v="notice">1개월이내공고</div>
   </div>
 </div>
 <div class="rinfo" id="rinfo"></div>
@@ -201,13 +213,14 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
         <th data-s="gu">자치구</th>
         <th data-s="name">단지명</th>
         <th data-s="subway">지하철역</th>
-        <th data-s="stage">단계</th>
+        <th data-s="stage">사업단계</th>
         <th data-s="private" style="text-align:right">민간세대</th>
-        <th data-s="vacancy" style="min-width:130px">공실률</th>
+        <th data-s="vacancy" style="min-width:90px">공실률</th>
         <th data-s="lastNotice">최근공고일</th>
+        <th data-s="noticeCnt" style="text-align:right">공고수</th>
         <th data-s="special" style="text-align:right">특별공급</th>
         <th data-s="general" style="text-align:right">일반공급</th>
-        <th data-s="moveIn">입주일</th>
+        <th data-s="completion">준공연도</th>
       </tr></thead>
       <tbody id="tableBody"></tbody>
     </table>
@@ -219,7 +232,7 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
   <div id="map"></div>
 </div>
 
-<!-- 상세 패널 -->
+<!-- 상세 패널: 지도탭에서는 숨김 처리 -->
 <div class="ov" id="detailOv" onclick="if(event.target===this)closeDetail()">
   <div class="dp">
     <div class="dh">
@@ -238,28 +251,45 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
 <script>
 let ALL = [], filtered = [], sortState = {key:'id', dir:'asc'}, vFilter = 'all';
 let mapInstance = null, mapMarkers = [];
+let currentTab = 'table';
 const today = new Date();
+today.setHours(0,0,0,0);
 
 // ── 날짜 헬퍼 ──
-function todayStr(){ return today.toISOString().slice(0,10); }
-function yesterdayStr(){ const d=new Date(today); d.setDate(d.getDate()-1); return d.toISOString().slice(0,10); }
+function todayStr(){ return new Date().toISOString().slice(0,10); }
+function oneMonthAgoStr(){
+  const d = new Date(); d.setMonth(d.getMonth()-1);
+  return d.toISOString().slice(0,10);
+}
+function isWithinOneMonth(dt){
+  if(!dt) return false;
+  return dt >= oneMonthAgoStr();
+}
 function dc(dt){
   if(!dt) return 'do';
-  const diff=(today-new Date(dt))/(1000*86400);
+  const diff=(new Date()-new Date(dt))/(1000*86400);
   return diff<30?'dr':diff<90?'dn':'do';
 }
+// 준공연도 + 경과 만년수
+function completionLabel(dt){
+  if(!dt) return '—';
+  const ym = dt.slice(0,7); // YYYY-MM
+  const d = new Date(dt);
+  const years = Math.floor((new Date()-d)/(1000*86400*365.25));
+  return `${ym}(만${years}년)`;
+}
 
-// ── 공실률 렌더 ──
+// ── 공실률 바 (좁게) ──
 function vcHtml(r){
-  if(r==null||r===undefined) return '<span style="color:var(--tx3)">—</span>';
+  if(r==null) return '<span style="color:var(--tx3)">—</span>';
   const pct=Math.min(r*100,100), cls=r>=0.3?'vh':r>=0.1?'vm':'vl', fcls=r>=0.3?'fh':r>=0.1?'fm':'fl';
   return `<div class="vc ${cls}"><div class="vbw"><div class="vbf ${fcls}" style="width:${pct}%"></div></div><span class="vp">${(r*100).toFixed(1)}%</span></div>`;
 }
 
 // ── 단계 배지 ──
 function stageBadge(s){
-  const cls = ['입주','준공','착공신고','인가완료'].includes(s)?`s${s}`:'s기타';
-  return `<span class="sb ${cls}">${s||'—'}</span>`;
+  const ok=['입주','준공','착공신고','인가완료'];
+  return `<span class="sb ${ok.includes(s)?'s'+s:'s기타'}">${s||'—'}</span>`;
 }
 
 // ── 데이터 로드 ──
@@ -268,8 +298,6 @@ async function loadData(){
     const res = await fetch('data.json?t='+Date.now());
     if(!res.ok) throw new Error('HTTP '+res.status);
     const json = await res.json();
-
-    // KPI
     const k = json.kpi||{};
     document.getElementById('kpiTotal').textContent  = (k.totalComplexes||0).toLocaleString();
     document.getElementById('kpiActive').textContent = (k.activeComplexes||0).toLocaleString();
@@ -277,41 +305,39 @@ async function loadData(){
     document.getElementById('kpiVacancy').textContent= (k.vacancyUnits||0).toLocaleString();
     document.getElementById('kpiRate').textContent   = (k.avgVacancyRate||0).toFixed(1)+'%';
     document.getElementById('statusBadge').className = 'badge live';
-    document.getElementById('statusBadge').textContent = json.updatedAt ? json.updatedAt+' 업데이트' : 'LIVE';
+    document.getElementById('statusBadge').textContent = (json.updatedAt||'') + ' 업데이트';
     document.getElementById('nextSyncInfo').textContent = '매일 00:00 자동 갱신';
 
     ALL = json.complexes||[];
-
-    // 자치구 목록
     const gus = [...new Set(ALL.map(c=>c.gu).filter(Boolean))].sort();
     const sel = document.getElementById('guFilter');
     gus.forEach(g=>{ const o=document.createElement('option'); o.value=o.textContent=g; sel.appendChild(o); });
-
     applyFilters();
   } catch(e) {
-    console.error(e);
     document.getElementById('statusBadge').className='badge err';
-    document.getElementById('statusBadge').textContent='데이터 오류';
-    document.getElementById('rinfo').textContent = '⚠ '+e.message+' — data.json을 확인하세요';
+    document.getElementById('statusBadge').textContent='데이터 오류: '+e.message;
+    document.getElementById('rinfo').textContent='⚠ data.json을 확인하세요';
   }
 }
 
-// ── 필터 ──
+// ── 필터 & 정렬 ──
 function applyFilters(){
-  const q = document.getElementById('searchInput').value.toLowerCase();
+  const q  = document.getElementById('searchInput').value.toLowerCase();
   const gu = document.getElementById('guFilter').value;
-  const stage = document.getElementById('stageFilter').value;
-  const yd = yesterdayStr();
+  const st = document.getElementById('stageFilter').value;
 
   filtered = ALL.filter(c=>{
     if(q && !c.name?.toLowerCase().includes(q) && !c.subway?.toLowerCase().includes(q) && !c.gu?.toLowerCase().includes(q)) return false;
     if(gu && c.gu!==gu) return false;
-    if(stage && c.stage!==stage) return false;
-    if(vFilter==='mid' && !(c.vacancy>=0.1)) return false;
-    if(vFilter==='high' && !(c.vacancy>=0.3)) return false;
-    if(vFilter==='notice' && !(c.lastNotice && c.lastNotice>=yd.slice(0,7))) return false;
+    if(st && c.stage!==st) return false;
+    if(vFilter==='mid'  && !(c.vacancy>=0.1))  return false;
+    if(vFilter==='high' && !(c.vacancy>=0.3))  return false;
+    if(vFilter==='notice' && !isWithinOneMonth(c.lastNotice)) return false;
     return true;
   });
+
+  // noticeCnt 필드 보강
+  filtered.forEach(c=>{ c.noticeCnt=(c.notices||[]).length; });
 
   filtered.sort((a,b)=>{
     let va=a[sortState.key]??'', vb=b[sortState.key]??'';
@@ -320,7 +346,7 @@ function applyFilters(){
     return va<vb?(sortState.dir==='asc'?-1:1):va>vb?(sortState.dir==='asc'?1:-1):0;
   });
 
-  document.getElementById('rinfo').textContent = `${filtered.length}개 단지 표시 중 (전체 ${ALL.length}개)`;
+  document.getElementById('rinfo').textContent=`${filtered.length}개 단지 표시 중 (전체 ${ALL.length}개)`;
   renderTable();
   if(mapInstance) renderMarkers();
   document.querySelectorAll('thead th').forEach(th=>{
@@ -331,47 +357,54 @@ function applyFilters(){
 
 // ── 테이블 렌더 ──
 function renderTable(){
-  const tbody = document.getElementById('tableBody');
+  const tbody=document.getElementById('tableBody');
   if(!filtered.length){
-    tbody.innerHTML='<tr class="empty-row"><td colspan="11">조건에 맞는 단지가 없습니다</td></tr>';
+    tbody.innerHTML='<tr class="empty-row"><td colspan="12">조건에 맞는 단지가 없습니다</td></tr>';
     return;
   }
-  tbody.innerHTML = filtered.map((c,i)=>{
-    const notices = c.notices||[];
-    const ncnt = notices.length>0?`<span class="ncnt">${notices.length}</span>`:'';
-    const subway = c.subwayFormatted || c.subway || '—';
+  tbody.innerHTML=filtered.map((c,i)=>{
+    const newBadge = isWithinOneMonth(c.lastNotice)?'<span class="new-badge">N</span>':'';
+    const sub = c.subwayFormatted||c.subway||'—';
+    const ncnt = (c.notices||[]).length;
     return `<tr onclick="openDetail(${i})" data-i="${i}">
       <td class="mo" style="color:var(--tx3)">${c.id}</td>
       <td class="mo">${c.gu||'—'}</td>
-      <td class="nm">${c.name||'—'}${ncnt}</td>
-      <td class="mo">${subway}</td>
+      <td class="nm">${c.name||'—'}${newBadge}</td>
+      <td class="mo">${sub}</td>
       <td>${stageBadge(c.stage)}</td>
       <td class="nu">${(c.private||0).toLocaleString()}</td>
       <td>${vcHtml(c.vacancy)}</td>
       <td class="mo ${dc(c.lastNotice)}">${c.lastNotice||'—'}</td>
+      <td class="nu">${ncnt||'—'}</td>
       <td class="nu">${c.special||0}</td>
       <td class="nu">${c.general||0}</td>
-      <td class="mo ${dc(c.moveIn)}">${c.moveIn||'—'}</td>
+      <td class="mo" style="font-size:11px;">${completionLabel(c.completion)}</td>
     </tr>`;
   }).join('');
 }
 
 // ── 상세 패널 ──
 function openDetail(idx){
-  const c = filtered[idx];
+  // 지도탭이면 열지 않음
+  if(currentTab==='map') return;
+  const c=filtered[idx];
   if(!c) return;
   document.querySelectorAll('tbody tr').forEach(r=>r.classList.remove('selected'));
   const tr=document.querySelector(`tr[data-i="${idx}"]`);
   if(tr) tr.classList.add('selected');
+  document.getElementById('detailTitle').textContent=c.name;
+  document.getElementById('detailSub').textContent=`${c.gu||''} · ${c.stage||'—'}`;
 
-  document.getElementById('detailTitle').textContent = c.name;
-  document.getElementById('detailSub').textContent = `${c.gu} · ${c.stage||'—'}`;
+  const vPct=Math.min((c.vacancy||0)*100,100);
+  const r=28,circ=2*Math.PI*r,dashoff=circ*(1-vPct/100);
+  const sc=(c.vacancy||0)>=0.3?'#ef4444':(c.vacancy||0)>=0.1?'#eab308':'#22c55e';
+  const notices=c.notices||[];
+  const tdNow=new Date();
 
-  const vPct = Math.min((c.vacancy||0)*100, 100);
-  const r=28, circ=2*Math.PI*r, dashoff=circ*(1-vPct/100);
-  const sc = (c.vacancy||0)>=0.3?'#ef4444':(c.vacancy||0)>=0.1?'#eab308':'#22c55e';
-  const notices = c.notices||[];
-  const tdToday = new Date();
+  // 청약 링크: 최신 공고의 url 사용, 없으면 모집공고 목록
+  const applyUrl = notices.length>0&&notices[0].url
+    ? notices[0].url
+    : 'https://soco.seoul.go.kr/youth/bbs/BMSR00015/list.do?menuNo=400008';
 
   document.getElementById('detailBody').innerHTML=`
     <div class="ds"><div class="dst">공실 현황</div>
@@ -399,7 +432,7 @@ function openDetail(idx){
       <div class="drow"><div class="dk">최근공고일</div><div class="dv ${dc(c.lastNotice)}">${c.lastNotice||'—'}</div></div>
     </div>
     ${notices.length>0?`
-    <div class="ds"><div class="dst">수집 공고 (${notices.length}건 · ${yesterdayStr()} 기준)</div>
+    <div class="ds"><div class="dst">수집 공고 (${notices.length}건)</div>
       <div class="notice-list">${notices.map(n=>`
         <div class="ni">
           <div class="ni-title">${n.title}</div>
@@ -421,7 +454,7 @@ function openDetail(idx){
     </div>
     <div class="ds"><div class="dst">사업 일정</div>
       <div class="tl">${[{l:'인허가',dt:c.approval},{l:'착공신고',dt:c.construction},{l:'사용승인',dt:c.completion},{l:'입주',dt:c.moveIn}].map(i=>{
-        const done=i.dt&&new Date(i.dt)<=tdToday;
+        const done=i.dt&&new Date(i.dt)<=tdNow;
         return `<div class="tli"><div class="tld ${done?'done':'act'}"></div><div><div class="tll">${i.l}</div><div class="tlt">${i.dt||'미정'}</div></div></div>`;
       }).join('')}</div>
     </div>
@@ -429,7 +462,9 @@ function openDetail(idx){
       <div class="drow"><div class="dk">자치구</div><div class="dv nt">${c.gu||'—'}</div></div>
       <div class="drow"><div class="dk">지하철역</div><div class="dv nt">${c.subwayFormatted||c.subway||'—'}</div></div>
       <div class="drow"><div class="dk">추진단계</div><div class="dv nt">${c.stage||'—'}</div></div>
-      <div class="drow"><div class="dk">사업시행자</div><div class="dv nt" style="max-width:260px;text-align:right;white-space:normal">${c.operator||'—'}</div></div>
+      <div class="drow"><div class="dk">사업시행자</div><div class="dv nt" style="max-width:260px;white-space:normal">${c.operator||'—'}</div></div>
+      <div class="drow"><div class="dk">시공사</div><div class="dv nt" style="max-width:260px;white-space:normal">${c.contractor||'—'}</div></div>
+      <div class="drow"><div class="dk">청약페이지</div><div class="dv nt"><a href="${applyUrl}" target="_blank" rel="noopener">공고 바로가기 ↗</a></div></div>
       ${c.note?`<div class="drow"><div class="dk">비고</div><div class="dv nt">${c.note}</div></div>`:''}
     </div>`;
 
@@ -443,6 +478,9 @@ function closeDetail(){
 
 // ── 탭 전환 ──
 function switchTab(tab){
+  currentTab=tab;
+  // 탭 전환 시 상세 패널 닫기
+  closeDetail();
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
   document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
@@ -453,26 +491,34 @@ function switchTab(tab){
 
 // ── 지도 ──
 function initMap(){
-  mapInstance = L.map('map',{center:[37.5665,126.978],zoom:11});
+  mapInstance=L.map('map',{center:[37.5665,126.978],zoom:11});
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-    attribution:'&copy; CARTO &copy; OSM', maxZoom:19
+    attribution:'&copy; <a href="https://carto.com/" style="color:#8892aa">CARTO</a> &copy; <a href="https://openstreetmap.org/copyright" style="color:#8892aa">OpenStreetMap</a> contributors',
+    maxZoom:19
   }).addTo(mapInstance);
   renderMarkers();
+}
+
+function markerColor(vacancy){
+  // 공실률: <10% 파랑, 10~90% 초록, 90%+ 빨강
+  const v = (vacancy||0)*100;
+  if(v>=90) return '#ef4444';
+  if(v>=10) return '#22c55e';
+  return '#4c7cf3';
 }
 
 function renderMarkers(){
   mapMarkers.forEach(m=>m.remove());
   mapMarkers=[];
-  const stageColor={'입주':'#4c7cf3','준공':'#38d9a9','착공신고':'#f59e0b','인가완료':'#a855f7'};
   filtered.forEach((c,i)=>{
     if(!c.lat||!c.lng) return;
-    const color = stageColor[c.stage]||'#4a5568';
-    const icon = L.divIcon({
+    const color=markerColor(c.vacancy);
+    const icon=L.divIcon({
       className:'',
       html:`<div style="width:12px;height:12px;border-radius:50%;background:${color};border:2px solid rgba(255,255,255,0.35);box-shadow:0 2px 6px rgba(0,0,0,.4);cursor:pointer;"></div>`,
       iconSize:[12,12],iconAnchor:[6,6]
     });
-    const m = L.marker([c.lat,c.lng],{icon}).addTo(mapInstance).bindPopup(`
+    const m=L.marker([c.lat,c.lng],{icon}).addTo(mapInstance).bindPopup(`
       <div class="popup-name">${c.name}</div>
       <div class="popup-row">자치구: <span>${c.gu}</span></div>
       <div class="popup-row">지하철: <span>${c.subwayFormatted||c.subway||'—'}</span></div>
@@ -480,7 +526,7 @@ function renderMarkers(){
       <div class="popup-row">민간세대: <span>${(c.private||0).toLocaleString()}세대</span></div>
       <div class="popup-row">공실률: <span>${c.vacancy!=null?(c.vacancy*100).toFixed(1)+'%':'—'}</span></div>
     `);
-    m.on('click',()=>{ const ti=filtered.indexOf(c); if(ti>=0) openDetail(ti); });
+    // 지도 마커 클릭 → 팝업만 (상세 패널 열지 않음)
     mapMarkers.push(m);
   });
 }
@@ -504,7 +550,6 @@ document.querySelectorAll('thead th[data-s]').forEach(th=>{
 });
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeDetail(); });
 
-// ── 시작 ──
 loadData();
 </script>
 </body>
