@@ -6,36 +6,43 @@
 <title>서울시 청년안심주택 공급 추진현황</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
-:root{--bg:#0d0f14;--sf:#141720;--sf2:#1c2030;--bd:#262c3e;--ac:#4c7cf3;--ac2:#38d9a9;--warn:#f59e0b;--danger:#f43f5e;--tx:#e8ecf5;--tx2:#8892aa;--tx3:#4a5568;--green:#22c55e;}
+:root{--bg:#0d0f14;--sf:#141720;--sf2:#1c2030;--bd:#262c3e;--ac:#4c7cf3;--ac2:#38d9a9;--warn:#f59e0b;--danger:#f43f5e;--tx:#e8ecf5;--tx2:#8892aa;--tx3:#4a5568;--green:#22c55e;--header-h:64px;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh;font-size:13px;}
 
-/* ── 헤더 ── */
-header{background:var(--sf);border-bottom:1px solid var(--bd);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
-header h1{font-size:15px;font-weight:700;letter-spacing:-.3px;}
-.sub{font-size:11px;color:var(--tx2);font-family:'IBM Plex Mono',monospace;margin-top:2px;}
-.badge{font-size:10px;font-family:'IBM Plex Mono',monospace;padding:3px 9px;border-radius:4px;border:1px solid;}
+/* ── 헤더 (KPI 포함) ── */
+header{background:var(--sf);border-bottom:1px solid var(--bd);padding:0 24px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;position:sticky;top:0;z-index:100;height:var(--header-h);}
+.hd-left{display:flex;flex-direction:column;gap:2px;flex-shrink:0;}
+header h1{font-size:14px;font-weight:700;letter-spacing:-.3px;white-space:nowrap;}
+.sub{font-size:10px;color:var(--tx2);font-family:'IBM Plex Mono',monospace;}
+.hd-sources{display:flex;gap:10px;margin-top:3px;}
+.hd-sources a{font-size:9px;color:var(--tx3);text-decoration:none;font-family:'IBM Plex Mono',monospace;transition:color .15s;white-space:nowrap;}
+.hd-sources a:hover{color:var(--ac);}
+
+/* KPI 인라인 */
+.kpi-inline{display:flex;align-items:center;gap:2px;justify-content:center;}
+.kpi-item{display:flex;flex-direction:column;align-items:center;padding:0 18px;border-right:1px solid var(--bd);}
+.kpi-item:last-child{border-right:none;}
+.ki-label{font-size:9px;color:var(--tx3);font-family:'IBM Plex Mono',monospace;letter-spacing:.4px;white-space:nowrap;text-transform:uppercase;}
+.ki-value{font-size:18px;font-weight:700;font-family:'IBM Plex Mono',monospace;letter-spacing:-1px;line-height:1.15;margin-top:1px;}
+.ki-sub{font-size:9px;color:var(--tx3);font-family:'IBM Plex Mono',monospace;margin-top:1px;white-space:nowrap;}
+.kv-ac{color:var(--ac)}.kv-g{color:var(--green)}.kv-tx{color:var(--tx)}.kv-w{color:var(--warn)}.kv-d{color:var(--danger)}
+
+.hd-right{display:flex;flex-direction:column;align-items:flex-end;gap:3px;flex-shrink:0;}
+.badge{font-size:10px;font-family:'IBM Plex Mono',monospace;padding:3px 9px;border-radius:4px;border:1px solid;white-space:nowrap;}
 .badge.live{border-color:var(--ac2);color:var(--ac2);background:rgba(56,217,169,.08);}
 .badge.err{border-color:var(--danger);color:var(--danger);background:rgba(244,63,94,.08);}
 .badge.loading{border-color:var(--warn);color:var(--warn);background:rgba(245,158,11,.08);}
 .next-sync{font-size:10px;color:var(--tx3);font-family:'IBM Plex Mono',monospace;}
 
-/* ── KPI ── */
-.kpi-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--bd);border-bottom:1px solid var(--bd);}
-.kpi-card{background:var(--sf);padding:14px 20px;}
-.kpi-label{font-size:10px;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px;font-family:'IBM Plex Mono',monospace;}
-.kpi-value{font-size:22px;font-weight:700;font-family:'IBM Plex Mono',monospace;letter-spacing:-1px;line-height:1;margin-top:4px;}
-.kv-ac{color:var(--ac)}.kv-g{color:var(--green)}.kv-w{color:var(--warn)}.kv-d{color:var(--danger)}
-.kpi-sub{font-size:10px;color:var(--tx3);font-family:'IBM Plex Mono',monospace;margin-top:3px;}
-
 /* ── 탭 ── */
-.tab-bar{display:flex;background:var(--sf);border-bottom:1px solid var(--bd);padding:0 24px;}
-.tab-btn{display:flex;align-items:center;gap:6px;padding:11px 16px;background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:13px;font-weight:500;color:var(--tx2);margin-bottom:-1px;transition:all .15s;}
+.tab-bar{display:flex;background:var(--sf);border-bottom:1px solid var(--bd);padding:0 24px;position:sticky;top:var(--header-h);z-index:90;}
+.tab-btn{display:flex;align-items:center;gap:6px;padding:10px 16px;background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:13px;font-weight:500;color:var(--tx2);margin-bottom:-1px;transition:all .15s;}
 .tab-btn:hover{color:var(--tx);}
 .tab-btn.active{color:var(--ac);border-bottom-color:var(--ac);}
 
 /* ── 필터 ── */
-.controls{background:var(--sf);border-bottom:1px solid var(--bd);padding:10px 24px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;position:sticky;top:53px;z-index:80;}
+.controls{background:var(--sf);border-bottom:1px solid var(--bd);padding:8px 24px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;position:sticky;top:calc(var(--header-h) + 37px);z-index:80;}
 .search-box{position:relative;flex:0 0 220px;}
 .search-box input{width:100%;background:var(--bg);border:1px solid var(--bd);color:var(--tx);border-radius:6px;padding:7px 10px 7px 30px;font-size:12px;font-family:'Noto Sans KR',sans-serif;outline:none;transition:border-color .2s;}
 .search-box input:focus{border-color:var(--ac);}
@@ -48,7 +55,7 @@ select:focus{border-color:var(--ac);}
 .pill.active{background:var(--ac);border-color:var(--ac);color:#fff;}
 .pill.active.pw{background:var(--warn);border-color:var(--warn);}
 .pill.active.pd{background:var(--danger);border-color:var(--danger);}
-.rinfo{padding:6px 24px;font-size:11px;color:var(--tx3);font-family:'IBM Plex Mono',monospace;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;}
+.rinfo{padding:5px 24px;font-size:11px;color:var(--tx3);font-family:'IBM Plex Mono',monospace;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;}
 
 /* ── 탭 패널 ── */
 .tab-panel{display:none;}
@@ -57,8 +64,7 @@ select:focus{border-color:var(--ac);}
 /* ── 테이블 ── */
 .table-wrap{overflow-x:auto;padding:0 32px 32px;display:flex;justify-content:center;}
 .table-wrap table{width:auto;min-width:900px;border-collapse:collapse;margin-top:14px;}
-table{width:auto;min-width:900px;border-collapse:collapse;margin-top:14px;}
-thead th{background:var(--sf);color:var(--tx2);font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.5px;padding:9px 12px;border-bottom:1px solid var(--bd);white-space:nowrap;font-family:'IBM Plex Mono',monospace;position:sticky;top:var(--thead-top,91px);z-index:10;text-align:left;cursor:pointer;user-select:none;}
+thead th{background:var(--sf);color:var(--tx2);font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.5px;padding:9px 12px;border-bottom:1px solid var(--bd);white-space:nowrap;font-family:'IBM Plex Mono',monospace;position:sticky;top:var(--thead-top,130px);z-index:10;text-align:left;cursor:pointer;user-select:none;}
 thead th:hover{color:var(--tx);}
 thead th.sa::after{content:' ↑';color:var(--ac);}
 thead th.sd::after{content:' ↓';color:var(--ac);}
@@ -81,7 +87,7 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
 /* NEW 배지 */
 .new-badge{display:inline-block;background:rgba(244,63,94,.15);color:#f87171;border:1px solid rgba(244,63,94,.3);border-radius:3px;padding:0 4px;font-size:9px;font-weight:700;font-family:'IBM Plex Mono',monospace;margin-left:4px;vertical-align:middle;letter-spacing:.05em;}
 
-/* 공실률 바 (좁게) */
+/* 공실률 바 */
 .vc{display:flex;align-items:center;gap:5px;min-width:80px;}
 .vbw{width:36px;height:4px;background:var(--sf2);border-radius:2px;overflow:hidden;flex-shrink:0;}
 .vbf{height:100%;border-radius:2px;}
@@ -94,19 +100,22 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
 .empty-row td{text-align:center;padding:40px;color:var(--tx3);}
 
 /* ── 지도 탭 ── */
-#map{height:calc(100vh - 210px);min-height:400px;background:var(--sf2);}
+#map{height:calc(100vh - 148px);min-height:400px;background:var(--sf2);}
 .leaflet-container{background:#1a2030!important;}
 .leaflet-popup-content-wrapper{background:var(--sf)!important;border:1px solid var(--bd)!important;border-radius:8px!important;color:var(--tx)!important;box-shadow:0 8px 24px rgba(0,0,0,.4)!important;}
 .leaflet-popup-tip{background:var(--sf)!important;}
 .leaflet-popup-content{margin:12px 14px!important;font-size:13px;}
-.popup-name{font-weight:700;font-size:14px;margin-bottom:6px;color:var(--tx);}
+.popup-name{font-weight:700;font-size:14px;margin-bottom:6px;}
 .popup-row{color:var(--tx2);margin:3px 0;font-size:12px;}
 .popup-row span{color:var(--tx);font-family:'IBM Plex Mono',monospace;}
+/* Leaflet 출처 표기 강제 표시 */
+.leaflet-control-attribution{background:rgba(13,15,20,.8)!important;color:var(--tx3)!important;font-size:10px!important;}
+.leaflet-control-attribution a{color:var(--tx2)!important;}
 
 /* ── 상세 패널 ── */
-.ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:200;backdrop-filter:blur(2px);}
+.ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:500;backdrop-filter:blur(2px);}
 .ov.open{display:block;}
-.dp{position:fixed;top:0;right:0;bottom:0;width:460px;max-width:95vw;background:var(--sf);border-left:1px solid var(--bd);overflow-y:auto;animation:sli .2s ease;z-index:201;}
+.dp{position:fixed;top:0;right:0;bottom:0;width:460px;max-width:95vw;background:var(--sf);border-left:1px solid var(--bd);overflow-y:auto;animation:sli .2s ease;z-index:501;}
 @keyframes sli{from{transform:translateX(40px);opacity:0}to{transform:translateX(0);opacity:1}}
 .dh{padding:18px 22px;border-bottom:1px solid var(--bd);display:flex;justify-content:space-between;align-items:flex-start;position:sticky;top:0;background:var(--sf);z-index:10;}
 .dt{font-size:15px;font-weight:700;line-height:1.3;max-width:360px;}
@@ -157,29 +166,48 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
 <body>
 
 <header>
-  <div>
+  <div class="hd-left">
     <h1>서울시 청년안심주택 공급 추진현황</h1>
     <div class="sub">YOUTH SAFE HOUSING · SUPPLY STATUS TRACKER</div>
-    <div style="margin-top:5px;display:flex;gap:10px;flex-wrap:wrap;">
-      <a href="https://news.seoul.go.kr/citybuild/archives/502414?listPage=2" target="_blank" rel="noopener" style="font-size:10px;color:var(--tx3);text-decoration:none;font-family:'IBM Plex Mono',monospace;transition:color .15s;" onmouseover="this.style.color='var(--ac)'" onmouseout="this.style.color='var(--tx3)'">서울시청 청년안심주택 공급 추진 현황 ↗</a>
-      <a href="https://soco.seoul.go.kr/youth/bbs/BMSR00015/list.do?menuNo=400008" target="_blank" rel="noopener" style="font-size:10px;color:var(--tx3);text-decoration:none;font-family:'IBM Plex Mono',monospace;transition:color .15s;" onmouseover="this.style.color='var(--ac)'" onmouseout="this.style.color='var(--tx3)'">서울시청 청년안심주택 플랫폼 ↗</a>
+    <div class="hd-sources">
+      <a href="https://news.seoul.go.kr/citybuild/archives/502414?listPage=2" target="_blank" rel="noopener">서울시청 청년안심주택 공급 추진 현황 ↗</a>
+      <a href="https://soco.seoul.go.kr/youth/bbs/BMSR00015/list.do?menuNo=400008" target="_blank" rel="noopener">서울시청 청년안심주택 플랫폼 ↗</a>
     </div>
   </div>
-  <div style="display:flex;align-items:center;gap:10px;">
-    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;">
-      <span id="statusBadge" class="badge loading">데이터 로딩 중...</span>
-      <span id="nextSyncInfo" class="next-sync"></span>
+
+  <div class="kpi-inline">
+    <div class="kpi-item">
+      <div class="ki-label">총 단지수</div>
+      <div class="ki-value kv-ac" id="kpiTotal">—</div>
+      <div class="ki-sub">민간임대 기준</div>
     </div>
+    <div class="kpi-item">
+      <div class="ki-label">입주 단지수</div>
+      <div class="ki-value kv-g" id="kpiActive">—</div>
+      <div class="ki-sub">현재 입주 중</div>
+    </div>
+    <div class="kpi-item">
+      <div class="ki-label">총 세대수(민간)</div>
+      <div class="ki-value kv-tx" id="kpiUnits">—</div>
+      <div class="ki-sub">민간임대 합계</div>
+    </div>
+    <div class="kpi-item">
+      <div class="ki-label">공실 세대수</div>
+      <div class="ki-value kv-w" id="kpiVacancy">—</div>
+      <div class="ki-sub">추정 공실</div>
+    </div>
+    <div class="kpi-item">
+      <div class="ki-label">평균 공실률</div>
+      <div class="ki-value kv-d" id="kpiRate">—</div>
+      <div class="ki-sub">민간임대 기준</div>
+    </div>
+  </div>
+
+  <div class="hd-right">
+    <span id="statusBadge" class="badge loading">데이터 로딩 중...</span>
+    <span id="nextSyncInfo" class="next-sync"></span>
   </div>
 </header>
-
-<div class="kpi-strip">
-  <div class="kpi-card"><div class="kpi-label">총 단지수</div><div class="kpi-value kv-ac" id="kpiTotal">—</div><div class="kpi-sub">민간임대 기준</div></div>
-  <div class="kpi-card"><div class="kpi-label">입주 단지수</div><div class="kpi-value kv-g" id="kpiActive">—</div><div class="kpi-sub">현재 입주 중</div></div>
-  <div class="kpi-card"><div class="kpi-label">총 세대수(민간)</div><div class="kpi-value" id="kpiUnits">—</div><div class="kpi-sub">민간임대 합계</div></div>
-  <div class="kpi-card"><div class="kpi-label">공실 세대수</div><div class="kpi-value kv-w" id="kpiVacancy">—</div><div class="kpi-sub">추정 공실</div></div>
-  <div class="kpi-card"><div class="kpi-label">평균 공실률</div><div class="kpi-value kv-d" id="kpiRate">—</div><div class="kpi-sub">민간임대 기준</div></div>
-</div>
 
 <div class="tab-bar">
   <button class="tab-btn active" data-tab="table" onclick="switchTab('table')">
@@ -237,7 +265,7 @@ td.nu{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;colo
   <div id="map"></div>
 </div>
 
-<!-- 상세 패널: 지도탭에서는 숨김 처리 -->
+<!-- 상세 패널 -->
 <div class="ov" id="detailOv" onclick="if(event.target===this)closeDetail()">
   <div class="dp">
     <div class="dh">
@@ -261,30 +289,24 @@ const today = new Date();
 today.setHours(0,0,0,0);
 
 // ── 날짜 헬퍼 ──
-function todayStr(){ return new Date().toISOString().slice(0,10); }
 function oneMonthAgoStr(){
   const d = new Date(); d.setMonth(d.getMonth()-1);
   return d.toISOString().slice(0,10);
 }
-function isWithinOneMonth(dt){
-  if(!dt) return false;
-  return dt >= oneMonthAgoStr();
-}
+function isWithinOneMonth(dt){ return dt && dt >= oneMonthAgoStr(); }
 function dc(dt){
   if(!dt) return 'do';
   const diff=(new Date()-new Date(dt))/(1000*86400);
   return diff<30?'dr':diff<90?'dn':'do';
 }
-// 준공연도 + 경과 만년수
 function completionLabel(dt){
   if(!dt) return '—';
-  const ym = dt.slice(0,7); // YYYY-MM
-  const d = new Date(dt);
-  const years = Math.floor((new Date()-d)/(1000*86400*365.25));
+  const ym = dt.slice(0,7);
+  const years = Math.floor((new Date()-new Date(dt))/(1000*86400*365.25));
   return `${ym}(만${years}년)`;
 }
 
-// ── 공실률 바 (좁게) ──
+// ── 공실률 바 ──
 function vcHtml(r){
   if(r==null) return '<span style="color:var(--tx3)">—</span>';
   const pct=Math.min(r*100,100), cls=r>=0.3?'vh':r>=0.1?'vm':'vl', fcls=r>=0.3?'fh':r>=0.1?'fm':'fl';
@@ -297,6 +319,16 @@ function stageBadge(s){
   return `<span class="sb ${ok.includes(s)?'s'+s:'s기타'}">${s||'—'}</span>`;
 }
 
+// ── thead top 계산 ──
+function updateTheadTop(){
+  const hh = document.querySelector('header')?.offsetHeight || 64;
+  const th = document.querySelector('.tab-bar')?.offsetHeight || 37;
+  const ch = document.querySelector('.controls')?.offsetHeight || 45;
+  const rh = document.getElementById('rinfo')?.offsetHeight || 26;
+  const top = hh + th + ch + rh;
+  document.documentElement.style.setProperty('--thead-top', top + 'px');
+}
+
 // ── 데이터 로드 ──
 async function loadData(){
   try {
@@ -304,13 +336,13 @@ async function loadData(){
     if(!res.ok) throw new Error('HTTP '+res.status);
     const json = await res.json();
     const k = json.kpi||{};
-    document.getElementById('kpiTotal').textContent  = (k.totalComplexes||0).toLocaleString();
-    document.getElementById('kpiActive').textContent = (k.activeComplexes||0).toLocaleString();
-    document.getElementById('kpiUnits').textContent  = (k.totalPrivateUnits||0).toLocaleString();
-    document.getElementById('kpiVacancy').textContent= (k.vacancyUnits||0).toLocaleString();
-    document.getElementById('kpiRate').textContent   = (k.avgVacancyRate||0).toFixed(1)+'%';
-    document.getElementById('statusBadge').className = 'badge live';
-    document.getElementById('statusBadge').textContent = (json.updatedAt||'') + ' 업데이트';
+    document.getElementById('kpiTotal').textContent   = (k.totalComplexes||0).toLocaleString();
+    document.getElementById('kpiActive').textContent  = (k.activeComplexes||0).toLocaleString();
+    document.getElementById('kpiUnits').textContent   = (k.totalPrivateUnits||0).toLocaleString();
+    document.getElementById('kpiVacancy').textContent = (k.vacancyUnits||0).toLocaleString();
+    document.getElementById('kpiRate').textContent    = (k.avgVacancyRate||0).toFixed(1)+'%';
+    document.getElementById('statusBadge').className  = 'badge live';
+    document.getElementById('statusBadge').textContent= (json.updatedAt||'') + ' 업데이트';
     document.getElementById('nextSyncInfo').textContent = '매일 00:00 자동 갱신';
 
     ALL = json.complexes||[];
@@ -318,7 +350,7 @@ async function loadData(){
     const sel = document.getElementById('guFilter');
     gus.forEach(g=>{ const o=document.createElement('option'); o.value=o.textContent=g; sel.appendChild(o); });
     applyFilters();
-    setTimeout(updateTheadTop, 100);
+    requestAnimationFrame(()=>{ updateTheadTop(); });
     window.addEventListener('resize', updateTheadTop);
   } catch(e) {
     document.getElementById('statusBadge').className='badge err';
@@ -337,13 +369,12 @@ function applyFilters(){
     if(q && !c.name?.toLowerCase().includes(q) && !c.subway?.toLowerCase().includes(q) && !c.gu?.toLowerCase().includes(q)) return false;
     if(gu && c.gu!==gu) return false;
     if(st && c.stage!==st) return false;
-    if(vFilter==='mid'  && !(c.vacancy>=0.1))  return false;
-    if(vFilter==='high' && !(c.vacancy>=0.3))  return false;
-    if(vFilter==='notice' && !isWithinOneMonth(c.lastNotice)) return false;
+    if(vFilter==='mid'   && !(c.vacancy>=0.1))  return false;
+    if(vFilter==='high'  && !(c.vacancy>=0.3))  return false;
+    if(vFilter==='notice'&& !isWithinOneMonth(c.lastNotice)) return false;
     return true;
   });
 
-  // noticeCnt 필드 보강
   filtered.forEach(c=>{ c.noticeCnt=(c.notices||[]).length; });
 
   filtered.sort((a,b)=>{
@@ -360,6 +391,7 @@ function applyFilters(){
     th.classList.remove('sa','sd');
     if(th.dataset.s===sortState.key) th.classList.add(sortState.dir==='asc'?'sa':'sd');
   });
+  requestAnimationFrame(updateTheadTop);
 }
 
 // ── 테이블 렌더 ──
@@ -390,25 +422,15 @@ function renderTable(){
   }).join('');
 }
 
-// ── 상세 패널 ──
-function openDetail(idx){
-  // 지도탭이면 열지 않음
-  if(currentTab==='map') return;
-  const c=filtered[idx];
-  if(!c) return;
-  document.querySelectorAll('tbody tr').forEach(r=>r.classList.remove('selected'));
-  const tr=document.querySelector(`tr[data-i="${idx}"]`);
-  if(tr) tr.classList.add('selected');
+// ── 상세 패널 공통 렌더 ──
+function renderDetailPanel(c){
   document.getElementById('detailTitle').textContent=c.name;
   document.getElementById('detailSub').textContent=`${c.gu||''} · ${c.stage||'—'}`;
-
   const vPct=Math.min((c.vacancy||0)*100,100);
-  const r=28,circ=2*Math.PI*r,dashoff=circ*(1-vPct/100);
+  const rv=28,circ=2*Math.PI*rv,dashoff=circ*(1-vPct/100);
   const sc=(c.vacancy||0)>=0.3?'#ef4444':(c.vacancy||0)>=0.1?'#eab308':'#22c55e';
   const notices=c.notices||[];
   const tdNow=new Date();
-
-  // 청약 링크: applyUrl 필드 우선, 없으면 최신 공고 url, 없으면 목록
   const applyUrl = c.applyUrl
     ? c.applyUrl
     : notices.length>0&&notices[0].url
@@ -419,8 +441,8 @@ function openDetail(idx){
     <div class="ds"><div class="dst">공실 현황</div>
       <div class="vbig">
         <svg width="70" height="70" viewBox="0 0 70 70">
-          <circle cx="35" cy="35" r="${r}" fill="none" stroke="var(--sf2)" stroke-width="8"/>
-          <circle cx="35" cy="35" r="${r}" fill="none" stroke="${sc}" stroke-width="8"
+          <circle cx="35" cy="35" r="${rv}" fill="none" stroke="var(--sf2)" stroke-width="8"/>
+          <circle cx="35" cy="35" r="${rv}" fill="none" stroke="${sc}" stroke-width="8"
             stroke-dasharray="${circ.toFixed(1)}" stroke-dashoffset="${dashoff.toFixed(1)}"
             stroke-linecap="round" transform="rotate(-90 35 35)"/>
           <text x="35" y="39" text-anchor="middle" fill="${sc}" font-size="11" font-family="IBM Plex Mono" font-weight="700">${vPct.toFixed(1)}%</text>
@@ -462,67 +484,6 @@ function openDetail(idx){
       <div class="drow"><div class="dk">부지면적</div><div class="dv">${(c.area||0).toLocaleString()} ㎡</div></div>
     </div>
     <div class="ds"><div class="dst">사업 일정</div>
-      <div class="tl">${[{l:'인허가',dt:c.approval},{l:'착공신고',dt:c.construction},{l:'사용승인',dt:c.completion},{l:'입주',dt:c.moveIn}].map(i=>{
-        const done=i.dt&&new Date(i.dt)<=tdNow;
-        return `<div class="tli"><div class="tld ${done?'done':'act'}"></div><div><div class="tll">${i.l}</div><div class="tlt">${i.dt||'미정'}</div></div></div>`;
-      }).join('')}</div>
-    </div>
-    <div class="ds"><div class="dst">사업 정보</div>
-      <div class="drow"><div class="dk">자치구</div><div class="dv nt">${c.gu||'—'}</div></div>
-      <div class="drow"><div class="dk">지하철역</div><div class="dv nt">${c.subwayFormatted||c.subway||'—'}</div></div>
-      <div class="drow"><div class="dk">추진단계</div><div class="dv nt">${c.stage||'—'}</div></div>
-      <div class="drow"><div class="dk">사업시행자</div><div class="dv nt" style="max-width:260px;white-space:normal">${c.operator||'—'}</div></div>
-      <div class="drow"><div class="dk">시공사</div><div class="dv nt" style="max-width:260px;white-space:normal">${c.contractor||'—'}</div></div>
-      <div class="drow"><div class="dk">청약페이지</div><div class="dv nt"><a href="${applyUrl}" target="_blank" rel="noopener">공고 바로가기 ↗</a></div></div>
-      ${c.note?`<div class="drow"><div class="dk">비고</div><div class="dv nt">${c.note}</div></div>`:''}
-    </div>`;
-
-  document.getElementById('detailOv').classList.add('open');
-}
-
-function closeDetail(){
-  document.getElementById('detailOv').classList.remove('open');
-  document.querySelectorAll('tbody tr').forEach(r=>r.classList.remove('selected'));
-}
-
-// 지도 팝업의 단지명 클릭 시 호출 (ALL 인덱스 기준)
-function openDetailFromMap(allIdx){
-  const c = ALL[allIdx];
-  if(!c) return;
-  // 테이블 행 선택 해제
-  document.querySelectorAll('tbody tr').forEach(r=>r.classList.remove('selected'));
-  document.getElementById('detailTitle').textContent=c.name;
-  document.getElementById('detailSub').textContent=`${c.gu||''} · ${c.stage||'—'}`;
-  const vPct=Math.min((c.vacancy||0)*100,100);
-  const rv=28,circ=2*Math.PI*rv,dashoff=circ*(1-vPct/100);
-  const sc=(c.vacancy||0)>=0.3?'#ef4444':(c.vacancy||0)>=0.1?'#eab308':'#22c55e';
-  const notices=c.notices||[];
-  const tdNow=new Date();
-  const applyUrl = notices.length>0&&notices[0].url ? notices[0].url : 'https://soco.seoul.go.kr/youth/bbs/BMSR00015/list.do?menuNo=400008';
-  document.getElementById('detailBody').innerHTML=`
-    <div class="ds"><div class="dst">공실 현황</div>
-      <div class="vbig">
-        <svg width="70" height="70" viewBox="0 0 70 70">
-          <circle cx="35" cy="35" r="${rv}" fill="none" stroke="var(--sf2)" stroke-width="8"/>
-          <circle cx="35" cy="35" r="${rv}" fill="none" stroke="${sc}" stroke-width="8"
-            stroke-dasharray="${circ.toFixed(1)}" stroke-dashoffset="${dashoff.toFixed(1)}"
-            stroke-linecap="round" transform="rotate(-90 35 35)"/>
-          <text x="35" y="39" text-anchor="middle" fill="${sc}" font-size="11" font-family="IBM Plex Mono" font-weight="700">${vPct.toFixed(1)}%</text>
-        </svg>
-        <div>
-          <div class="vbigp" style="color:${sc}">${vPct.toFixed(1)}%</div>
-          <div class="vbigl">민간임대 공실률</div>
-          <div class="vbigu">추정 ${Math.round((c.private||0)*(c.vacancy||0))}세대 / 민간 ${c.private||0}세대</div>
-        </div>
-      </div>
-    </div>
-    <div class="ds"><div class="dst">세대 구성</div>
-      <div class="drow"><div class="dk">합계</div><div class="dv">${(c.total||0).toLocaleString()} 세대</div></div>
-      <div class="drow"><div class="dk">공공임대</div><div class="dv">${(c.public||0).toLocaleString()} 세대</div></div>
-      <div class="drow"><div class="dk">민간임대</div><div class="dv">${(c.private||0).toLocaleString()} 세대</div></div>
-      <div class="drow"><div class="dk">부지면적</div><div class="dv">${(c.area||0).toLocaleString()} ㎡</div></div>
-    </div>
-    <div class="ds"><div class="dst">사업 일정</div>
       <div class="tl">${[{l:'인허가',dt:c.approval},{l:'착공신고',dt:c.construction},{l:'사용승인',dt:c.completion},{l:'입주',dt:c.moveIn}].map(item=>{
         const done=item.dt&&new Date(item.dt)<=tdNow;
         return `<div class="tli"><div class="tld ${done?'done':'act'}"></div><div><div class="tll">${item.l}</div><div class="tlt">${item.dt||'미정'}</div></div></div>`;
@@ -540,10 +501,30 @@ function openDetailFromMap(allIdx){
   document.getElementById('detailOv').classList.add('open');
 }
 
+function openDetail(idx){
+  const c=filtered[idx];
+  if(!c) return;
+  document.querySelectorAll('tbody tr').forEach(r=>r.classList.remove('selected'));
+  const tr=document.querySelector(`tr[data-i="${idx}"]`);
+  if(tr) tr.classList.add('selected');
+  renderDetailPanel(c);
+}
+
+function openDetailFromMap(allIdx){
+  const c=ALL[allIdx];
+  if(!c) return;
+  document.querySelectorAll('tbody tr').forEach(r=>r.classList.remove('selected'));
+  renderDetailPanel(c);
+}
+
+function closeDetail(){
+  document.getElementById('detailOv').classList.remove('open');
+  document.querySelectorAll('tbody tr').forEach(r=>r.classList.remove('selected'));
+}
+
 // ── 탭 전환 ──
 function switchTab(tab){
   currentTab=tab;
-  // 탭 전환 시 상세 패널 닫기
   closeDetail();
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
@@ -551,21 +532,21 @@ function switchTab(tab){
   document.getElementById(`tab-${tab}`).classList.add('active');
   if(tab==='map'&&!mapInstance) initMap();
   if(tab==='map'&&mapInstance) setTimeout(()=>{mapInstance.invalidateSize();renderMarkers();},100);
+  requestAnimationFrame(updateTheadTop);
 }
 
 // ── 지도 ──
 function initMap(){
   mapInstance=L.map('map',{center:[37.5665,126.978],zoom:11});
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-    attribution:'&copy; <a href="https://carto.com/" style="color:#8892aa">CARTO</a> &copy; <a href="https://openstreetmap.org/copyright" style="color:#8892aa">OpenStreetMap</a> contributors',
+    attribution:'&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom:19
   }).addTo(mapInstance);
   renderMarkers();
 }
 
 function markerColor(vacancy){
-  // 공실률: <10% 파랑, 10~90% 초록, 90%+ 빨강
-  const v = (vacancy||0)*100;
+  const v=(vacancy||0)*100;
   if(v>=90) return '#ef4444';
   if(v>=10) return '#22c55e';
   return '#4c7cf3';
@@ -574,22 +555,18 @@ function markerColor(vacancy){
 function renderMarkers(){
   mapMarkers.forEach(m=>m.remove());
   mapMarkers=[];
-  // 지도는 항상 전체 단지(ALL) 표시, 필터 무관
   ALL.forEach((c,i)=>{
     if(!c.lat||!c.lng) return;
     const color=markerColor(c.vacancy);
-    // 필터된 목록에 포함여부로 투명도 구분
-    const inFilter = filtered.some(f=>f.id===c.id);
-    const opacity = inFilter ? 1 : 0.3;
+    const inFilter=filtered.some(f=>f.id===c.id);
+    const opacity=inFilter?1:0.3;
     const icon=L.divIcon({
       className:'',
       html:`<div style="width:12px;height:12px;border-radius:50%;background:${color};border:2px solid rgba(255,255,255,0.35);box-shadow:0 2px 6px rgba(0,0,0,.4);cursor:pointer;opacity:${opacity};"></div>`,
       iconSize:[12,12],iconAnchor:[6,6]
     });
-    // 팝업에서 단지명 클릭 시 사이드패널 오픈 (allIdx 기준)
-    const allIdx = i;
     const m=L.marker([c.lat,c.lng],{icon}).addTo(mapInstance).bindPopup(`
-      <div class="popup-name"><a href="#" onclick="openDetailFromMap(${allIdx});return false;" style="color:var(--ac);text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${c.name}</a></div>
+      <div class="popup-name"><a href="#" onclick="openDetailFromMap(${i});return false;" style="color:var(--ac);text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${c.name}</a></div>
       <div class="popup-row">자치구: <span>${c.gu}</span></div>
       <div class="popup-row">지하철: <span>${c.subwayFormatted||c.subway||'—'}</span></div>
       <div class="popup-row">단계: <span>${c.stage||'—'}</span></div>
@@ -618,16 +595,6 @@ document.querySelectorAll('thead th[data-s]').forEach(th=>{
   });
 });
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeDetail(); });
-
-// ── thead top 동적 계산 ──
-function updateTheadTop(){
-  const header = document.querySelector('header');
-  const controls = document.querySelector('.controls');
-  const rinfo = document.getElementById('rinfo');
-  if(!header||!controls) return;
-  const top = header.offsetHeight + controls.offsetHeight + (rinfo?rinfo.offsetHeight:0);
-  document.documentElement.style.setProperty('--thead-top', top+'px');
-}
 
 loadData();
 </script>
