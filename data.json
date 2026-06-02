@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-01 15:38",
+  "updatedAt": "2026-06-02 12:35",
   "kpi": {
     "totalComplexes": 85,
     "activeComplexes": 79,
@@ -286,7 +286,7 @@
       "completion": "2020-03-02",
       "operator": "유(U)삼진랜드",
       "note": "",
-      "subwayFormatted": "장한평역",
+      "subwayFormatted": "장한평역 ⑤",
       "lat": 37.6392593,
       "lng": 126.9189072,
       "notices": [
@@ -1489,7 +1489,7 @@
       "completion": "2021-01-21",
       "operator": "주식회사 휴먼타운",
       "note": "",
-      "subwayFormatted": "회기역",
+      "subwayFormatted": "회기역 ①경의중앙",
       "lat": 37.5905116,
       "lng": 127.0607679,
       "notices": [
@@ -1955,7 +1955,7 @@
       "completion": "2021-11-26",
       "operator": "김병준",
       "note": "최초",
-      "subwayFormatted": "도림사거리역",
+      "subwayFormatted": "도림사거리역 (예정)",
       "lat": 37.5264,
       "lng": 126.8962,
       "notices": [
@@ -1989,7 +1989,7 @@
       "completion": "2022-05-13",
       "operator": "(주)도휘",
       "note": "",
-      "subwayFormatted": "솔밭공원역",
+      "subwayFormatted": "솔밭공원역 우이신설",
       "lat": 37.6688,
       "lng": 127.0471,
       "notices": [
@@ -2476,7 +2476,7 @@
       "completion": "2023-01-20",
       "operator": "(주)두진",
       "note": "",
-      "subwayFormatted": "회기역",
+      "subwayFormatted": "회기역 ①경의중앙",
       "lat": 37.588663,
       "lng": 127.0585782,
       "notices": [
@@ -3467,7 +3467,7 @@
       "completion": "2025-10-02",
       "operator": "",
       "note": "",
-      "subwayFormatted": "화계역",
+      "subwayFormatted": "화계역 ④",
       "lat": 37.6396,
       "lng": 127.0253,
       "notices": []
@@ -3492,7 +3492,7 @@
       "completion": "2025-04-24",
       "operator": "",
       "note": "",
-      "subwayFormatted": "개봉역",
+      "subwayFormatted": "개봉역 ①",
       "lat": 37.4954,
       "lng": 126.8874,
       "notices": []
@@ -3517,7 +3517,7 @@
       "completion": "2025-01-31",
       "operator": "꿈꾸는이상㈜",
       "note": "",
-      "subwayFormatted": "숭곡초교역",
+      "subwayFormatted": "숭곡초교역 (예정)",
       "lat": 37.5894,
       "lng": 127.0167,
       "notices": [
@@ -3624,7 +3624,7 @@
       "completion": "2024-08-14",
       "operator": "캡스톤서림역청년주택일반사모부동산투자 유한회사",
       "note": "",
-      "subwayFormatted": "서울대벤처타운역",
+      "subwayFormatted": "서울대벤처타운역 신림",
       "lat": 37.4784,
       "lng": 126.9516,
       "notices": []
@@ -3649,7 +3649,7 @@
       "completion": "2025-04-21",
       "operator": "",
       "note": "",
-      "subwayFormatted": "회기역",
+      "subwayFormatted": "회기역 ①경의중앙",
       "lat": 37.5744,
       "lng": 127.0395,
       "notices": []
@@ -3856,7 +3856,7 @@
       "completion": "2025-03-18",
       "operator": "주식회사 씨드원",
       "note": "",
-      "subwayFormatted": "장한평역",
+      "subwayFormatted": "장한평역 ⑤",
       "lat": 37.5744,
       "lng": 127.0395,
       "notices": []
@@ -3971,7 +3971,7 @@
       "completion": "2025-03-31",
       "operator": "개봉아이알디피에프브이㈜",
       "note": "",
-      "subwayFormatted": "개봉역",
+      "subwayFormatted": "개봉역 ①",
       "lat": 37.4954,
       "lng": 126.8874,
       "notices": [
@@ -4135,7 +4135,7 @@
       "completion": "2025-05-21",
       "operator": "현대아산㈜",
       "note": "최초",
-      "subwayFormatted": "광운대역",
+      "subwayFormatted": "광운대역 ①",
       "lat": 37.6542,
       "lng": 127.0568,
       "notices": [
@@ -4350,7 +4350,7 @@
       "completion": "2025-03-31",
       "operator": "(주)에버그린플라자",
       "note": "",
-      "subwayFormatted": "서울역",
+      "subwayFormatted": "서울역 ①④공항",
       "lat": 37.5323,
       "lng": 126.9906,
       "notices": [
@@ -4499,7 +4499,7 @@
       "completion": "2025-06-02",
       "operator": "주식회사 종암피에프브이",
       "note": "",
-      "subwayFormatted": "종암경찰서역",
+      "subwayFormatted": "종암경찰서역 (예정)",
       "lat": 37.5894,
       "lng": 127.0167,
       "notices": [
@@ -4682,7 +4682,7 @@
       "completion": null,
       "operator": "동서빌딩",
       "note": "",
-      "subwayFormatted": "장한평역",
+      "subwayFormatted": "장한평역 ⑤",
       "lat": 37.5744,
       "lng": 127.0395,
       "notices": []
@@ -4921,7 +4921,7 @@
       "completion": "2025-04-10",
       "operator": "한상(한석일 외 3명)",
       "note": "",
-      "subwayFormatted": "마장역",
+      "subwayFormatted": "마장역 ⑤",
       "lat": 37.5634,
       "lng": 127.0369,
       "notices": [
