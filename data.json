@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07 01:04",
+  "updatedAt": "2026-06-08 01:12",
   "kpi": {
     "totalComplexes": 85,
     "activeComplexes": 79,
@@ -287,8 +287,8 @@
       "operator": "유(U)삼진랜드",
       "note": "",
       "subwayFormatted": "장한평역 ⑤",
-      "lat": 37.609241,
-      "lng": 127.106209,
+      "lat": 37.6392593,
+      "lng": 126.9189072,
       "notices": [
         {
           "title": "[민간임대] 장한평역 힐데스하임 추가모집공고",
