@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11 15:44",
+  "updatedAt": "2026-06-12 03:10",
   "kpi": {
     "totalComplexes": 85,
     "activeComplexes": 80,
@@ -190,7 +190,7 @@
       "special": 0,
       "general": 0,
       "moveIn": "2021-02-19",
-      "lastNotice": "2020-09-11",
+      "lastNotice": "2026-06-11",
       "approval": "2017-12-07",
       "construction": "2018-06-11",
       "completion": "2021-01-11",
@@ -200,6 +200,14 @@
       "tableVisible": true,
       "subwayFormatted": "광흥창역 ⑥",
       "notices": [
+        {
+          "title": "[민간임대] 광흥창역 이랜드PEER신촌 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-11",
+          "applyDate": "2026-06-15",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6562&bbsId=BMSR00015&menuNo=400008"
+        },
         {
           "title": "[민간임대] 광흥창역 이랜드 PEER 신촌 최초모집공고",
           "type": "최초",
