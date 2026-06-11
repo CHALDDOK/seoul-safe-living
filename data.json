@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11 13:44",
+  "updatedAt": "2026-06-11 14:02",
   "kpi": {
     "totalComplexes": 85,
     "activeComplexes": 79,
@@ -28,9 +28,19 @@
       "completion": "2021-02-01",
       "operator": "(주)용산대한뉴스테이위탁관리부동산투자회사",
       "note": "",
+      "address": "용산구 한강로2가 2-350 외66",
       "tableVisible": true,
       "subwayFormatted": "삼각지역 ④⑥",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 삼각지역 용산베르디움프렌즈",
+          "type": "최초",
+          "house": "민간",
+          "date": "2020-09-29",
+          "applyDate": "2020-10-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5661&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5323,
       "lng": 126.9906
     },
@@ -54,9 +64,19 @@
       "completion": "2020-01-17",
       "operator": "원석디앤씨",
       "note": "최초",
+      "address": "서대문구 충정로3가 72-1 외7",
       "tableVisible": true,
       "subwayFormatted": "충정로역 ②⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 충정로역 어바니엘 위드 더 스타일 충정로 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2019-08-29",
+          "applyDate": "2019-09-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5651&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5791,
       "lng": 126.9368
     },
@@ -74,15 +94,57 @@
       "special": 0,
       "general": 0,
       "moveIn": "2020-05-01",
-      "lastNotice": "2019-11-05",
+      "lastNotice": "2025-06-11",
       "approval": "2017-03-30",
       "construction": "2017-08-02",
       "completion": "2020-04-23",
       "operator": "멀티에셋합정역청년주택전문투자형사모투자(유)",
       "note": "최초",
+      "address": "마포구 서교동 395-43 외5",
       "tableVisible": true,
       "subwayFormatted": "합정역 ②⑥",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 천호역 효성해링턴타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-11",
+          "applyDate": "2025-06-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6245&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 천호역 효성해링턴타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2023-10-04",
+          "applyDate": "2023-10-05",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5956&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 천호역 효성해링턴타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2023-08-14",
+          "applyDate": "2023-08-15",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5923&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 천호역 효성해링턴타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-06-28",
+          "applyDate": "2023-07-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5880&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 합정역 서교 효성해링턴타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2019-11-05",
+          "applyDate": "2019-09-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5653&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5663,
       "lng": 126.9014
     },
@@ -100,15 +162,81 @@
       "special": 1,
       "general": 1,
       "moveIn": "2021-09-10",
-      "lastNotice": "2025-10-02",
+      "lastNotice": "2026-05-28",
       "approval": "2017-09-21",
       "construction": "2018-12-20",
       "completion": "2021-09-03",
       "operator": "주식회사 선우",
       "note": "",
+      "address": "강서구 화곡동 1170",
       "tableVisible": true,
       "subwayFormatted": "우장산역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 노원역 해링턴플레이스 노원 센트럴 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-28",
+          "applyDate": "2026-05-31",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6548&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노원역 해링턴플레이스 노원 센트럴 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-16",
+          "applyDate": "2026-04-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6510&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 우장산역 해링턴타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-09",
+          "applyDate": "2026-04-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6499&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노원역 해링턴플레이스 노원 센트럴 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-26",
+          "applyDate": "2026-03-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6451&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노원역 해링턴플레이스 노원 센트럴 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-12-23",
+          "applyDate": "2026-01-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6394&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 우장산역 해링턴타워 추가모집공고",
+          "type": "",
+          "house": "민간",
+          "date": "2025-10-02",
+          "applyDate": "2025-10-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6330&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 우장산역 해링턴타워 추가모집공고",
+          "type": "",
+          "house": "민간",
+          "date": "2025-02-20",
+          "applyDate": "2025-02-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6183&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 우장산역 해링턴타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2021-07-09",
+          "applyDate": "2021-07-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5670&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5509,
       "lng": 126.8495
     },
@@ -132,9 +260,19 @@
       "completion": "2021-01-11",
       "operator": "(주)이베데스다제일호위탁관리부동산투자회사",
       "note": "최초",
+      "address": "마포구 창전동 19-8 외1",
       "tableVisible": true,
       "subwayFormatted": "광흥창역 ⑥",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 광흥창역 이랜드 PEER 신촌 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2020-09-11",
+          "applyDate": "2020-09-11",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5660&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5663,
       "lng": 126.9014
     },
@@ -152,15 +290,89 @@
       "special": 0,
       "general": 3,
       "moveIn": "2020-04-06",
-      "lastNotice": "2026-01-08",
+      "lastNotice": "2026-06-04",
       "approval": "2017-11-15",
       "construction": "2018-04-04",
       "completion": "2020-03-02",
       "operator": "유(U)삼진랜드",
       "note": "",
+      "address": "성동구 용답동 233-1",
       "tableVisible": true,
       "subwayFormatted": "장한평역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 장한평역 힐데스하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6554&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 힐데스하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-05",
+          "applyDate": "2026-03-05",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6459&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 힐데스하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6407&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 힐데스하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-02",
+          "applyDate": "2025-10-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6332&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 힐데스하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-08-13",
+          "applyDate": "2025-08-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6311&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 힐데스하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-22",
+          "applyDate": "2025-05-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6238&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 힐데스하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-01-16",
+          "applyDate": "2025-01-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6163&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 힐데스하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-02-19",
+          "applyDate": "2024-02-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6020&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 힐데스하임 (U-삼진랜드) 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2019-11-05",
+          "applyDate": "2019-11-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5603&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.609241,
       "lng": 127.106209
     },
@@ -178,15 +390,57 @@
       "special": 0,
       "general": 0,
       "moveIn": "2022-04-11",
-      "lastNotice": "2022-02-09",
+      "lastNotice": "2026-02-05",
       "approval": "2018-12-19",
       "construction": "2019-07-09",
       "completion": "2022-04-06",
       "operator": "(주)브이홀딩스",
       "note": "최초",
+      "address": "강남구 논현동 202-7",
       "tableVisible": true,
       "subwayFormatted": "신논현역 ⑨",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 고려대역 리스트안암 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-05",
+          "applyDate": "2026-02-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6434&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 고려대역 리스트 안암(LIST ANAM) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-09",
+          "applyDate": "2025-07-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6263&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 고려대역 리스트 안암(LIST ANAM) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-10",
+          "applyDate": "2025-02-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6173&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 고려대역 리스트 안암(LIST ANAM) 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-09-30",
+          "applyDate": "2024-10-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6118&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신논현역 리스트 강남 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-02-09",
+          "applyDate": "2022-02-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5646&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5172,
       "lng": 127.0473
     },
@@ -210,9 +464,19 @@
       "completion": "2023-01-13",
       "operator": "(주)삼조디앤씨",
       "note": "최초",
+      "address": "강남구 논현동 278-4 외2",
       "tableVisible": true,
       "subwayFormatted": "선정릉역 ⑨",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 선정릉역 모아엘가 퍼스트홈 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-02-10",
+          "applyDate": "2023-02-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5835&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5172,
       "lng": 127.0473
     },
@@ -236,6 +500,7 @@
       "completion": "2020-04-06",
       "operator": "",
       "note": "",
+      "address": "광진구 구의동 587-64",
       "tableVisible": true,
       "subwayFormatted": "강변역 ②",
       "notices": [],
@@ -256,15 +521,57 @@
       "special": 4,
       "general": 7,
       "moveIn": "2022-03-07",
-      "lastNotice": "2026-01-29",
+      "lastNotice": "2026-05-14",
       "approval": "2017-12-18",
       "construction": "2019-08-30",
       "completion": "2022-02-04",
       "operator": "(주)케이티엔지",
       "note": "",
+      "address": "도봉구 쌍문동 103-6 외1",
       "tableVisible": true,
       "subwayFormatted": "쌍문역 ④",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 쌍문역 인히어쌍문 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-14",
+          "applyDate": "2026-05-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6535&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 쌍문역 인히어쌍문 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-02",
+          "applyDate": "2026-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6489&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 쌍문역 인히어쌍문 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-29",
+          "applyDate": "2026-02-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6428&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 쌍문역 인히어쌍문 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-09-24",
+          "applyDate": "2025-09-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6327&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 쌍문역 인히어쌍문 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-02-16",
+          "applyDate": "2022-02-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5650&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6688,
       "lng": 127.0471
     },
@@ -288,9 +595,51 @@
       "completion": "2023-05-30",
       "operator": "(주)신림리더스하우징",
       "note": "",
+      "address": "관악구 신림동 75-6 외2",
       "tableVisible": true,
       "subwayFormatted": "신림역 ②",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 신림역 최강타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-22",
+          "applyDate": "2026-01-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6418&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신림역 최강타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-25",
+          "applyDate": "2025-06-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6254&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신림역 최강타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-11",
+          "applyDate": "2025-06-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6243&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신림역 최강타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2023-07-10",
+          "applyDate": "2023-07-11",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5886&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신림역 최강타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-06-09",
+          "applyDate": "2023-06-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5874&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.4784,
       "lng": 126.9516
     },
@@ -308,15 +657,81 @@
       "special": 0,
       "general": 0,
       "moveIn": "2021-01-30",
-      "lastNotice": "2020-08-03",
+      "lastNotice": "2025-07-23",
       "approval": "2018-04-04",
       "construction": "2018-07-05",
       "completion": "2020-12-30",
       "operator": "멀티에셋등촌역청년주택전문투자형사모부동산투자(유)",
       "note": "",
+      "address": "강서구 염창동 274-17",
       "tableVisible": true,
       "subwayFormatted": "등촌역 ⑨",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 발산역 센터스퀘어 발산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-23",
+          "applyDate": "2025-07-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6295&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 발산역 센터스퀘어 발산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-09",
+          "applyDate": "2025-07-11",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6266&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 발산역 센터스퀘어 발산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-18",
+          "applyDate": "2025-06-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6247&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대벤처타운역 센터스퀘어 서울대점 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-24",
+          "applyDate": "2025-04-30",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6225&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 발산역 센터스퀘어 발산 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-04-18",
+          "applyDate": "2025-04-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6220&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대벤처타운역 센터스퀘어 서울대점 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-01-03",
+          "applyDate": "2025-01-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6156&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대벤처타운역 센터스퀘어 서울대점 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-08-26",
+          "applyDate": "2024-09-05",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6111&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 등촌역 센터스퀘어 등촌 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2020-08-03",
+          "applyDate": "2020-08-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5659&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5506477,
       "lng": 126.8661652
     },
@@ -340,9 +755,19 @@
       "completion": "2022-10-13",
       "operator": "금강실업",
       "note": "",
+      "address": "송파구 잠실동 208-4,9,17",
       "tableVisible": true,
       "subwayFormatted": "잠실새내역 ②",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 잠실새내역 잠실엘타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-06-28",
+          "applyDate": "2022-07-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5720&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5145,
       "lng": 127.1059
     },
@@ -360,15 +785,81 @@
       "special": 1,
       "general": 0,
       "moveIn": "2020-06-02",
-      "lastNotice": "2025-08-13",
+      "lastNotice": "2026-04-23",
       "approval": "2018-05-09",
       "construction": "2018-08-10",
       "completion": "2020-05-01",
       "operator": "대호주택건설(김성수)",
       "note": "",
+      "address": "강서구 등촌동 648-5",
       "tableVisible": true,
       "subwayFormatted": "등촌역 ⑨",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 등촌역 아임2030 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-23",
+          "applyDate": "2026-04-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6516&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 등촌역 아르체움 등촌 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-16",
+          "applyDate": "2026-04-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6508&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 등촌역 아르체움 등촌 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-05",
+          "applyDate": "2026-03-09",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6461&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 등촌역 아임2030 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-05",
+          "applyDate": "2026-03-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6460&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 등촌역 아임2030 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-08-13",
+          "applyDate": "2025-08-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6309&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 등촌역 아임2030 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-23",
+          "applyDate": "2025-07-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6293&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 등촌역 아르체움 등촌 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-03-07",
+          "applyDate": "2025-03-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6193&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 등촌역 아임2030 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2020-05-18",
+          "applyDate": "2020-05-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5656&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5509,
       "lng": 126.8495
     },
@@ -392,6 +883,7 @@
       "completion": "2023-06-12",
       "operator": "당당 대표자 장요섭 외 2인",
       "note": "",
+      "address": "서초구 서초동 1365-8외7",
       "tableVisible": true,
       "subwayFormatted": "양재역 ③신분당",
       "notices": [],
@@ -412,15 +904,49 @@
       "special": 0,
       "general": 0,
       "moveIn": "2023-08-10",
-      "lastNotice": "2025-06-11",
+      "lastNotice": "2026-03-19",
       "approval": "2018-07-26",
       "construction": "2020-04-03",
       "completion": "2023-07-24",
       "operator": "(주)이지스청년주택제1호위탁관리부동산투자회사",
       "note": "예비",
+      "address": "강동구 성내동 87-1",
       "tableVisible": true,
       "subwayFormatted": "천호역 ⑤⑧",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 천호역 천호한강청년주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-19",
+          "applyDate": "2026-03-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6471&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 천호역 천호한강청년주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-29",
+          "applyDate": "2026-02-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6431&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 천호역 천호한강청년주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6410&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 천호역 한강 리슈빌 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2021-02-01",
+          "applyDate": "2021-02-15",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5666&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5301,
       "lng": 127.1238
     },
@@ -444,9 +970,59 @@
       "completion": "2022-12-01",
       "operator": "(주)당산동청년주택피에프브이",
       "note": "예비",
+      "address": "영등포구 당산동2가 45-5",
       "tableVisible": true,
       "subwayFormatted": "영등포구청역 ②⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 영등포구청역 포레나 당산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-22",
+          "applyDate": "2026-01-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6422&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 영등포구청역 포레나 당산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-30",
+          "applyDate": "2025-08-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6299&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 영등포구청역 포레나 당산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-24",
+          "applyDate": "2025-03-27",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6200&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 영등포구청역 포레나 당산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-05",
+          "applyDate": "2025-03-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6190&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 영등포구청역 포레나 당산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-14",
+          "applyDate": "2025-02-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6177&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 영등포구청역 포레나 당산 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-11-16",
+          "applyDate": "2022-11-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5774&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5219536,
       "lng": 126.8955078
     },
@@ -470,9 +1046,19 @@
       "completion": "2022-04-28",
       "operator": "(주)롯데건설",
       "note": "",
+      "address": "용산구 원효로1가 134",
       "tableVisible": true,
       "subwayFormatted": "남영역 ①",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 남영역 용산 원효 루미니 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-02-11",
+          "applyDate": "2022-02-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5643&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5323,
       "lng": 126.9906
     },
@@ -490,15 +1076,73 @@
       "special": 0,
       "general": 8,
       "moveIn": "2023-09-15",
-      "lastNotice": "2025-10-23",
+      "lastNotice": "2026-01-22",
       "approval": "2019-03-19",
       "construction": "2021-03-15",
       "completion": "2023-07-31",
       "operator": "선릉역마에스트로역세권청년주택프로젝트금융투자 주식회사",
       "note": "",
+      "address": "강남구 삼성동 140-32",
       "tableVisible": true,
       "subwayFormatted": "선릉역 ②수인분당",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 문정역 마에스트로 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-22",
+          "applyDate": "2026-01-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6420&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 선릉역 삼성동 마에스트로 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-23",
+          "applyDate": "2025-10-27",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6346&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 선릉역 삼성동 마에스트로 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-08-06",
+          "applyDate": "2025-08-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6303&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 문정역 마에스트로 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-03-04",
+          "applyDate": "2024-03-05",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6024&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 문정역 마에스트로 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-01-10",
+          "applyDate": "2024-01-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6008&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 선릉역 마에스트로 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2023-09-19",
+          "applyDate": "2023-09-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5950&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 선릉역 마에스트로 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-08-07",
+          "applyDate": "2023-08-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5920&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5172,
       "lng": 127.0473
     },
@@ -516,15 +1160,113 @@
       "special": 2,
       "general": 4,
       "moveIn": "2020-10-30",
-      "lastNotice": "2026-01-08",
+      "lastNotice": "2026-04-30",
       "approval": "2018-05-23",
       "construction": "2018-10-12",
       "completion": "2020-11-17",
       "operator": "조한문 외 9인",
       "note": "",
+      "address": "동작구 노량진동 37-1 외7",
       "tableVisible": true,
       "subwayFormatted": "노량진역 ①⑨",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-30",
+          "applyDate": "2026-05-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6523&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-26",
+          "applyDate": "2026-03-30",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6477&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6408&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-18",
+          "applyDate": "2025-12-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6390&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-06",
+          "applyDate": "2025-11-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6361&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-08-13",
+          "applyDate": "2025-08-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6308&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-19",
+          "applyDate": "2025-05-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6233&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-19",
+          "applyDate": "2025-03-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6198&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-07",
+          "applyDate": "2025-03-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6192&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-19",
+          "applyDate": "2025-02-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6180&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식 동작 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-10",
+          "applyDate": "2025-02-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6172&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더클래식동작 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2020-07-20",
+          "applyDate": "2020-08-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5657&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5124,
       "lng": 126.9393
     },
@@ -542,17 +1284,65 @@
       "special": 0,
       "general": 3,
       "moveIn": "2021-12-27",
-      "lastNotice": "2025-07-02",
+      "lastNotice": "2026-02-12",
       "approval": "2018-09-14",
       "construction": "2019-08-06",
       "completion": "2021-11-01",
       "operator": "주식회사 더블라썸묵동",
       "note": "",
+      "address": "중랑구 묵동 176-39 외3",
       "tableVisible": true,
       "subwayFormatted": "먹골역 ⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 먹골역 칼튼테라스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-12",
+          "applyDate": "2026-02-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6441&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 먹골역 칼튼테라스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-02",
+          "applyDate": "2025-07-05",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6258&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 먹골역 칼튼테라스 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2021-11-12",
+          "applyDate": "2021-12-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5673&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6063,
       "lng": 127.0926
+    },
+    {
+      "id": "pdf_22",
+      "gu": "동대문구",
+      "name": "동대문구 신설동 98-18",
+      "subway": "신설동역",
+      "subwayFormatted": "신설동역 ①②",
+      "stage": "착공신고",
+      "total": 99,
+      "public": 7,
+      "private": 92,
+      "address": "동대문구 신설동 98-18",
+      "approval": "2021-04-19",
+      "construction": "2022-03-02",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5733,
+      "lng": 127.0246
     },
     {
       "id": 23,
@@ -568,15 +1358,105 @@
       "special": 0,
       "general": 2,
       "moveIn": "2021-04-01",
-      "lastNotice": "2026-01-15",
+      "lastNotice": "2026-04-30",
       "approval": "2019-01-04",
       "construction": "2019-06-25",
       "completion": "2021-03-23",
       "operator": "서초꽃마을 주얼리 황인 외 3명",
       "note": "",
+      "address": "서초구 서초동 1502-12 외1",
       "tableVisible": true,
       "subwayFormatted": "서초역 ②",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-30",
+          "applyDate": "2026-05-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6521&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-26",
+          "applyDate": "2026-03-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6449&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-15",
+          "applyDate": "2026-01-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6415&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6405&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-27",
+          "applyDate": "2025-12-01",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6378&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-23",
+          "applyDate": "2025-10-27",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6347&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-16",
+          "applyDate": "2025-10-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6340&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-09-04",
+          "applyDate": "2025-09-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6315&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-11",
+          "applyDate": "2025-06-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6242&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역 서초꽃마을 주얼리 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-22",
+          "applyDate": "2025-05-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6237&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서초역서초꽃마을 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2020-12-08",
+          "applyDate": "2020-12-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5665&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.4837,
       "lng": 127.0324
     },
@@ -600,6 +1480,7 @@
       "completion": "2021-08-20",
       "operator": "㈜알이비에셋",
       "note": "",
+      "address": "강동구 천호동 458-3 외 7",
       "tableVisible": true,
       "subwayFormatted": "천호역 ⑤⑧",
       "notices": [],
@@ -620,15 +1501,49 @@
       "special": 0,
       "general": 0,
       "moveIn": "2022-01-02",
-      "lastNotice": "2025-11-06",
+      "lastNotice": "2026-05-14",
       "approval": "2019-08-12",
       "construction": "2019-12-10",
       "completion": "2021-12-02",
       "operator": "태운산업개발㈜",
       "note": "예비",
+      "address": "노원구 공릉동 617-3외 2필지",
       "tableVisible": true,
       "subwayFormatted": "태릉입구역 ⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 태릉입구역 와이엔타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-14",
+          "applyDate": "2026-05-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6539&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 태릉입구역 와이엔타워 예비자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-06",
+          "applyDate": "2025-11-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6359&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 태릉입구역 와이엔타워 예비자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-07",
+          "applyDate": "2025-05-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6227&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 태릉입구역 와이엔타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2021-08-23",
+          "applyDate": "2021-08-30",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5671&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6542,
       "lng": 127.0568
     },
@@ -646,15 +1561,97 @@
       "special": 1,
       "general": 4,
       "moveIn": "2021-02-15",
-      "lastNotice": "2026-01-22",
+      "lastNotice": "2026-04-16",
       "approval": "2019-05-09",
       "construction": "2019-05-16",
       "completion": "2021-01-21",
       "operator": "주식회사 휴먼타운",
       "note": "",
+      "address": "동대문구 휘경동 192-1",
       "tableVisible": true,
       "subwayFormatted": "회기역 ①경의중앙",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-16",
+          "applyDate": "2026-04-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6506&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-19",
+          "applyDate": "2026-03-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6469&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-05",
+          "applyDate": "2026-03-09",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6455&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-22",
+          "applyDate": "2026-01-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6419&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-18",
+          "applyDate": "2025-12-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6392&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-20",
+          "applyDate": "2025-11-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6375&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-09-10",
+          "applyDate": "2025-09-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6320&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-18",
+          "applyDate": "2025-06-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6249&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-24",
+          "applyDate": "2025-04-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6224&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 휘경제이스카이시티 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2020-11-19",
+          "applyDate": "2020-12-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5664&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5905116,
       "lng": 127.0607679
     },
@@ -678,9 +1675,27 @@
       "completion": "2021-03-24",
       "operator": "보눔하우스 화곡 대표 장의종",
       "note": "",
+      "address": "강서구 화곡동 401-1",
       "tableVisible": true,
       "subwayFormatted": "화곡역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 화곡역 보눔하우스 화곡 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-11",
+          "applyDate": "2025-12-15",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6385&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 화곡역 보눔하우스화곡 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2020-10-05",
+          "applyDate": "2020-10-27",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5662&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5509,
       "lng": 126.8495
     },
@@ -698,15 +1713,73 @@
       "special": 1,
       "general": 0,
       "moveIn": "2021-12-03",
-      "lastNotice": "2026-02-05",
+      "lastNotice": "2026-05-14",
       "approval": "2019-10-30",
       "construction": "2020-04-14",
       "completion": "2021-11-10",
       "operator": "정지량 외 6명",
       "note": "",
+      "address": "광진구 구의동 593-11",
       "tableVisible": true,
       "subwayFormatted": "강변역 ②",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 강변역 비바힐스강변 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-14",
+          "applyDate": "2026-05-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6533&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 강변역 비바힐스강변 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-05",
+          "applyDate": "2026-03-09",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6458&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 강변역 비바힐스강변 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-05",
+          "applyDate": "2026-02-09",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6436&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 강변역 비바힐스강변 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-09-04",
+          "applyDate": "2025-09-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6318&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 강변역 비바힐스강변 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-04",
+          "applyDate": "2025-04-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6210&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 강변역 비바힐스강변 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-20",
+          "applyDate": "2025-02-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6181&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 강변역 비바힐스 강변 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2021-09-03",
+          "applyDate": "2021-10-01",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5672&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5384,
       "lng": 127.0826
     },
@@ -724,15 +1797,153 @@
       "special": 0,
       "general": 2,
       "moveIn": "2022-05-14",
-      "lastNotice": "2026-01-29",
+      "lastNotice": "2026-05-28",
       "approval": "2019-11-29",
       "construction": "2020-05-27",
       "completion": "2022-05-11",
       "operator": "박정호 외 3인",
       "note": "",
+      "address": "관악구 봉천동 854-3 외2",
       "tableVisible": true,
       "subwayFormatted": "서울대입구역 ②",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-28",
+          "applyDate": "2026-06-01",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6550&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-14",
+          "applyDate": "2026-05-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6534&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-30",
+          "applyDate": "2026-05-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6522&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-23",
+          "applyDate": "2026-04-27",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6515&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-02",
+          "applyDate": "2026-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6492&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-19",
+          "applyDate": "2026-03-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6472&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-26",
+          "applyDate": "2026-03-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6448&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-29",
+          "applyDate": "2026-02-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6425&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-22",
+          "applyDate": "2026-01-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6421&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-24",
+          "applyDate": "2025-12-29",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6399&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-23",
+          "applyDate": "2025-10-27",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6348&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-16",
+          "applyDate": "2025-10-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6339&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-08-13",
+          "applyDate": "2025-08-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6310&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-30",
+          "applyDate": "2025-08-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6298&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-09",
+          "applyDate": "2025-05-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6228&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-24",
+          "applyDate": "2025-03-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6201&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울대입구역 BX201 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-04-01",
+          "applyDate": "2022-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5696&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.4784,
       "lng": 126.9516
     },
@@ -750,15 +1961,65 @@
       "special": 3,
       "general": 7,
       "moveIn": "2020-05-21",
-      "lastNotice": "2025-03-31",
+      "lastNotice": "2025-11-06",
       "approval": null,
       "construction": null,
       "completion": "2020-05-21",
       "operator": "(주)포씨즈",
       "note": "",
+      "address": "종로구 숭인동 207-32일원",
       "tableVisible": true,
       "subwayFormatted": "동묘앞역 ①⑥",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 동대문역사문화공원역 166타워 추가모집공고(수정)",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-06",
+          "applyDate": "2025-11-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6360&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동대문역사문화공원역 166타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-09-04",
+          "applyDate": "2025-09-07",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6316&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 동대문 영하우스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-31",
+          "applyDate": "2025-04-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6207&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 동대문 영하우스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-12",
+          "applyDate": "2025-02-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6174&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동대문역사문화공원역 166 tower 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-08-28",
+          "applyDate": "2023-09-07",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5941&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 동대문 영하우스 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2019-11-20",
+          "applyDate": "2019-12-09",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5655&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5735,
       "lng": 126.979
     },
@@ -782,9 +2043,19 @@
       "completion": "2021-11-26",
       "operator": "김병준",
       "note": "최초",
+      "address": "영등포구 도림동 250-20",
       "tableVisible": true,
       "subwayFormatted": "도림사거리역 (예정)",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 도림사거리역 도림브라보 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2021-12-20",
+          "applyDate": "2021-12-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5676&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5264,
       "lng": 126.8962
     },
@@ -808,9 +2079,27 @@
       "completion": "2022-05-13",
       "operator": "(주)도휘",
       "note": "",
+      "address": "도봉구 쌍문동 507-1일원",
       "tableVisible": true,
       "subwayFormatted": "솔밭공원역 우이신설",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 솔밭공원역 에드가쌍문 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2023-01-27",
+          "applyDate": "2023-02-01",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5834&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 솔밭공원역 에드가쌍문 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-05-27",
+          "applyDate": "2022-06-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5707&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6688,
       "lng": 127.0471
     },
@@ -828,15 +2117,65 @@
       "special": 0,
       "general": 6,
       "moveIn": "2022-12-17",
-      "lastNotice": "2025-12-18",
+      "lastNotice": "2026-05-14",
       "approval": "2019-10-04",
       "construction": "2020-09-19",
       "completion": "2022-12-09",
       "operator": "최병덕 외 10인(가자자산)",
       "note": "",
+      "address": "서대문구 남가좌동 269-1외 3",
       "tableVisible": true,
       "subwayFormatted": "가좌역 경의중앙",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 가좌역 스타타워 입주자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-14",
+          "applyDate": "2026-05-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6538&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 가좌역 스타타워 입주자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-05",
+          "applyDate": "2026-03-09",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6457&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 가좌역 스타타워 입주자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-18",
+          "applyDate": "2025-12-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6393&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 가좌역 스타타워 입주자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-20",
+          "applyDate": "2025-11-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6373&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 가좌역 스타타워 입주자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-12-03",
+          "applyDate": "2024-12-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6142&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 가좌역 스타타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-09-23",
+          "applyDate": "2022-09-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5759&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5791,
       "lng": 126.9368
     },
@@ -854,15 +2193,161 @@
       "special": 1,
       "general": 5,
       "moveIn": "2024-04-16",
-      "lastNotice": "2026-01-29",
+      "lastNotice": "2026-05-21",
       "approval": "2020-03-24",
       "construction": "2021-09-01",
       "completion": "2024-03-29",
       "operator": "코레이트노량진역청년주택전문투자형사모부동산투자 유한회사",
       "note": "",
+      "address": "동작구 노량진동 54-1",
       "tableVisible": true,
       "subwayFormatted": "노량진역 ①⑨",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 양재역 도곡 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-21",
+          "applyDate": "2026-05-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6544&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-16",
+          "applyDate": "2026-04-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6505&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-26",
+          "applyDate": "2026-03-30",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6478&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 양재역 도곡 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-19",
+          "applyDate": "2026-03-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6470&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-29",
+          "applyDate": "2026-02-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6429&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-27",
+          "applyDate": "2025-12-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6381&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 양재역 도곡 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-27",
+          "applyDate": "2025-11-29",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6377&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-06",
+          "applyDate": "2025-11-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6362&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-16",
+          "applyDate": "2025-10-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6338&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-18",
+          "applyDate": "2025-06-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6251&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 양재역 도곡 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-27",
+          "applyDate": "2025-05-29",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6240&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-19",
+          "applyDate": "2025-05-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6232&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 양재역 도곡 더써밋타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-04-11",
+          "applyDate": "2025-04-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6215&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-28",
+          "applyDate": "2025-04-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6205&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-19",
+          "applyDate": "2025-03-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6199&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-04",
+          "applyDate": "2025-03-07",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6189&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-03-27",
+          "applyDate": "2024-03-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6034&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 노량진역 더써밋타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-02-07",
+          "applyDate": "2024-02-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6018&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5124,
       "lng": 126.9393
     },
@@ -886,9 +2371,27 @@
       "completion": "2023-04-11",
       "operator": "양석영, 이상문",
       "note": "",
+      "address": "광진구 구의동 587-62",
       "tableVisible": true,
       "subwayFormatted": "강변역 ②",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 강변역 센텀힐스한강 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-30",
+          "applyDate": "2025-10-31",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6350&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 강변역 센텀힐스한강 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-01-27",
+          "applyDate": "2023-02-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5830&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5384,
       "lng": 127.0826
     },
@@ -912,9 +2415,19 @@
       "completion": "2022-12-29",
       "operator": "(주)대조피에프브이",
       "note": "최초",
+      "address": "은평구 대조동 2-9",
       "tableVisible": true,
       "subwayFormatted": "불광역 ③⑥",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 불광역 호반베르디움 스테이원 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-08-12",
+          "applyDate": "2022-08-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5742&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6026,
       "lng": 126.9292
     },
@@ -938,9 +2451,43 @@
       "completion": "2022-01-10",
       "operator": "윤석표 외 2인",
       "note": "",
+      "address": "강서구 등촌동 671-1",
       "tableVisible": true,
       "subwayFormatted": "발산역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 발산역 엘크루 발산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-04",
+          "applyDate": "2025-12-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6383&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 발산역 엘크루 발산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-17",
+          "applyDate": "2025-04-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6218&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 발산역 엘크루 발산 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-24",
+          "applyDate": "2025-02-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6187&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 발산역 엘크루 발산 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2021-11-05",
+          "applyDate": "2021-12-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5674&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5509,
       "lng": 126.8495
     },
@@ -958,15 +2505,33 @@
       "special": 0,
       "general": 0,
       "moveIn": "2022-10-04",
-      "lastNotice": "2022-07-13",
+      "lastNotice": "2026-01-27",
       "approval": "2020-01-06",
       "construction": "2020-07-31",
       "completion": "2022-08-30",
       "operator": "(주)케이리얼티임대주택제3호위탁관리부동산투자회사",
       "note": "최초",
+      "address": "광진구 중곡동 637-5일원",
       "tableVisible": true,
       "subwayFormatted": "군자역 ⑤⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 구의역 리마크빌 구의 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2026-01-27",
+          "applyDate": "2026-02-05",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6424&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 군자역 리마크빌 군자 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-07-13",
+          "applyDate": "2022-07-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5724&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5384,
       "lng": 127.0826
     },
@@ -990,6 +2555,7 @@
       "completion": "2023-08-02",
       "operator": "허남이",
       "note": "",
+      "address": "송파구 잠실동 187-10 외 3",
       "tableVisible": true,
       "subwayFormatted": "잠실역 ②⑧",
       "notices": [],
@@ -1010,17 +2576,129 @@
       "special": 0,
       "general": 4,
       "moveIn": "2023-01-28",
-      "lastNotice": "2026-02-05",
+      "lastNotice": "2026-05-28",
       "approval": "2019-10-17",
       "construction": "2020-04-22",
       "completion": "2023-01-20",
       "operator": "(주)두진",
       "note": "",
+      "address": "동대문구 휘경동 281-1 외9",
       "tableVisible": true,
       "subwayFormatted": "회기역 ①경의중앙",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 회기역 하트리움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-28",
+          "applyDate": "2026-06-01",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6549&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 장안동 하트리움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-05",
+          "applyDate": "2026-03-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6456&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 하트리움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-05",
+          "applyDate": "2026-02-09",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6435&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 장안동 하트리움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-31",
+          "applyDate": "2026-01-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6402&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 하트리움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-30",
+          "applyDate": "2025-11-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6352&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 장안동 하트리움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-09-04",
+          "applyDate": "2025-09-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6314&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 장안동 하트리움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-11",
+          "applyDate": "2025-06-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6244&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 장안동 하트리움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-09",
+          "applyDate": "2025-05-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6229&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 장안동 하트리움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-03",
+          "applyDate": "2025-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6209&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 장한평역 장안동 하트리움 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-12-23",
+          "applyDate": "2025-01-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6151&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 회기역 하트리움 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-09-15",
+          "applyDate": "2022-09-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5755&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.588663,
       "lng": 127.0585782
+    },
+    {
+      "id": "pdf_41",
+      "gu": "서초구",
+      "name": "서초구 양재동 산17-7 외",
+      "subway": "양재역",
+      "subwayFormatted": "양재역 ③신분당",
+      "stage": "준공",
+      "total": 192,
+      "public": 84,
+      "private": 108,
+      "address": "서초구 양재동 산17-7 외",
+      "approval": "2019-11-07",
+      "construction": "2020-08-25",
+      "completion": "2026-04-30",
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4845,
+      "lng": 127.034
     },
     {
       "id": 43,
@@ -1036,15 +2714,97 @@
       "special": 1,
       "general": 3,
       "moveIn": "2022-05-26",
-      "lastNotice": "2025-12-11",
+      "lastNotice": "2026-04-16",
       "approval": "2019-12-24",
       "construction": "2020-04-14",
       "completion": "2022-05-18",
       "operator": "주식회사 덕영",
       "note": "",
+      "address": "은평구 구산동 198-3 외1",
       "tableVisible": true,
       "subwayFormatted": "구산역 ⑥",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 구산역 구산주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-16",
+          "applyDate": "2026-04-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6507&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 구산역 구산주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-05",
+          "applyDate": "2026-03-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6454&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 구산역 구산주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-11",
+          "applyDate": "2025-12-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6386&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 구산역 구산주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-08-20",
+          "applyDate": "2025-08-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6313&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 구산역 구산주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-04",
+          "applyDate": "2025-04-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6211&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 구산역 구산주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-10",
+          "applyDate": "2025-02-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6171&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 구산역 구산주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-11-18",
+          "applyDate": "2024-11-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6134&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 구산역 구산주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-07-08",
+          "applyDate": "2024-07-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6080&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 구산역 구산주택 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-04-05",
+          "applyDate": "2024-04-05",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6041&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 구산역 구산주택 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2022-03-10",
+          "applyDate": "2022-03-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5688&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6122424,
       "lng": 126.9150182
     },
@@ -1068,9 +2828,19 @@
       "completion": "2021-04-20",
       "operator": "크리원",
       "note": "최초",
+      "address": "마포구 상수동 355-2 일원",
       "tableVisible": true,
       "subwayFormatted": "상수역 ⑥",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 상수역 홍대 크리원 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2021-02-08",
+          "applyDate": "2021-02-15",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5667&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5663,
       "lng": 126.9014
     },
@@ -1088,15 +2858,97 @@
       "special": 0,
       "general": 4,
       "moveIn": "2021-06-18",
-      "lastNotice": "2025-10-30",
+      "lastNotice": "2026-04-02",
       "approval": "2019-12-31",
       "construction": "2020-04-13",
       "completion": "2021-06-07",
       "operator": "(주)대원교역상사",
       "note": "",
+      "address": "중랑구 상봉동 109-34일원",
       "tableVisible": true,
       "subwayFormatted": "상봉역 ⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-02",
+          "applyDate": "2026-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6493&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-12",
+          "applyDate": "2026-02-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6444&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-30",
+          "applyDate": "2025-11-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6353&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-21",
+          "applyDate": "2025-05-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6234&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-12-17",
+          "applyDate": "2024-12-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6147&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-06-24",
+          "applyDate": "2024-06-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6076&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-04-08",
+          "applyDate": "2024-04-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6042&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-03-04",
+          "applyDate": "2024-03-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6023&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-02-19",
+          "applyDate": "2024-02-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6021&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 제이스타상봉 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2021-03-08",
+          "applyDate": "2021-04-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5668&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6063,
       "lng": 127.0926
     },
@@ -1114,15 +2966,49 @@
       "special": 3,
       "general": 6,
       "moveIn": "2022-02-15",
-      "lastNotice": "2026-01-22",
+      "lastNotice": "2026-06-04",
       "approval": "2020-06-18",
       "construction": "2020-08-06",
       "completion": "2022-01-27",
       "operator": "권기범 외 3명",
       "note": "",
+      "address": "강서구 화곡동 1073-11",
       "tableVisible": true,
       "subwayFormatted": "화곡역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 화곡역 포르투나블루 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6557&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 화곡역 포르투나블루 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-22",
+          "applyDate": "2026-01-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6417&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 화곡역 포르투나블루 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-16",
+          "applyDate": "2025-10-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6341&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 화곡역 포르투나블루 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-02",
+          "applyDate": "2025-07-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6260&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5509,
       "lng": 126.8495
     },
@@ -1146,11 +3032,34 @@
       "completion": "2025-11-03",
       "operator": "",
       "note": "",
+      "address": "관악구 신림동 1644-3",
       "tableVisible": true,
       "subwayFormatted": "구로디지털단지역 ②",
       "notices": [],
       "lat": 37.4784,
       "lng": 126.9516
+    },
+    {
+      "id": "pdf_47",
+      "gu": "서초구",
+      "name": "서초구 반포동 705 외1",
+      "subway": "논현역",
+      "subwayFormatted": "논현역 ⑦",
+      "stage": "인가완료",
+      "total": 61,
+      "public": 20,
+      "private": 41,
+      "address": "서초구 반포동 705 외1",
+      "approval": null,
+      "construction": null,
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5117,
+      "lng": 127.0226
     },
     {
       "id": 49,
@@ -1166,15 +3075,89 @@
       "special": 0,
       "general": 0,
       "moveIn": "2024-09-23",
-      "lastNotice": "2025-12-18",
+      "lastNotice": "2026-04-02",
       "approval": "2020-04-09",
       "construction": "2021-09-01",
       "completion": "2024-10-08",
       "operator": "㈜랜드코퍼레이션",
       "note": "예비",
+      "address": "영등포구 신길동 3608 일원",
       "tableVisible": true,
       "subwayFormatted": "신풍역 ⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 신풍역 비스타동원 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-02",
+          "applyDate": "2026-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6495&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신풍역 비스타동원 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-12",
+          "applyDate": "2026-03-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6463&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신풍역 비스타동원 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-12",
+          "applyDate": "2026-02-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6440&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신풍역 비스타동원 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-18",
+          "applyDate": "2025-12-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6391&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신풍역 비스타동원 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-02",
+          "applyDate": "2025-07-07",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6259&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신풍역 비스타동원 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-21",
+          "applyDate": "2025-05-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6236&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신풍역 비스타동원 입주자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-12",
+          "applyDate": "2025-02-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6175&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신풍역 비스타동원 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-07-11",
+          "applyDate": "2024-07-11",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6081&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신풍역 비스타동원 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-05-10",
+          "applyDate": "2024-05-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6058&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5264,
       "lng": 126.8962
     },
@@ -1198,9 +3181,43 @@
       "completion": "2023-05-12",
       "operator": "형윤준",
       "note": "",
+      "address": "강남구 역삼동 738-29",
       "tableVisible": true,
       "subwayFormatted": "역삼역 ②",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 역삼역 더원역삼 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6406&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 역삼역 더원역삼 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-18",
+          "applyDate": "2025-12-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6389&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 역삼역 더원역삼 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2023-03-24",
+          "applyDate": "2023-03-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5839&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 역삼역 더원역삼 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-01-16",
+          "applyDate": "2023-01-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5811&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5172,
       "lng": 127.0473
     },
@@ -1218,15 +3235,97 @@
       "special": 1,
       "general": 3,
       "moveIn": "2023-09-18",
-      "lastNotice": "2025-12-24",
+      "lastNotice": "2026-04-16",
       "approval": "2020-11-10",
       "construction": "2021-03-16",
       "completion": "2023-09-18",
       "operator": "이승은 외 3인",
       "note": "",
+      "address": "종로구 숭인동 240-1",
       "tableVisible": true,
       "subwayFormatted": "동묘앞역 ①⑥",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-16",
+          "applyDate": "2026-04-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6509&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-24",
+          "applyDate": "2025-12-29",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6398&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-09-04",
+          "applyDate": "2025-09-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6317&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-15",
+          "applyDate": "2025-07-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6269&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-18",
+          "applyDate": "2025-06-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6250&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-15",
+          "applyDate": "2025-04-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6217&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-18",
+          "applyDate": "2025-02-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6179&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2023-10-11",
+          "applyDate": "2023-10-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5957&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2023-08-25",
+          "applyDate": "2023-08-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5935&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 동묘앞역 청계로벤하임 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-07-24",
+          "applyDate": "2023-08-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5893&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5735,
       "lng": 126.979
     },
@@ -1244,15 +3343,185 @@
       "special": 0,
       "general": 0,
       "moveIn": "2024-01-20",
-      "lastNotice": "2026-01-08",
+      "lastNotice": "2026-06-04",
       "approval": "2020-07-02",
       "construction": "2021-02-18",
       "completion": "2024-01-24",
       "operator": "주식회사 위드웰에셋",
       "note": "예비",
+      "address": "은평구 불광동 323-21",
       "tableVisible": true,
       "subwayFormatted": "연신내역 ③⑥",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 연신내역 더스튜디오163 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6552&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 더스튜디오163 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-21",
+          "applyDate": "2026-05-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6543&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 더스튜디오163 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-30",
+          "applyDate": "2026-05-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6525&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 Lumino 816 (루미노 816) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-02",
+          "applyDate": "2026-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6487&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 루체스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-26",
+          "applyDate": "2026-03-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6452&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 Lumino 816 (루미노 816) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-12",
+          "applyDate": "2026-02-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6443&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 루체스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6409&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 루체스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-27",
+          "applyDate": "2025-12-01",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6379&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 더스튜디오163 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-16",
+          "applyDate": "2025-10-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6337&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 Lumino 816 (루미노 816) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-02",
+          "applyDate": "2025-10-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6331&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 Lumino 816 (루미노 816) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-08-06",
+          "applyDate": "2025-08-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6302&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 루체스테이션 추가모집공고 (수정)",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-29",
+          "applyDate": "2025-05-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6226&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 루체스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-04",
+          "applyDate": "2025-03-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6188&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 Lumino 816 (루미노 816) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-13",
+          "applyDate": "2025-02-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6176&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 Lumino 816 (루미노 816) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-01-02",
+          "applyDate": "2025-01-07",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6155&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 Lumino 816 (루미노 816) 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-09-23",
+          "applyDate": "2024-10-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6115&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 루체스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-06-03",
+          "applyDate": "2024-06-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6062&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 루체스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-04-18",
+          "applyDate": "2024-04-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6050&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 더스튜디오 163(THE STUDIO 163) 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-04-03",
+          "applyDate": "2024-04-15",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6038&bbsId=BMSR00015"
+        },
+        {
+          "title": "[추가모집] 연신내역 루체스테이션 추가모집공고문",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-01-10",
+          "applyDate": "2024-01-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6009&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 연신내역 루체스테이션 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-11-17",
+          "applyDate": "2023-11-27",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5986&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6026,
       "lng": 126.9292
     },
@@ -1276,6 +3545,7 @@
       "completion": "2024-05-08",
       "operator": "유한회사 자산하우징",
       "note": "예비",
+      "address": "은평구 갈현동 456-25 일원",
       "tableVisible": true,
       "subwayFormatted": "연신내역 ③⑥",
       "notices": [],
@@ -1302,6 +3572,7 @@
       "completion": "2023-10-11",
       "operator": "태성청년주택",
       "note": "",
+      "address": "중구 광희동1가 166",
       "tableVisible": true,
       "subwayFormatted": "동대문역사문화공원역 ②④⑤",
       "notices": [],
@@ -1322,15 +3593,49 @@
       "special": 0,
       "general": 6,
       "moveIn": "2023-08-07",
-      "lastNotice": "2025-07-09",
+      "lastNotice": "2026-05-14",
       "approval": "2020-09-10",
       "construction": "2021-02-17",
       "completion": "2023-07-14",
       "operator": "주식회사 제이케이스타 대표이사 이준훈",
       "note": "",
+      "address": "영등포구 신길동 173-6 일원",
       "tableVisible": true,
       "subwayFormatted": "신길역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 신길역 준타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-14",
+          "applyDate": "2026-05-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6537&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신길역 준타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-09",
+          "applyDate": "2025-07-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6267&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신길역 준타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2023-09-01",
+          "applyDate": "2023-09-01",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5942&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신길역 준타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-07-17",
+          "applyDate": "2023-07-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5891&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5264,
       "lng": 126.8962
     },
@@ -1354,6 +3659,7 @@
       "completion": "2025-10-02",
       "operator": "",
       "note": "",
+      "address": "강북구 수유동 47-52 일원",
       "tableVisible": true,
       "subwayFormatted": "화계역 ④",
       "notices": [],
@@ -1380,6 +3686,7 @@
       "completion": "2025-04-24",
       "operator": "",
       "note": "",
+      "address": "구로구 개봉동 179-11 일원",
       "tableVisible": true,
       "subwayFormatted": "개봉역 ①",
       "notices": [],
@@ -1400,17 +3707,97 @@
       "special": 0,
       "general": 1,
       "moveIn": "2025-03-05",
-      "lastNotice": "2025-11-20",
+      "lastNotice": "2026-04-16",
       "approval": "2020-12-03",
       "construction": "2021-03-31",
       "completion": "2025-01-31",
       "operator": "꿈꾸는이상㈜",
       "note": "",
+      "address": "성북구 하월곡동 88-222 일원",
       "tableVisible": true,
       "subwayFormatted": "숭곡초교역 (예정)",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 숭곡초교역(예정) 성북펠릭스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-16",
+          "applyDate": "2026-04-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6504&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 숭곡초교역(예정) 성북펠릭스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-19",
+          "applyDate": "2026-03-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6468&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 숭곡초교역(예정) 성북펠릭스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-19",
+          "applyDate": "2026-02-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6445&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 숭곡초교역(예정) 성북펠릭스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-20",
+          "applyDate": "2025-11-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6374&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 숭곡초교역(예정) 성북펠릭스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-16",
+          "applyDate": "2025-10-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6343&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 숭곡초교역(예정) 성북펠릭스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-21",
+          "applyDate": "2025-02-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6184&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 숭곡초교역(예정) 성북펠릭스 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-12-23",
+          "applyDate": "2025-01-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6150&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5894,
       "lng": 127.0167
+    },
+    {
+      "id": "pdf_58",
+      "gu": "성북구",
+      "name": "성북구 하월곡동 88-513 일원",
+      "subway": "미아사거리역",
+      "subwayFormatted": "미아사거리역 ④",
+      "stage": "준공",
+      "total": 415,
+      "public": 90,
+      "private": 325,
+      "address": "성북구 하월곡동 88-513 일원",
+      "approval": "2020-12-03",
+      "construction": "2022-11-23",
+      "completion": "2025-11-11",
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.6141,
+      "lng": 127.0294
     },
     {
       "id": 60,
@@ -1432,6 +3819,7 @@
       "completion": "2024-01-19",
       "operator": "",
       "note": "",
+      "address": "송파구 문정동 55-6",
       "tableVisible": true,
       "subwayFormatted": "문정역 ⑧",
       "notices": [],
@@ -1458,6 +3846,7 @@
       "completion": "2024-08-14",
       "operator": "캡스톤서림역청년주택일반사모부동산투자 유한회사",
       "note": "",
+      "address": "관악구 신림동 240-3",
       "tableVisible": true,
       "subwayFormatted": "서울대벤처타운역 신림",
       "notices": [],
@@ -1484,6 +3873,7 @@
       "completion": "2025-04-21",
       "operator": "",
       "note": "",
+      "address": "동대문구 휘경동 244-1",
       "tableVisible": true,
       "subwayFormatted": "회기역 ①경의중앙",
       "notices": [],
@@ -1510,6 +3900,7 @@
       "completion": "2024-11-05",
       "operator": "(주)에이치엔비개발",
       "note": "",
+      "address": "은평구 불광동 302-13",
       "tableVisible": true,
       "subwayFormatted": "연신내역 ③⑥",
       "notices": [],
@@ -1536,11 +3927,56 @@
       "completion": "2025-05-15",
       "operator": "",
       "note": "",
+      "address": "노원구 상계동 1049-71 일원",
       "tableVisible": true,
       "subwayFormatted": "수락산역 ⑦",
       "notices": [],
       "lat": 37.6542,
       "lng": 127.0568
+    },
+    {
+      "id": "pdf_64",
+      "gu": "강서구",
+      "name": "강서구 공항동 11-21",
+      "subway": "송정역",
+      "subwayFormatted": "송정역 공항",
+      "stage": "준공",
+      "total": 176,
+      "public": 72,
+      "private": 104,
+      "address": "강서구 공항동 11-21",
+      "approval": "2021-01-14",
+      "construction": "2023-11-15",
+      "completion": "2026-01-23",
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5627,
+      "lng": 126.8028
+    },
+    {
+      "id": "pdf_65",
+      "gu": "서초구",
+      "name": "서초구 서초동 1673-3 일원",
+      "subway": "교대역",
+      "subwayFormatted": "교대역 ②③",
+      "stage": "착공신고",
+      "total": 76,
+      "public": 12,
+      "private": 64,
+      "address": "서초구 서초동 1673-3 일원",
+      "approval": "2021-09-06",
+      "construction": "2022-07-04",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4934,
+      "lng": 127.0138
     },
     {
       "id": 68,
@@ -1556,15 +3992,65 @@
       "special": 3,
       "general": 6,
       "moveIn": "2025-02-17",
-      "lastNotice": "2026-01-29",
+      "lastNotice": "2026-06-04",
       "approval": "2021-02-04",
       "construction": "2022-07-08",
       "completion": "2024-12-04",
       "operator": "(주)대한제37호위탁관리부동산투자회사",
       "note": "",
+      "address": "강동구 길동 367-1 일원",
       "tableVisible": true,
       "subwayFormatted": "길동역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 길동역 길동생활(A동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6560&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(A동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-29",
+          "applyDate": "2026-02-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6426&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(A동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-02",
+          "applyDate": "2025-10-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6333&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(A동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-09",
+          "applyDate": "2025-07-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6264&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(A동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-13",
+          "applyDate": "2025-03-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6195&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(A동) 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-01-13",
+          "applyDate": "2025-01-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6160&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5301,
       "lng": 127.1238
     },
@@ -1582,15 +4068,65 @@
       "special": 0,
       "general": 8,
       "moveIn": "2025-02-17",
-      "lastNotice": "2026-01-29",
+      "lastNotice": "2026-06-04",
       "approval": "2021-02-04",
       "construction": "2022-06-29",
       "completion": "2024-12-04",
       "operator": "(주)대한제37호위탁관리부동산투자회사",
       "note": "",
+      "address": "강동구 길동 368-7",
       "tableVisible": true,
       "subwayFormatted": "길동역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 길동역 길동생활(B동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6561&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(B동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-29",
+          "applyDate": "2026-02-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6427&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(B동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-02",
+          "applyDate": "2025-10-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6334&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(B동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-09",
+          "applyDate": "2025-07-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6265&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(B동) 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-13",
+          "applyDate": "2025-03-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6196&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 길동역 길동생활(B동) 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-01-13",
+          "applyDate": "2025-01-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6161&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5301,
       "lng": 127.1238
     },
@@ -1614,6 +4150,7 @@
       "completion": "2025-03-18",
       "operator": "주식회사 씨드원",
       "note": "",
+      "address": "동대문구 장안동 465-4 일원",
       "tableVisible": true,
       "subwayFormatted": "장한평역 ⑤",
       "notices": [],
@@ -1634,15 +4171,81 @@
       "special": 0,
       "general": 3,
       "moveIn": "2024-07-01",
-      "lastNotice": "2026-02-05",
+      "lastNotice": "2026-05-21",
       "approval": "2021-04-01",
       "construction": "2021-12-20",
       "completion": "2024-06-17",
       "operator": "김대용",
       "note": "",
+      "address": "중랑구 상봉동 118-8일원",
       "tableVisible": true,
       "subwayFormatted": "상봉역 ⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 상봉역 상봉동양엔파트 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-21",
+          "applyDate": "2026-05-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6545&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 상봉동양엔파트 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-02",
+          "applyDate": "2026-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6488&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 상봉동양엔파트 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-12",
+          "applyDate": "2026-03-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6464&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 상봉동양엔파트 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-05",
+          "applyDate": "2026-02-09",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6437&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 상봉동양엔파트 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-12",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6404&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 상봉동양엔파트 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-10-23",
+          "applyDate": "2024-10-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6124&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 상봉동양엔파트 추가모집공고(수정)",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-07-25",
+          "applyDate": "2024-07-31",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6099&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 상봉동양엔파트 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-03-22",
+          "applyDate": "2024-04-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6033&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6063,
       "lng": 127.0926
     },
@@ -1660,15 +4263,129 @@
       "special": 3,
       "general": 4,
       "moveIn": "2025-04-28",
-      "lastNotice": "2026-01-08",
+      "lastNotice": "2026-06-04",
       "approval": "2021-04-15",
       "construction": "2021-10-18",
       "completion": "2025-03-31",
       "operator": "개봉아이알디피에프브이㈜",
       "note": "",
+      "address": "구로구 개봉동 403-29 일원",
       "tableVisible": true,
       "subwayFormatted": "개봉역 ①",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 상봉역 세이지움 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6553&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 세이지움 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-14",
+          "applyDate": "2026-05-18",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6536&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 개봉역 세이지움 개봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-30",
+          "applyDate": "2026-05-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6526&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 세이지움 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-30",
+          "applyDate": "2026-05-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6524&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 세이지움 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-02",
+          "applyDate": "2026-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6490&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 개봉역 세이지움 개봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-19",
+          "applyDate": "2026-03-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6474&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 세이지움 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-19",
+          "applyDate": "2026-03-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6473&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 세이지움 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-29",
+          "applyDate": "2026-02-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6430&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 개봉역 세이지움 개봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6412&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 세이지움 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-24",
+          "applyDate": "2025-12-29",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6397&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 세이지움 상봉 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-11-04",
+          "applyDate": "2025-11-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6358&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 개봉역 세이지움 개봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-30",
+          "applyDate": "2025-11-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6356&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 개봉역 세이지움 개봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-20",
+          "applyDate": "2025-06-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6252&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 개봉역 세이지움 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-03-26",
+          "applyDate": "2025-04-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6203&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.4954,
       "lng": 126.8874
     },
@@ -1692,11 +4409,43 @@
       "completion": "2024-02-07",
       "operator": "이상현 외 1인",
       "note": "최초",
+      "address": "동작구 사당동 1044-1",
       "tableVisible": true,
       "subwayFormatted": "사당역 ②④",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 사당역 사당역코브(cove) 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-07-23",
+          "applyDate": "2024-08-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6086&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5124,
       "lng": 126.9393
+    },
+    {
+      "id": "pdf_72",
+      "gu": "서초구",
+      "name": "서초구 서초동 1448-1일원",
+      "subway": "남부터미널역",
+      "subwayFormatted": "남부터미널역 ③",
+      "stage": "착공신고",
+      "total": 835,
+      "public": 271,
+      "private": 564,
+      "address": "서초구 서초동 1448-1일원",
+      "approval": "2021-04-15",
+      "construction": "2023-01-20",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4855,
+      "lng": 127.0138
     },
     {
       "id": 75,
@@ -1712,17 +4461,57 @@
       "special": 38,
       "general": 142,
       "moveIn": "2026-03-04",
-      "lastNotice": "2026-01-27",
+      "lastNotice": "2026-06-04",
       "approval": "2021-06-10",
       "construction": "2022-04-29",
       "completion": "2025-05-21",
       "operator": "현대아산㈜",
       "note": "최초",
+      "address": "노원구 월계동 410-3",
       "tableVisible": true,
       "subwayFormatted": "광운대역 ①",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 광운대역 현대프라힐스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6559&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 광운대역 현대프라힐스 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2026-01-27",
+          "applyDate": "2026-02-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6423&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6542,
       "lng": 127.0568
+    },
+    {
+      "id": "pdf_74",
+      "gu": "광진구",
+      "name": "광진구 구의동 587-6 일원",
+      "subway": "구의역",
+      "subwayFormatted": "구의역 ②",
+      "stage": "준공",
+      "total": 174,
+      "public": 87,
+      "private": 87,
+      "address": "광진구 구의동 587-6 일원",
+      "approval": "2021-06-17",
+      "construction": "2023-08-07",
+      "completion": "2026-02-13",
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5392,
+      "lng": 127.0844
     },
     {
       "id": 77,
@@ -1744,9 +4533,43 @@
       "completion": "2023-11-24",
       "operator": "이영희",
       "note": "",
+      "address": "동작구 대방동 403-14 일원",
       "tableVisible": true,
       "subwayFormatted": "신대방삼거리역 ⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 신대방삼거리역 골든노블레스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-13",
+          "applyDate": "2025-11-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6371&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신대방삼거리역 골든노블레스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-05-21",
+          "applyDate": "2025-05-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6235&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신대방삼거리역 골든노블레스 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-03-18",
+          "applyDate": "2024-03-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6030&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신대방삼거리역 골든노블레스 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-12-11",
+          "applyDate": "2023-12-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5995&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5124,
       "lng": 126.9393
     },
@@ -1770,11 +4593,34 @@
       "completion": "2025-07-01",
       "operator": "상봉아이알디피에프브이㈜",
       "note": "",
+      "address": "중랑구 상봉동 109-28",
       "tableVisible": true,
       "subwayFormatted": "상봉역 ⑦",
       "notices": [],
       "lat": 37.6063,
       "lng": 127.0926
+    },
+    {
+      "id": "pdf_77",
+      "gu": "마포구",
+      "name": "마포구 동교동 173-2",
+      "subway": "홍대입구역",
+      "subwayFormatted": "홍대입구역 ②⑥공항경의중앙",
+      "stage": "착공신고",
+      "total": 285,
+      "public": 90,
+      "private": 195,
+      "address": "마포구 동교동 173-2",
+      "approval": "2021-07-15",
+      "construction": "2024-10-24",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5571,
+      "lng": 126.9241
     },
     {
       "id": 80,
@@ -1790,17 +4636,165 @@
       "special": 31,
       "general": 119,
       "moveIn": "2026-01-26",
-      "lastNotice": "2025-12-23",
+      "lastNotice": "2026-06-04",
       "approval": "2021-07-22",
       "construction": "2022-11-11",
       "completion": "2025-10-01",
       "operator": "주식회사 엘앤피개발",
       "note": "",
+      "address": "노원구 상계동 690",
       "tableVisible": true,
       "subwayFormatted": "노원역 ④⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 상봉역 와이센트럴시티 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6556&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 와이센트럴시티 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-30",
+          "applyDate": "2026-05-04",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6527&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 와이센트럴시티 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-16",
+          "applyDate": "2026-04-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6511&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 와이센트럴시티 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-02",
+          "applyDate": "2026-04-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6494&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 와이센트럴시티 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-19",
+          "applyDate": "2026-02-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6446&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 와이 센트럴시티 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6411&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 와이 센트럴시티 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-27",
+          "applyDate": "2025-12-02",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6380&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 상봉역 와이 센트럴시티 상봉 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-09-30",
+          "applyDate": "2025-10-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6328&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 잠실새내역 잠실 센트럴파크 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-02-22",
+          "applyDate": "2024-02-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6022&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 잠실새내역 잠실 센트럴파크 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2023-06-09",
+          "applyDate": "2023-06-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=5873&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6542,
       "lng": 127.0568
+    },
+    {
+      "id": "pdf_79",
+      "gu": "강남구",
+      "name": "강남구 논현동 221-16",
+      "subway": "언주역",
+      "subwayFormatted": "언주역 ⑨",
+      "stage": "착공신고",
+      "total": 94,
+      "public": 20,
+      "private": 74,
+      "address": "강남구 논현동 221-16",
+      "approval": "2022-01-14",
+      "construction": "2023-03-06",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5121,
+      "lng": 127.0387
+    },
+    {
+      "id": "pdf_80",
+      "gu": "송파구",
+      "name": "송파구 장지동 842-1",
+      "subway": "장지역",
+      "subwayFormatted": "장지역 ⑧",
+      "stage": "착공신고",
+      "total": 484,
+      "public": 239,
+      "private": 245,
+      "address": "송파구 장지동 842-1",
+      "approval": "2021-07-29",
+      "construction": "2022-09-28",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4779,
+      "lng": 127.1256
+    },
+    {
+      "id": "pdf_81",
+      "gu": "성동구",
+      "name": "성동구 도선동 286 일원",
+      "subway": "상왕십리역",
+      "subwayFormatted": "상왕십리역 ②수인분당",
+      "stage": "착공신고",
+      "total": 381,
+      "public": 137,
+      "private": 244,
+      "address": "성동구 도선동 286 일원",
+      "approval": "2021-07-29",
+      "construction": "2023-10-30",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5652,
+      "lng": 127.0298
     },
     {
       "id": 84,
@@ -1816,15 +4810,65 @@
       "special": 0,
       "general": 1,
       "moveIn": "2025-06-05",
-      "lastNotice": "2026-01-08",
+      "lastNotice": "2026-04-30",
       "approval": "2021-08-12",
       "construction": "2022-08-01",
       "completion": "2025-03-31",
       "operator": "(주)에버그린플라자",
       "note": "",
+      "address": "용산구 서계동 100-1일원",
       "tableVisible": true,
       "subwayFormatted": "서울역 ①④공항",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 서울역 어반허브 서울스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-30",
+          "applyDate": "2026-05-19",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6528&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울역 어반허브 서울스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-12",
+          "applyDate": "2026-03-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6439&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울역 어반허브 서울스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-08",
+          "applyDate": "2026-01-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6413&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울역 어반허브 서울스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-30",
+          "applyDate": "2025-11-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6355&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울역 어반허브 서울스테이션 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-23",
+          "applyDate": "2025-07-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6294&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 서울역 어반허브 서울스테이션 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-04-01",
+          "applyDate": "2025-04-11",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6208&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5323,
       "lng": 126.9906
     },
@@ -1842,15 +4886,49 @@
       "special": 2,
       "general": 62,
       "moveIn": "2025-06-12",
-      "lastNotice": "2025-12-24",
+      "lastNotice": "2026-06-04",
       "approval": "2021-08-19",
       "construction": "2022-12-16",
       "completion": "2025-05-30",
       "operator": "인트러스제1호전문투자형사모부동산투자(유)",
       "note": "",
+      "address": "성동구 마장동 339-2 일원",
       "tableVisible": true,
       "subwayFormatted": "왕십리역 ②⑤수인분당경의중앙",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 왕십리역 라봄성동 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6558&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 왕십리역 라봄성동 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-19",
+          "applyDate": "2026-02-20",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6447&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 왕십리역 라봄성동 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-24",
+          "applyDate": "2025-12-29",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6400&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 왕십리역 라봄성동 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-06-12",
+          "applyDate": "2025-06-23",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6246&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5634,
       "lng": 127.0369
     },
@@ -1874,6 +4952,7 @@
       "completion": "2024-08-19",
       "operator": "주식회사 브이인마크청년주택위탁관리부동산투자회사",
       "note": "",
+      "address": "동대문구 제기동 136-3",
       "tableVisible": true,
       "subwayFormatted": "고려대역 ⑥",
       "notices": [],
@@ -1894,17 +4973,117 @@
       "special": 7,
       "general": 36,
       "moveIn": "2025-06-16",
-      "lastNotice": "2025-10-30",
+      "lastNotice": "2026-06-04",
       "approval": "2021-09-16",
       "construction": "2022-04-10",
       "completion": "2025-06-02",
       "operator": "주식회사 종암피에프브이",
       "note": "",
+      "address": "성북구 종암동 83-3 일원",
       "tableVisible": true,
       "subwayFormatted": "종암경찰서역 (예정)",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 종암경찰서역(예정) 라온프라이빗 종암 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-04",
+          "applyDate": "2026-06-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6555&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 종암경찰서역(예정) 라온프라이빗 종암 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-21",
+          "applyDate": "2026-05-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6541&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 종암경찰서역(예정) 라온프라이빗 종암 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-30",
+          "applyDate": "2025-11-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6351&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 종암경찰서역(예정) 라온프라이빗 종암 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-04-14",
+          "applyDate": "2025-04-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6216&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5894,
       "lng": 127.0167
+    },
+    {
+      "id": "pdf_86",
+      "gu": "성북구",
+      "name": "성북구 석관동 173-1일원",
+      "subway": "돌곶이역",
+      "subwayFormatted": "돌곶이역 ⑥",
+      "stage": "착공신고",
+      "total": 242,
+      "public": 62,
+      "private": 180,
+      "address": "성북구 석관동 173-1일원",
+      "approval": "2021-09-23",
+      "construction": "2023-08-04",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.6029,
+      "lng": 127.0548
+    },
+    {
+      "id": "pdf_87",
+      "gu": "중랑구",
+      "name": "중랑구 묵동 165",
+      "subway": "태릉입구역",
+      "subwayFormatted": "태릉입구역 ⑦",
+      "stage": "준공",
+      "total": 927,
+      "public": 381,
+      "private": 546,
+      "address": "중랑구 묵동 165",
+      "approval": "2021-09-30",
+      "construction": "2022-03-16",
+      "completion": "2026-04-21",
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.6071525,
+      "lng": 127.0755743
+    },
+    {
+      "id": "pdf_88",
+      "gu": "금천구",
+      "name": "금천구 독산동 292-6",
+      "subway": "독산역",
+      "subwayFormatted": "독산역 ①",
+      "stage": "준공",
+      "total": 589,
+      "public": 151,
+      "private": 438,
+      "address": "금천구 독산동 292-6",
+      "approval": "2021-10-14",
+      "construction": "2022-06-03",
+      "completion": "2026-04-01",
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4698,
+      "lng": 126.8962
     },
     {
       "id": 91,
@@ -1920,17 +5099,117 @@
       "special": 3,
       "general": 60,
       "moveIn": "2025-12-08",
-      "lastNotice": "2025-12-24",
+      "lastNotice": "2026-04-23",
       "approval": "2021-10-14",
       "construction": "2022-07-28",
       "completion": "2025-07-08",
       "operator": "(주)더블유앤홀딩스",
       "note": "",
+      "address": "광진구 중곡동 93-13 일원",
       "tableVisible": true,
       "subwayFormatted": "아차산역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 아차산역 백악관타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-23",
+          "applyDate": "2026-04-26",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6514&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 아차산역 백악관타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-12",
+          "applyDate": "2026-02-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6442&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 아차산역 백악관타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-24",
+          "applyDate": "2025-12-29",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6396&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 아차산역 백악관타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-10-28",
+          "applyDate": "2025-11-07",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6349&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5384,
       "lng": 127.0826
+    },
+    {
+      "id": "pdf_90",
+      "gu": "성동구",
+      "name": "성동구 용답동 231 일원",
+      "subway": "장한평역",
+      "subwayFormatted": "장한평역 ⑤",
+      "stage": "착공신고",
+      "total": 1403,
+      "public": 604,
+      "private": 799,
+      "address": "성동구 용답동 231 일원",
+      "approval": "2021-10-21",
+      "construction": "2022-01-14",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.568,
+      "lng": 127.0503
+    },
+    {
+      "id": "pdf_91",
+      "gu": "성동구",
+      "name": "성동구 용답동 68-2",
+      "subway": "답십리역",
+      "subwayFormatted": "답십리역 ⑤",
+      "stage": "착공신고",
+      "total": 228,
+      "public": 75,
+      "private": 153,
+      "address": "성동구 용답동 68-2",
+      "approval": "2021-10-21",
+      "construction": "2024-01-03",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.572,
+      "lng": 127.0589
+    },
+    {
+      "id": "pdf_92",
+      "gu": "중랑구",
+      "name": "중랑구 묵동 8",
+      "subway": "화랑대역",
+      "subwayFormatted": "화랑대역 ⑥",
+      "stage": "준공",
+      "total": 724,
+      "public": 253,
+      "private": 471,
+      "address": "중랑구 묵동 8",
+      "approval": "2021-10-21",
+      "construction": "2023-05-03",
+      "completion": "2026-04-27",
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.6088,
+      "lng": 127.0641
     },
     {
       "id": 95,
@@ -1952,9 +5231,35 @@
       "completion": "2025-02-10",
       "operator": "금성종합건설 주식회사",
       "note": "",
+      "address": "동작구 신대방동 351-5",
       "tableVisible": true,
       "subwayFormatted": "신대방삼거리역 ⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 신대방삼거리역 골드타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-06",
+          "applyDate": "2025-11-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6363&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신대방삼거리역 골드타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-02",
+          "applyDate": "2025-10-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6335&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 신대방삼거리역 골드타워 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-01-06",
+          "applyDate": "2025-01-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6158&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5124,
       "lng": 126.9393
     },
@@ -1978,11 +5283,34 @@
       "completion": "2025-12-18",
       "operator": "㈜마스턴제124호위탁관리부동산투자회사",
       "note": "",
+      "address": "광진구 구의동 246-10 일원",
       "tableVisible": true,
       "subwayFormatted": "구의역 ②",
       "notices": [],
       "lat": 37.5384,
       "lng": 127.0826
+    },
+    {
+      "id": "pdf_95",
+      "gu": "성동구",
+      "name": "성동구 홍익동 150",
+      "subway": "상왕십리역",
+      "subwayFormatted": "상왕십리역 ②수인분당",
+      "stage": "착공신고",
+      "total": 266,
+      "public": 70,
+      "private": 196,
+      "address": "성동구 홍익동 150",
+      "approval": "2021-11-11",
+      "construction": "2023-10-06",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5654903,
+      "lng": 127.0311557
     },
     {
       "id": 98,
@@ -2004,11 +5332,34 @@
       "completion": null,
       "operator": "동서빌딩",
       "note": "",
+      "address": "동대문구 장안동 418-1 일원",
       "tableVisible": true,
       "subwayFormatted": "장한평역 ⑤",
       "notices": [],
       "lat": 37.5744,
       "lng": 127.0395
+    },
+    {
+      "id": "pdf_97",
+      "gu": "영등포구",
+      "name": "영등포구 대림동 986-4 일원",
+      "subway": "대림삼거리역",
+      "subwayFormatted": "대림삼거리역 ⑦",
+      "stage": "착공신고",
+      "total": 597,
+      "public": 296,
+      "private": 301,
+      "address": "영등포구 대림동 986-4 일원",
+      "approval": "2021-11-18",
+      "construction": "2022-12-05",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.492,
+      "lng": 126.8843
     },
     {
       "id": 100,
@@ -2024,15 +5375,121 @@
       "special": 8,
       "general": 0,
       "moveIn": "2025-02-28",
-      "lastNotice": "2026-01-15",
+      "lastNotice": "2026-04-09",
       "approval": "2021-11-25",
       "construction": "2022-07-15",
       "completion": "2025-02-06",
       "operator": "㈜엘앤케이이스테이트",
       "note": "",
+      "address": "광진구 자양동 8-8",
       "tableVisible": true,
       "subwayFormatted": "건대입구역 ②⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-04-09",
+          "applyDate": "2026-04-11",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6501&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-02-26",
+          "applyDate": "2026-03-01",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6450&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-01-15",
+          "applyDate": "2026-01-17",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6416&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-11-20",
+          "applyDate": "2025-11-24",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6376&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-10-30",
+          "applyDate": "2025-11-03",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6354&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-09-10",
+          "applyDate": "2025-09-13",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6319&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-08-13",
+          "applyDate": "2025-08-16",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6307&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-09",
+          "applyDate": "2025-07-11",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6262&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-06-18",
+          "applyDate": "2025-06-22",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6248&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-22",
+          "applyDate": "2025-04-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6221&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-03-06",
+          "applyDate": "2025-03-10",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6191&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-06",
+          "applyDate": "2025-02-11",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6169&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 건대입구역 더포디엄830 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-12-20",
+          "applyDate": "2024-12-30",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6149&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5384,
       "lng": 127.0826
     },
@@ -2056,11 +5513,34 @@
       "completion": "2025-03-27",
       "operator": "캡스톤발산역청년주택일반사모부동산투자유한회사",
       "note": "",
+      "address": "강서구 내발산동 647-1",
       "tableVisible": true,
       "subwayFormatted": "발산역 ⑤",
       "notices": [],
       "lat": 37.5509,
       "lng": 126.8495
+    },
+    {
+      "id": "pdf_100",
+      "gu": "성동구",
+      "name": "성동구 용답동 230-4",
+      "subway": "장한평역",
+      "subwayFormatted": "장한평역 ⑤",
+      "stage": "인가완료",
+      "total": 172,
+      "public": 59,
+      "private": 113,
+      "address": "성동구 용답동 230-4",
+      "approval": "2023-11.23",
+      "construction": null,
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.568,
+      "lng": 127.0503
     },
     {
       "id": 103,
@@ -2082,9 +5562,19 @@
       "completion": "2025-05-28",
       "operator": "롯데건설㈜",
       "note": "최초",
+      "address": "용산구 갈월동 98-6",
       "tableVisible": true,
       "subwayFormatted": "남영역 ①",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 남영역 용산 남영역 롯데캐슬 헤리티지 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-04-09",
+          "applyDate": "2025-04-14",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6213&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5323,
       "lng": 126.9906
     },
@@ -2108,11 +5598,34 @@
       "completion": "2025-04-11",
       "operator": "코레이트도곡동청년주택전문투자형사모부동산투자 유한회사",
       "note": "",
+      "address": "강남구 도곡동 954-17 일원",
       "tableVisible": true,
       "subwayFormatted": "양재역 ③신분당",
       "notices": [],
       "lat": 37.5172,
       "lng": 127.0473
+    },
+    {
+      "id": "pdf_103",
+      "gu": "동작구",
+      "name": "동작구 노량진동 19-6 일원",
+      "subway": "노량진역",
+      "subwayFormatted": "노량진역 ①⑨",
+      "stage": "착공신고",
+      "total": 840,
+      "public": 418,
+      "private": 422,
+      "address": "동작구 노량진동 19-6 일원",
+      "approval": "2022-02-17",
+      "construction": "2023-05-31",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5138,
+      "lng": 126.9421
     },
     {
       "id": 106,
@@ -2134,9 +5647,27 @@
       "completion": "2025-04-10",
       "operator": "한상(한석일 외 3명)",
       "note": "",
+      "address": "성동구 마장동 783-5 일원",
       "tableVisible": true,
       "subwayFormatted": "마장역 ⑤",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 마장역 한영스테이 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-07-02",
+          "applyDate": "2025-07-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6257&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 마장역 한영스테이 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2025-02-17",
+          "applyDate": "2025-02-27",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6178&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.5634,
       "lng": 127.0369
     },
@@ -2154,15 +5685,73 @@
       "special": 0,
       "general": 1,
       "moveIn": "2024-10-17",
-      "lastNotice": "2025-12-04",
+      "lastNotice": "2026-05-21",
       "approval": "2022-03-03",
       "construction": "2023-02-01",
       "completion": "2024-10-15",
       "operator": "유한책임회사 문하",
       "note": "",
+      "address": "노원구 공릉동 684-41",
       "tableVisible": true,
       "subwayFormatted": "태릉입구역 ⑦",
-      "notices": [],
+      "notices": [
+        {
+          "title": "[민간임대] 태릉입구역 이니티움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-05-21",
+          "applyDate": "2026-05-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6542&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 태릉입구역 이니티움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-03-26",
+          "applyDate": "2026-03-30",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6479&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 태릉입구역 이니티움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-12-04",
+          "applyDate": "2025-12-08",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6384&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 태릉입구역 이니티움 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-04-17",
+          "applyDate": "2025-04-21",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6219&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 태릉입구역 이니티움 입주자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2025-02-03",
+          "applyDate": "2025-02-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6168&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 태릉입구역 이니티움 입주자 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2024-11-20",
+          "applyDate": "2024-11-25",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6137&bbsId=BMSR00015"
+        },
+        {
+          "title": "[민간임대] 태릉입구역 이니티움 최초모집공고",
+          "type": "최초",
+          "house": "민간",
+          "date": "2024-08-14",
+          "applyDate": "2024-08-28",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6109&bbsId=BMSR00015"
+        }
+      ],
       "lat": 37.6542,
       "lng": 127.0568
     },
@@ -2186,11 +5775,122 @@
       "completion": "2025-07-25",
       "operator": "상봉동케이원청년주택피에프브이㈜",
       "note": "",
+      "address": "중랑구 상봉동 100 일원",
       "tableVisible": true,
       "subwayFormatted": "상봉역 ⑦",
       "notices": [],
       "lat": 37.6063,
       "lng": 127.0926
+    },
+    {
+      "id": "pdf_107",
+      "gu": "동작구",
+      "name": "동작구 사당동 1008-1 일원",
+      "subway": "이수역",
+      "subwayFormatted": "이수역 ④⑦",
+      "stage": "입주",
+      "total": 162,
+      "public": 64,
+      "private": 98,
+      "address": "동작구 사당동 1008-1 일원",
+      "approval": "2022-04-14",
+      "construction": "2024-01-04",
+      "completion": "2026-02-13",
+      "moveIn": "2026-04-08",
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4856,
+      "lng": 126.9807
+    },
+    {
+      "id": "pdf_108",
+      "gu": "마포구",
+      "name": "마포구 염리동 85-2",
+      "subway": "대흥역",
+      "subwayFormatted": "대흥역 ⑥",
+      "stage": "착공신고",
+      "total": 499,
+      "public": 74,
+      "private": 425,
+      "address": "마포구 염리동 85-2",
+      "approval": "2022-04-21",
+      "construction": "2023-11-24",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5418,
+      "lng": 126.9428
+    },
+    {
+      "id": "pdf_109",
+      "gu": "성북구",
+      "name": "성북구 하월곡동 80-55",
+      "subway": "미아사거리역",
+      "subwayFormatted": "미아사거리역 ④",
+      "stage": "착공신고",
+      "total": 254,
+      "public": 118,
+      "private": 136,
+      "address": "성북구 하월곡동 80-55",
+      "approval": "2022-06-16",
+      "construction": "2024-02-02",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.6141,
+      "lng": 127.0294
+    },
+    {
+      "id": "pdf_110",
+      "gu": "용산구",
+      "name": "용산구 원효로3가 1-159",
+      "subway": "효창공원앞역",
+      "subwayFormatted": "효창공원앞역 ⑥",
+      "stage": "착공신고",
+      "total": 988,
+      "public": 353,
+      "private": 635,
+      "address": "용산구 원효로3가 1-159",
+      "approval": "2022-06-23",
+      "construction": "2022-09-23",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5393,
+      "lng": 126.9612
+    },
+    {
+      "id": "pdf_111",
+      "gu": "동대문구",
+      "name": "동대문구 전농동 127-359",
+      "subway": "청량리역",
+      "subwayFormatted": "청량리역 ①수인분당",
+      "stage": "준공",
+      "total": 206,
+      "public": 100,
+      "private": 106,
+      "address": "동대문구 전농동 127-359",
+      "approval": "2022-06-23",
+      "construction": "2023-04-28",
+      "completion": "2025-12-03",
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5836,
+      "lng": 127.0457
     },
     {
       "id": 114,
@@ -2212,11 +5912,518 @@
       "completion": "2025-04-21",
       "operator": "윤호표 외 8인 (대현빌딩)",
       "note": "최초",
+      "address": "강서구 염창동 275",
       "tableVisible": true,
       "subwayFormatted": "등촌역 ⑨",
       "notices": [],
       "lat": 37.5509,
       "lng": 126.8495
+    },
+    {
+      "id": "pdf_113",
+      "gu": "중랑구",
+      "name": "중랑구 상봉동 116-49",
+      "subway": "상봉역",
+      "subwayFormatted": "상봉역 ⑦",
+      "stage": "착공신고",
+      "total": 299,
+      "public": 121,
+      "private": 178,
+      "address": "중랑구 상봉동 116-49",
+      "approval": "2022-08-04",
+      "construction": "2023-10-31",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5875,
+      "lng": 127.0854
+    },
+    {
+      "id": "pdf_114",
+      "gu": "영등포구",
+      "name": "영등포구 신길동 1300",
+      "subway": "대방역",
+      "subwayFormatted": "대방역 ①",
+      "stage": "착공신고",
+      "total": 281,
+      "public": 112,
+      "private": 169,
+      "address": "영등포구 신길동 1300",
+      "approval": "2022-08-04",
+      "construction": "2024-12-31",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5145,
+      "lng": 126.932
+    },
+    {
+      "id": "pdf_115",
+      "gu": "마포구",
+      "name": "마포구 염리동 172-10",
+      "subway": "공덕역",
+      "subwayFormatted": "공덕역 ⑤⑥공항경의중앙",
+      "stage": "준공",
+      "total": 299,
+      "public": 124,
+      "private": 175,
+      "address": "마포구 염리동 172-10",
+      "approval": "2022-08-04",
+      "construction": "2023-11-24",
+      "completion": "2026-03-25",
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5449,
+      "lng": 126.9513
+    },
+    {
+      "id": "pdf_116",
+      "gu": "동작구",
+      "name": "동작구 노량진동 39-20",
+      "subway": "노량진역",
+      "subwayFormatted": "노량진역 ①⑨",
+      "stage": "착공신고",
+      "total": 260,
+      "public": 72,
+      "private": 188,
+      "address": "동작구 노량진동 39-20",
+      "approval": "2022-08-25",
+      "construction": "2023-11-30",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5138,
+      "lng": 126.9421
+    },
+    {
+      "id": "pdf_117",
+      "gu": "금천구",
+      "name": "금천구 시흥동 103-3",
+      "subway": "시흥사거리역",
+      "subwayFormatted": "시흥사거리역 ①",
+      "stage": "착공신고",
+      "total": 180,
+      "public": 82,
+      "private": 98,
+      "address": "금천구 시흥동 103-3",
+      "approval": "2022-11-03",
+      "construction": "2023-10-04",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4543,
+      "lng": 126.8983
+    },
+    {
+      "id": "pdf_118",
+      "gu": "서초구",
+      "name": "서초구 서초동 1676-4",
+      "subway": "교대역",
+      "subwayFormatted": "교대역 ②③",
+      "stage": "착공신고",
+      "total": 252,
+      "public": 63,
+      "private": 189,
+      "address": "서초구 서초동 1676-4",
+      "approval": "2022-11-17",
+      "construction": "2023-08-29",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4934,
+      "lng": 127.0138
+    },
+    {
+      "id": "pdf_119",
+      "gu": "서대문구",
+      "name": "서대문구 창천동 502-11",
+      "subway": "홍대입구역",
+      "subwayFormatted": "홍대입구역 ②⑥공항경의중앙",
+      "stage": "착공신고",
+      "total": 288,
+      "public": 92,
+      "private": 196,
+      "address": "서대문구 창천동 502-11",
+      "approval": "2022-11-24",
+      "construction": "2024-01-26",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5571,
+      "lng": 126.9241
+    },
+    {
+      "id": "pdf_120",
+      "gu": "동작구",
+      "name": "동작구 상도동 188-19",
+      "subway": "장승배기역",
+      "subwayFormatted": "장승배기역 ⑦",
+      "stage": "착공신고",
+      "total": 250,
+      "public": 125,
+      "private": 125,
+      "address": "동작구 상도동 188-19",
+      "approval": "2022-12-01",
+      "construction": "2024-06-17",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5071,
+      "lng": 126.9412
+    },
+    {
+      "id": "pdf_121",
+      "gu": "서초구",
+      "name": "서초구 양재동 1-26",
+      "subway": "양재역",
+      "subwayFormatted": "양재역 ③신분당",
+      "stage": "착공신고",
+      "total": 342,
+      "public": 171,
+      "private": 171,
+      "address": "서초구 양재동 1-26",
+      "approval": "2022-12-15",
+      "construction": "2024-02-29",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4845,
+      "lng": 127.034
+    },
+    {
+      "id": "pdf_122",
+      "gu": "강서구",
+      "name": "강서구 공항동 50-5",
+      "subway": "송정역",
+      "subwayFormatted": "송정역 공항",
+      "stage": "착공신고",
+      "total": 157,
+      "public": 71,
+      "private": 86,
+      "address": "강서구 공항동 50-5",
+      "approval": "2023-01-12",
+      "construction": "2023-12-22",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5627,
+      "lng": 126.8028
+    },
+    {
+      "id": "pdf_123",
+      "gu": "동작구",
+      "name": "동작구 노량진동 56-1",
+      "subway": "노량진역",
+      "subwayFormatted": "노량진역 ①⑨",
+      "stage": "착공신고",
+      "total": 397,
+      "public": 198,
+      "private": 199,
+      "address": "동작구 노량진동 56-1",
+      "approval": "2023-01-19",
+      "construction": "2024-12-04",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5138,
+      "lng": 126.9421
+    },
+    {
+      "id": "pdf_124",
+      "gu": "동작구",
+      "name": "동작구 노량진동 117-2",
+      "subway": "노량진역",
+      "subwayFormatted": "노량진역 ①⑨",
+      "stage": "착공신고",
+      "total": 432,
+      "public": 212,
+      "private": 220,
+      "address": "동작구 노량진동 117-2",
+      "approval": "2023-02-02",
+      "construction": "2024-08-01",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.508004,
+      "lng": 126.9399245
+    },
+    {
+      "id": "pdf_125",
+      "gu": "노원구",
+      "name": "노원구 월계동 390-35",
+      "subway": "광운대역",
+      "subwayFormatted": "광운대역 ①",
+      "stage": "인가완료",
+      "total": 103,
+      "public": 21,
+      "private": 82,
+      "address": "노원구 월계동 390-35",
+      "approval": "2023-02-09",
+      "construction": null,
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.6244,
+      "lng": 127.0578
+    },
+    {
+      "id": "pdf_126",
+      "gu": "서대문구",
+      "name": "서대문구 북가좌동 333-1",
+      "subway": "증산역",
+      "subwayFormatted": "증산역 ⑥",
+      "stage": "착공신고",
+      "total": 382,
+      "public": 111,
+      "private": 271,
+      "address": "서대문구 북가좌동 333-1",
+      "approval": "2023-02-16",
+      "construction": "2023-12-15",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5823,
+      "lng": 126.9163
+    },
+    {
+      "id": "pdf_127",
+      "gu": "강남구",
+      "name": "강남구 역삼동 828-2",
+      "subway": "강남역",
+      "subwayFormatted": "강남역 ②신분당",
+      "stage": "착공신고",
+      "total": 566,
+      "public": 216,
+      "private": 350,
+      "address": "강남구 역삼동 828-2",
+      "approval": "2023-04-13",
+      "construction": "2024-09-03",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4979,
+      "lng": 127.0276
+    },
+    {
+      "id": "pdf_128",
+      "gu": "성동구",
+      "name": "성동구 행당동 319-36",
+      "subway": "왕십리역",
+      "subwayFormatted": "왕십리역 ②⑤수인분당경의중앙",
+      "stage": "인가완료",
+      "total": 637,
+      "public": 312,
+      "private": 325,
+      "address": "성동구 행당동 319-36",
+      "approval": "2023-04-20",
+      "construction": null,
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5615,
+      "lng": 127.0374
+    },
+    {
+      "id": "pdf_129",
+      "gu": "서초구",
+      "name": "서초구 방배동 1955",
+      "subway": "총신대입구역",
+      "subwayFormatted": "총신대입구역 ④⑦",
+      "stage": "착공신고",
+      "total": 144,
+      "public": 22,
+      "private": 79,
+      "address": "서초구 방배동 1955",
+      "approval": "2023-04-20",
+      "construction": "2023-10-04",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4761987,
+      "lng": 126.9902473
+    },
+    {
+      "id": "pdf_130",
+      "gu": "강동구",
+      "name": "강동구 성내동 382-6",
+      "subway": "강동역",
+      "subwayFormatted": "강동역 ⑤⑧",
+      "stage": "착공신고",
+      "total": 281,
+      "public": 140,
+      "private": 141,
+      "address": "강동구 성내동 382-6",
+      "approval": "2023-05-04",
+      "construction": "2024-05-17",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5304,
+      "lng": 127.1266
+    },
+    {
+      "id": "pdf_131",
+      "gu": "구로구",
+      "name": "구로구 오류동 172-67",
+      "subway": "천왕역",
+      "subwayFormatted": "천왕역 ⑦",
+      "stage": "인가완료",
+      "total": 75,
+      "public": 37,
+      "private": 38,
+      "address": "구로구 오류동 172-67",
+      "approval": "2025-05-02",
+      "construction": null,
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4948,
+      "lng": 126.8348
+    },
+    {
+      "id": "pdf_132",
+      "gu": "강서구",
+      "name": "강서구 등촌동 533-2",
+      "subway": "등촌역",
+      "subwayFormatted": "등촌역 ⑨",
+      "stage": "착공신고",
+      "total": 616,
+      "public": 214,
+      "private": 402,
+      "address": "강서구 등촌동 533-2",
+      "approval": "2024-02-08",
+      "construction": "2025-03-31",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.5423,
+      "lng": 126.8705
+    },
+    {
+      "id": "pdf_133",
+      "gu": "구로구",
+      "name": "구로구 오류동 108-105",
+      "subway": "온수역",
+      "subwayFormatted": "온수역 ①⑦",
+      "stage": "인가완료",
+      "total": 585,
+      "public": 225,
+      "private": 360,
+      "address": "구로구 오류동 108-105",
+      "approval": "2024-05-16",
+      "construction": null,
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.489,
+      "lng": 126.8208
+    },
+    {
+      "id": "pdf_134",
+      "gu": "관악구",
+      "name": "관악구 봉천동 945-11",
+      "subway": "봉천역",
+      "subwayFormatted": "봉천역 ②",
+      "stage": "인가완료",
+      "total": 92,
+      "public": 21,
+      "private": 71,
+      "address": "관악구 봉천동 945-11",
+      "approval": "2024-11-21",
+      "construction": null,
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4818,
+      "lng": 126.9472
+    },
+    {
+      "id": "pdf_135",
+      "gu": "관악구",
+      "name": "관악구 봉천동 464-8",
+      "subway": "",
+      "subwayFormatted": "",
+      "stage": "착공신고",
+      "total": 100,
+      "public": 19,
+      "private": 81,
+      "address": "관악구 봉천동 464-8",
+      "approval": "2024-12-06",
+      "construction": "2025-12-18",
+      "completion": null,
+      "moveIn": null,
+      "vacancy": null,
+      "lastNotice": null,
+      "notices": [],
+      "tableVisible": false,
+      "lat": 37.4784,
+      "lng": 126.9516
     }
   ]
 }
