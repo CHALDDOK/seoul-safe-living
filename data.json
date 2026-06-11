@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-06-11 14:36",
+  "updatedAt": "2026-06-11 15:01",
   "kpi": {
     "totalComplexes": 85,
     "activeComplexes": 79,
     "totalPrivateUnits": 20546,
-    "vacancyUnits": 1684,
-    "avgVacancyRate": 8.2
+    "vacancyUnits": 1512,
+    "avgVacancyRate": 4.5
   },
   "complexes": [
     {
@@ -4402,16 +4402,16 @@
       "public": 95,
       "private": 180,
       "area": 2132.0,
-      "vacancy": 1.0,
-      "special": 38,
-      "general": 142,
+      "vacancy": 0.044444,
+      "special": 0,
+      "general": 8,
       "moveIn": "2026-03-04",
       "lastNotice": "2026-06-04",
       "approval": "2021-06-10",
       "construction": "2022-04-29",
       "completion": "2025-05-21",
       "operator": "현대아산㈜",
-      "note": "최초",
+      "note": "",
       "address": "노원구 월계동 410-3",
       "tableVisible": true,
       "subwayFormatted": "광운대역 ①",
