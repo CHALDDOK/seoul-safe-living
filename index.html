@@ -512,8 +512,8 @@ function renderDetailPanel(c){
       <div class="drow"><div class="dk">추진단계</div><div class="dv nt">${c.stage||'—'}</div></div>
       <div class="drow"><div class="dk">사업시행자</div><div class="dv nt" style="max-width:260px;white-space:normal">${c.operator||'—'}</div></div>
       <div class="drow"><div class="dk">시공사</div><div class="dv nt" style="max-width:260px;white-space:normal">${c.contractor||'—'}</div></div>
-      <div class="drow"><div class="dk">청약페이지</div><div class="dv nt"><a href="${applyUrl}" target="_blank" rel="noopener">공고 바로가기 ↗</a></div></div>
-      ${c.note?`<div class="drow"><div class="dk">비고</div><div class="dv nt">${c.note}</div></div>`:''}
+      <div class="drow"><div class="dk">공고 바로가기</div><div class="dv nt"><a href="${notices.length>0&&notices[0].url?notices[0].url:'https://soco.seoul.go.kr/youth/bbs/BMSR00015/list.do?menuNo=400008'}" target="_blank" rel="noopener">공고 바로가기 ↗</a></div></div>
+      ${c.applyUrl?`<div class="drow"><div class="dk">청약 신청</div><div class="dv nt"><a href="${c.applyUrl}" target="_blank" rel="noopener">청약 바로가기 ↗</a></div></div>`:''}
     </div>`;
   document.getElementById('detailOv').classList.add('open');
 }
