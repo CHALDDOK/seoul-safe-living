@@ -28,6 +28,8 @@ jobs:
 
       - name: Run data fetch script
         run: python scripts/fetch.py
+        env:
+          KAKAO_API_KEY: ${{ secrets.KAKAO_MAP }}
 
       - name: Check for changes
         id: changes
