@@ -321,18 +321,21 @@ function stageBadge(s){
 
 // ── thead top 계산 ──
 function updateTheadTop(){
-  const hh = document.querySelector('header')?.offsetHeight || 64;
-  const th = document.querySelector('.tab-bar')?.offsetHeight || 37;
-  const ch = document.querySelector('.controls')?.offsetHeight || 45;
-  const top = hh + th + ch;
-  document.documentElement.style.setProperty('--thead-top', top + 'px');
+  const controls = document.querySelector('.controls');
+  if(controls){
+    // getBoundingClientRect().bottom은 sticky 요소의 실제 뷰포트 위치를 반환
+    // 스크롤 여부와 무관하게 controls 하단 = thead가 sticking 시작할 위치
+    document.documentElement.style.setProperty(
+      '--thead-top',
+      controls.getBoundingClientRect().bottom + 'px'
+    );
+  }
 }
-// 폰트 로드 완료 후 계산 (웹폰트 로딩 타이밍 버그 방지)
 document.fonts.ready.then(() => {
   updateTheadTop();
-  setTimeout(updateTheadTop, 200);
-  window.addEventListener('resize', updateTheadTop);
+  setTimeout(updateTheadTop, 300);
 });
+window.addEventListener('resize', updateTheadTop);
 
 // ── 데이터 로드 ──
 async function loadData(){
@@ -356,7 +359,7 @@ async function loadData(){
     const sel = document.getElementById('guFilter');
     gus.forEach(g=>{ const o=document.createElement('option'); o.value=o.textContent=g; sel.appendChild(o); });
     applyFilters();
-    updateTheadTop();
+    requestAnimationFrame(updateTheadTop);
   } catch(e) {
     document.getElementById('statusBadge').className='badge err';
     document.getElementById('statusBadge').textContent='데이터 오류: '+e.message;
