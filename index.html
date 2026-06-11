@@ -324,19 +324,7 @@ function updateTheadTop(){
   const hh = document.querySelector('header')?.offsetHeight || 64;
   const th = document.querySelector('.tab-bar')?.offsetHeight || 37;
   const ch = document.querySelector('.controls')?.offsetHeight || 45;
-  const rh = document.getElementById('rinfo')?.offsetHeight || 26;
-
-  // rinfo를 sticky로 설정 (controls 바로 아래에 고정)
-  const rinfoEl = document.getElementById('rinfo');
-  if(rinfoEl){
-    rinfoEl.style.position = 'sticky';
-    rinfoEl.style.top = (hh + th + ch) + 'px';
-    rinfoEl.style.zIndex = '75';
-    rinfoEl.style.background = 'var(--sf)';
-  }
-
-  // thead는 rinfo 바로 아래에 고정
-  const top = hh + th + ch + rh;
+  const top = hh + th + ch;
   document.documentElement.style.setProperty('--thead-top', top + 'px');
 }
 // 폰트 로드 완료 후 계산 (웹폰트 로딩 타이밍 버그 방지)
@@ -368,7 +356,7 @@ async function loadData(){
     const sel = document.getElementById('guFilter');
     gus.forEach(g=>{ const o=document.createElement('option'); o.value=o.textContent=g; sel.appendChild(o); });
     applyFilters();
-    document.fonts.ready.then(() => { updateTheadTop(); setTimeout(updateTheadTop, 200); });
+    updateTheadTop();
   } catch(e) {
     document.getElementById('statusBadge').className='badge err';
     document.getElementById('statusBadge').textContent='데이터 오류: '+e.message;
