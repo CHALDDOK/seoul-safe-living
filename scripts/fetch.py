@@ -420,15 +420,26 @@ def fetch_notice_detail(ntt_id: str) -> dict:
         return {"detailUrl": url}
 
 def match_complex(title: str, data_list: list):
+    """공고 제목에서 단지 매칭 — 역명 가중치 포함 스코어링"""
     t = re.sub(r'[\[\]（）()]', '', title).lower()
+    best, best_score = None, 0
     for d in data_list:
+        score = 0
         n = d["name"].lower()
+        subway = re.sub(r'역$', '', d.get("subway","")).lower()
+        # 단지명 완전 포함 시 높은 점수
         if n in t or t in n:
-            return d
-        words = [w for w in re.split(r'[\s\-_]+', n) if len(w) >= 3]
-        if any(w in t for w in words):
-            return d
-    return None
+            score = 100 + len(n)
+        else:
+            words = [w for w in re.split(r'[\s\-_]+', n) if len(w) >= 3]
+            score = sum(10 for w in words if w in t)
+        # 역명 포함 시 보너스 (이름이 겹치는 단지 구분 핵심)
+        if subway and subway in t:
+            score += 50
+        if score > best_score:
+            best_score = score
+            best = d
+    return best if best_score > 0 else None
 
 def map_type(v): return {"1":"최초","2":"추가"}.get(str(v), str(v) if v else "")
 def map_house(v): return {"1":"공공","2":"민간"}.get(str(v), str(v) if v else "")
