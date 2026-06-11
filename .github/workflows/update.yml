@@ -24,7 +24,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python dependencies
-        run: pip install requests
+        run: pip install requests pdfplumber
 
       - name: Run data fetch script
         run: python scripts/fetch.py
