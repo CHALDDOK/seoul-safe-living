@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-06-11 15:01",
+  "updatedAt": "2026-06-11 15:44",
   "kpi": {
     "totalComplexes": 85,
-    "activeComplexes": 79,
+    "activeComplexes": 80,
     "totalPrivateUnits": 20546,
-    "vacancyUnits": 1512,
+    "vacancyUnits": 1682,
     "avgVacancyRate": 4.5
   },
   "complexes": [
@@ -2881,23 +2881,23 @@
     {
       "id": 47,
       "gu": "관악구",
-      "name": "메트로움 지밸리퍼스트",
+      "name": "구로디지털단지역 유벤투스 240",
       "subway": "구로디지털단지역",
-      "stage": "준공",
+      "stage": "입주",
       "total": 240,
       "public": 70,
       "private": 170,
       "area": 1499.8,
-      "vacancy": 0.0,
-      "special": 0,
-      "general": 0,
-      "moveIn": null,
+      "vacancy": 1.0,
+      "special": 34,
+      "general": 136,
+      "moveIn": "2026-06-30",
       "lastNotice": "2026-06-02",
       "approval": "2020-05-27",
       "construction": "2020-08-11",
       "completion": "2025-11-03",
-      "operator": "",
-      "note": "",
+      "operator": "우리자산신탁 주식회사",
+      "note": "최초",
       "address": "관악구 신림동 1644-3",
       "tableVisible": true,
       "subwayFormatted": "구로디지털단지역 ②",
@@ -4951,8 +4951,8 @@
           "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6118&bbsId=BMSR00015&menuNo=400008"
         }
       ],
-      "lat": 37.5744,
-      "lng": 127.0395
+      "lat": 37.601,
+      "lng": 127.0535
     },
     {
       "id": 87,
@@ -5033,8 +5033,8 @@
       "lastNotice": null,
       "notices": [],
       "tableVisible": false,
-      "lat": 37.6029,
-      "lng": 127.0548
+      "lat": 37.601,
+      "lng": 127.0535
     },
     {
       "id": "pdf_87",
@@ -6304,8 +6304,8 @@
       "lastNotice": null,
       "notices": [],
       "tableVisible": false,
-      "lat": 37.5627,
-      "lng": 126.8028
+      "lat": 37.566,
+      "lng": 126.8058
     },
     {
       "id": "pdf_123",
