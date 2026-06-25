@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25 02:02",
+  "updatedAt": "2026-06-26 02:09",
   "kpi": {
     "totalComplexes": 85,
     "activeComplexes": 80,
@@ -1731,7 +1731,7 @@
       "special": 1,
       "general": 0,
       "moveIn": "2021-12-03",
-      "lastNotice": "2026-05-14",
+      "lastNotice": "2026-06-25",
       "approval": "2019-10-30",
       "construction": "2020-04-14",
       "completion": "2021-11-10",
@@ -1741,6 +1741,14 @@
       "tableVisible": true,
       "subwayFormatted": "강변역 ②",
       "notices": [
+        {
+          "title": "[민간임대] 강변역 비바힐스강변 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-25",
+          "applyDate": "2026-06-29",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6579&bbsId=BMSR00015&menuNo=400008"
+        },
         {
           "title": "[민간임대] 강변역 비바힐스강변 추가모집공고",
           "type": "추가",
@@ -4620,7 +4628,7 @@
       "special": 0,
       "general": 145,
       "moveIn": "2025-12-08",
-      "lastNotice": "2026-06-04",
+      "lastNotice": "2026-06-25",
       "approval": "2021-07-01",
       "construction": "2021-09-29",
       "completion": "2025-07-01",
@@ -4630,6 +4638,14 @@
       "tableVisible": true,
       "subwayFormatted": "상봉역 ⑦",
       "notices": [
+        {
+          "title": "[민간임대] 상봉역 세이지움 상봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-06-25",
+          "applyDate": "2026-06-29",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6578&bbsId=BMSR00015&menuNo=400008"
+        },
         {
           "title": "[민간임대] 상봉역 세이지움 상봉 추가모집공고",
           "type": "추가",
