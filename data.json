@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02 02:11",
+  "updatedAt": "2026-07-03 01:47",
   "kpi": {
     "totalComplexes": 85,
     "activeComplexes": 80,
@@ -549,7 +549,7 @@
       "special": 0,
       "general": 2,
       "moveIn": "2023-07-10",
-      "lastNotice": "2026-01-22",
+      "lastNotice": "2026-07-02",
       "approval": "2019-08-29",
       "construction": "2020-06-18",
       "completion": "2023-05-30",
@@ -559,6 +559,14 @@
       "tableVisible": true,
       "subwayFormatted": "신림역 ②",
       "notices": [
+        {
+          "title": "[민간임대] 신림역 최강타워 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-07-02",
+          "applyDate": "2026-07-05",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6581&bbsId=BMSR00015&menuNo=400008"
+        },
         {
           "title": "[민간임대] 신림역 최강타워 추가모집공고",
           "type": "추가",
@@ -4360,7 +4368,7 @@
       "special": 3,
       "general": 4,
       "moveIn": "2025-04-28",
-      "lastNotice": "2026-06-18",
+      "lastNotice": "2026-07-02",
       "approval": "2021-04-15",
       "construction": "2021-10-18",
       "completion": "2025-03-31",
@@ -4370,6 +4378,14 @@
       "tableVisible": true,
       "subwayFormatted": "개봉역 ①",
       "notices": [
+        {
+          "title": "[민간임대] 개봉역 세이지움 개봉 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-07-02",
+          "applyDate": "2026-07-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6583&bbsId=BMSR00015&menuNo=400008"
+        },
         {
           "title": "[민간임대] 개봉역 세이지움 개봉 추가모집공고",
           "type": "추가",
@@ -4952,7 +4968,7 @@
       "special": 2,
       "general": 62,
       "moveIn": "2025-06-12",
-      "lastNotice": "2026-06-04",
+      "lastNotice": "2026-07-02",
       "approval": "2021-08-19",
       "construction": "2022-12-16",
       "completion": "2025-05-30",
@@ -4962,6 +4978,14 @@
       "tableVisible": true,
       "subwayFormatted": "왕십리역 ②⑤수인분당경의중앙",
       "notices": [
+        {
+          "title": "[민간임대] 왕십리역 라봄성동 추가모집공고",
+          "type": "추가",
+          "house": "민간",
+          "date": "2026-07-02",
+          "applyDate": "2026-07-06",
+          "url": "https://soco.seoul.go.kr/youth/bbs/BMSR00015/view.do?boardId=6582&bbsId=BMSR00015&menuNo=400008"
+        },
         {
           "title": "[민간임대] 왕십리역 라봄성동 추가모집공고",
           "type": "추가",
